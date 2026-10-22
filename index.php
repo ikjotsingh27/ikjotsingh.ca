@@ -1,0 +1,540 @@
+<!doctype html>
+<html lang="en" class="h-full">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ikjot Singh | Public Safety Portfolio — Intelligence & Risk Analyst Candidate</title>
+  <meta name="description" content="Ikjot Singh — Bachelor of Public Safety (Honours) candidate with CBRNE certifications, cybersecurity experience, and 16 years of martial arts discipline. Targeting intelligence support and public safety analyst roles with CBSA, CSIS, and federal agencies.">
+  <meta name="keywords" content="Ikjot Singh, Public Safety Portfolio, CBRNE, Intelligence Analyst, CBSA, CSIS, Algonquin College, Risk Assessment, Cybersecurity, Ottawa">
+  <meta name="author" content="Ikjot Singh">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://ikjot-singh.infinityfree.me/">
+
+  <!-- Open Graph / Social -->
+  <meta property="og:title" content="Ikjot Singh | Public Safety Portfolio">
+  <meta property="og:description" content="Resilient public safety professional with CBRNE certifications, systems thinking, and lived experience. Targeting intelligence and analyst roles.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://ikjot-singh.infinityfree.me/">
+  <meta property="og:image" content="https://i.imgur.com/IENzRUP.png">
+
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Ikjot Singh",
+    "url": "https://ikjot-singh.infinityfree.me/",
+    "jobTitle": "Public Safety Candidate / Intelligence Support Aspirant",
+    "alumniOf": "Algonquin College",
+    "knowsAbout": ["Public Safety", "CBRNE", "Risk Assessment", "Cybersecurity", "Emergency Management"],
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Ottawa",
+      "addressRegion": "Ontario",
+      "addressCountry": "CA"
+    }
+  }
+  </script>
+
+  <script src="https://cdn.tailwindcss.com/3.4.17"></script>
+  <script src="https://cdn.jsdelivr.net/npm/lucide@0.263.0/dist/umd/lucide.min.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500;600;700&family=Share+Tech+Mono&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'bg-primary': '#0a0e17',
+            'surface': '#111927',
+            'text-main': '#c8d6e5',
+            'accent': '#00e5ff',
+            'accent-dim': '#00a8bb',
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    html, body { height: 100%; margin: 0; }
+    * { box-sizing: border-box; }
+    body { background: #0a0e17; color: #c8d6e5; font-family: 'Outfit', sans-serif; }
+    ::-webkit-scrollbar { width: 6px; }
+    ::-webkit-scrollbar-track { background: #0a0e17; }
+    ::-webkit-scrollbar-thumb { background: #00e5ff33; border-radius: 3px; }
+    .scan-overlay {
+      pointer-events: none;
+      position: fixed; inset: 0; z-index: 9999;
+      background: repeating-linear-gradient(
+        0deg, transparent, transparent 2px, rgba(0,229,255,0.015) 2px, rgba(0,229,255,0.015) 4px
+      );
+    }
+    .grid-bg {
+      background-image:
+        linear-gradient(rgba(0,229,255,0.04) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(0,229,255,0.04) 1px, transparent 1px);
+      background-size: 40px 40px;
+    }
+    .glow-card {
+      background: #111927;
+      border: 1px solid rgba(0,229,255,0.15);
+      border-radius: 8px;
+      transition: border-color 0.3s, box-shadow 0.3s;
+    }
+    .glow-card:hover {
+      border-color: rgba(0,229,255,0.4);
+      box-shadow: 0 0 20px rgba(0,229,255,0.08);
+    }
+    .nav-link {
+      position: relative; padding: 8px 0; color: #c8d6e5;
+      font-family: 'Share Tech Mono', monospace; font-size: 13px;
+      text-transform: uppercase; letter-spacing: 2px;
+      transition: color 0.3s; cursor: pointer;
+    }
+    .nav-link:hover, .nav-link.active { color: #00e5ff; }
+    .nav-link::after {
+      content: ''; position: absolute; bottom: 0; left: 0;
+      width: 0; height: 1px; background: #00e5ff;
+      transition: width 0.3s;
+    }
+    .nav-link:hover::after, .nav-link.active::after { width: 100%; }
+    .section-tag {
+      font-family: 'Share Tech Mono', monospace;
+      font-size: 11px; letter-spacing: 3px; text-transform: uppercase;
+      color: #00e5ff; opacity: 0.7;
+    }
+    .section-title {
+      font-family: 'Rajdhani', sans-serif;
+      font-weight: 700; color: #fff;
+    }
+    .star-badge {
+      display: inline-block; padding: 2px 10px; border-radius: 3px;
+      font-family: 'Share Tech Mono', monospace; font-size: 11px;
+      letter-spacing: 2px; text-transform: uppercase;
+      background: rgba(0,229,255,0.1); color: #00e5ff;
+      border: 1px solid rgba(0,229,255,0.25);
+    }
+    .pulse-dot {
+      width: 8px; height: 8px; border-radius: 50%; background: #00e5ff;
+      box-shadow: 0 0 8px #00e5ff; animation: pulse-glow 2s infinite;
+    }
+    @keyframes pulse-glow { 0%,100% { opacity: 1; } 50% { opacity: 0.4; } }
+    .corner-accent { position: relative; }
+    .corner-accent::before, .corner-accent::after {
+      content: ''; position: absolute; width: 12px; height: 12px;
+      border-color: rgba(0,229,255,0.3); border-style: solid; border-width: 0;
+    }
+    .corner-accent::before { top: -1px; left: -1px; border-top-width: 1px; border-left-width: 1px; }
+    .corner-accent::after { bottom: -1px; right: -1px; border-bottom-width: 1px; border-right-width: 1px; }
+    .mobile-menu { transform: translateX(100%); transition: transform 0.3s; }
+    .mobile-menu.open { transform: translateX(0); }
+    .fade-section { opacity: 0; transform: translateY(30px); transition: opacity 0.6s, transform 0.6s; }
+    .fade-section.visible { opacity: 1; transform: translateY(0); }
+    img.lightbox-trigger { cursor: zoom-in; transition: opacity 0.2s; }
+    img.lightbox-trigger:hover { opacity: 0.85; }
+    .lightbox {
+      display: none;
+      position: fixed;
+      inset: 0;
+      background: rgba(0,0,0,0.92);
+      z-index: 10000;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+    }
+    .lightbox.active { display: flex; }
+    .lightbox img {
+      max-width: 90vw;
+      max-height: 90vh;
+      object-fit: contain;
+      border-radius: 8px;
+      box-shadow: 0 0 40px rgba(0,229,255,0.2);
+    }
+    .lightbox-close {
+      position: absolute;
+      top: 20px;
+      right: 24px;
+      color: #00e5ff;
+      font-size: 32px;
+      cursor: pointer;
+      background: none;
+      border: none;
+      font-family: 'Share Tech Mono', monospace;
+    }
+  </style>
+</head>
+<body class="h-full">
+  <div id="app-wrapper" class="h-full w-full overflow-auto grid-bg relative">
+    <div class="scan-overlay"></div>
+
+    <!-- NAV -->
+    <nav class="fixed top-0 left-0 right-0 z-50 bg-bg-primary/90 backdrop-blur border-b border-cyan-900/20">
+      <div class="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
+        <div class="flex items-center gap-3">
+          <div class="pulse-dot"></div>
+          <span class="font-semibold text-white tracking-wider" style="font-family:'Rajdhani',sans-serif; font-size:18px;">IKJOT SINGH</span>
+        </div>
+        <div class="hidden md:flex items-center gap-8">
+          <a class="nav-link active" onclick="scrollToSection('hero')">Home</a>
+          <a class="nav-link" onclick="scrollToSection('academics')">Mission</a>
+          <a class="nav-link" onclick="scrollToSection('skills')">Skills</a>
+          <a class="nav-link" onclick="scrollToSection('community')">Community</a>
+          <a class="nav-link" onclick="scrollToSection('certifications')">Certifications</a>
+          <a class="nav-link" onclick="scrollToSection('leadership')">Leadership</a>
+        </div>
+        <button class="md:hidden text-accent" onclick="toggleMobileMenu()">
+          <i data-lucide="menu" style="width:24px;height:24px;"></i>
+        </button>
+      </div>
+    </nav>
+
+    <!-- MOBILE MENU -->
+    <div id="mobile-menu" class="mobile-menu fixed top-0 right-0 bottom-0 w-64 z-50 bg-bg-primary/95 backdrop-blur border-l border-cyan-900/20 p-8 flex flex-col gap-6 pt-20">
+      <button class="absolute top-5 right-5 text-accent" onclick="toggleMobileMenu()">
+        <i data-lucide="x" style="width:24px;height:24px;"></i>
+      </button>
+      <a class="nav-link" onclick="scrollToSection('hero');toggleMobileMenu()">Home</a>
+      <a class="nav-link" onclick="scrollToSection('academics');toggleMobileMenu()">Mission</a>
+      <a class="nav-link" onclick="scrollToSection('skills');toggleMobileMenu()">Skills</a>
+      <a class="nav-link" onclick="scrollToSection('community');toggleMobileMenu()">Community</a>
+      <a class="nav-link" onclick="scrollToSection('certifications');toggleMobileMenu()">Certifications</a>
+      <a class="nav-link" onclick="scrollToSection('leadership');toggleMobileMenu()">Leadership</a>
+    </div>
+
+    <!-- HERO -->
+    <section id="hero" class="fade-section min-h-screen flex items-center pt-20 px-6">
+      <div class="max-w-6xl mx-auto w-full grid md:grid-cols-5 gap-10 items-center">
+        <div class="md:col-span-3 space-y-6">
+          <div class="section-tag">// Ikjot Singh — Public Safety Portfolio</div>
+          <h1 class="section-title text-4xl md:text-5xl lg:text-6xl leading-tight">Resilient. Analytical.<br>Committed to Service.</h1>
+          <div class="w-16 h-0.5 bg-accent/50"></div>
+          <p class="text-base md:text-lg leading-relaxed opacity-90 max-w-2xl">Bachelor of Public Safety (Honours) candidate combining CBRNE certifications, cybersecurity experience, and 16 years of martial arts discipline. After surviving an unprovoked hate crime and defending against a home intrusion, I redirected a computer science background toward proactive risk identification and public safety. Multilingual (English, Punjabi, Hindi, Urdu, Gujarati) with proven composure under pressure.</p>
+          <div class="glow-card corner-accent p-5 max-w-xl">
+            <div class="flex items-center gap-2 mb-3">
+              <i data-lucide="shield" style="width:16px;height:16px;color:#00e5ff;"></i>
+              <span class="text-xs tracking-widest uppercase" style="font-family:'Share Tech Mono',monospace;color:#00e5ff;">Distinctive Edge</span>
+            </div>
+            <p class="text-sm leading-relaxed opacity-85">Lived resilience + systems thinking + multilingual communication. Targeting Intelligence Support / Public Safety Analyst roles with CBSA, CSIS, and federal agencies. Prepared for security clearance processes.</p>
+          </div>
+        </div>
+        <div class="md:col-span-2 flex justify-center">
+          <div class="relative">
+            <div class="w-52 h-52 md:w-64 md:h-64 rounded-full border-2 border-accent/20 overflow-hidden flex items-center justify-center" style="background: radial-gradient(circle, #111927 0%, #0a0e17 100%);">
+              <img src="https://i.imgur.com/IENzRUP.png" alt="Ikjot Singh Profile" class="lightbox-trigger" loading="lazy" style="width:100%; height:100%; object-fit:cover;">
+              <div style="font-family:'Share Tech Mono',monospace;font-size:11px;color:#00e5ff;letter-spacing:2px;position:absolute;bottom:8px;">ACTIVE</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ASPIRATIONS & MISSION -->
+    <section id="academics" class="fade-section py-24 px-6">
+      <div class="max-w-6xl mx-auto space-y-10">
+        <div>
+          <div class="section-tag">// Aspirations & Mission</div>
+          <h2 class="section-title text-3xl md:text-4xl mt-2">Long-Term Trajectory</h2>
+        </div>
+        <div class="grid md:grid-cols-2 gap-6">
+          <div class="glow-card corner-accent p-6 space-y-4">
+            <div class="flex items-center gap-3">
+              <div class="w-10 h-10 rounded-lg bg-accent/10 flex items-center justify-center">
+                <i data-lucide="radar" style="width:20px;height:20px;color:#00e5ff;"></i>
+              </div>
+              <h3 class="text-white font-semibold text-lg" style="font-family:'Rajdhani',sans-serif;">Career Aspirations</h3>
+            </div>
+            <p class="text-sm leading-relaxed opacity-85">Targeting an <strong class="text-white">Intelligence Support or Public Safety Analyst role</strong> within the <strong class="text-white">Canada Border Services Agency (CBSA)</strong> or the <strong class="text-white">Canadian Security Intelligence Service (CSIS)</strong>. Focused on translating complex information into actionable intelligence to prevent harm and protect communities at critical infrastructure points.</p>
+          </div>
+          <div class="glow-card corner-accent p-6 space-y-4">
+            <div class="flex items-center gap-3">
+              <div class="w-10 h-10 rounded-lg bg-accent/10 flex items-center justify-center">
+                <i data-lucide="heart-handshake" style="width:20px;height:20px;color:#00e5ff;"></i>
+              </div>
+              <h3 class="text-white font-semibold text-lg" style="font-family:'Rajdhani',sans-serif;">Core Value: Seva (Service)</h3>
+            </div>
+            <p class="text-sm leading-relaxed opacity-85">Guided by the philosophy instilled by my grandmother: <em class="text-accent/80">"You find God in performing seva (selfless service) for others."</em><br><br><strong class="text-white">Public safety is a responsibility and a sacrifice, not a position of power.</strong> Every decision and action is grounded in this commitment to serve, not to dominate.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="fade-section py-24 px-6">
+      <div class="max-w-6xl mx-auto space-y-10">
+        <div>
+          <div class="section-tag">// Applied Coursework</div>
+          <h2 class="section-title text-3xl md:text-4xl mt-2">Transferable Skills</h2>
+        </div>
+        <div class="grid md:grid-cols-2 gap-6">
+          <div class="glow-card corner-accent p-6 space-y-5">
+            <div class="flex items-center justify-between">
+              <h3 class="text-white font-semibold text-lg" style="font-family:'Rajdhani',sans-serif;">Systems Thinking & Analytical Communication</h3>
+              <span class="star-badge">STAR</span>
+            </div>
+            <div class="space-y-4 text-sm leading-relaxed">
+              <div><span class="text-accent text-xs tracking-widest uppercase" style="font-family:'Share Tech Mono',monospace;">Situation</span><p class="opacity-85 mt-1">Preparing for complex Bachelor of Public Safety final exams requiring the synthesis of dense rules and technical regulations.</p></div>
+              <div><span class="text-accent text-xs tracking-widest uppercase" style="font-family:'Share Tech Mono',monospace;">Task</span><p class="opacity-85 mt-1">Review complex research topics and explain findings in a clear, interactive manner to improve retention and understanding.</p></div>
+              <div><span class="text-accent text-xs tracking-widest uppercase" style="font-family:'Share Tech Mono',monospace;">Action</span><p class="opacity-85 mt-1">Designed and programmed complex interactive learning flow charts and videos that mapped out how information flows, how systems are interconnected, and how weaknesses create cascading risks.</p></div>
+              <div><span class="text-accent text-xs tracking-widest uppercase" style="font-family:'Share Tech Mono',monospace;">Result</span><p class="opacity-85 mt-1">Mastered the concepts personally and distributed the interactive tools to my study group, directly resulting in peers achieving higher-than-expected grades.</p></div>
+            </div>
+          </div>
+          <div class="glow-card corner-accent p-6 space-y-5">
+            <div class="flex items-center justify-between">
+              <h3 class="text-white font-semibold text-lg" style="font-family:'Rajdhani',sans-serif;">Incident Analysis & Professional Briefing</h3>
+              <span class="star-badge">STAR</span>
+            </div>
+            <div class="space-y-4 text-sm leading-relaxed">
+              <div><span class="text-accent text-xs tracking-widest uppercase" style="font-family:'Share Tech Mono',monospace;">Situation</span><p class="opacity-85 mt-1">Assigned a critical incident analysis presentation in Police Foundations coursework.</p></div>
+              <div><span class="text-accent text-xs tracking-widest uppercase" style="font-family:'Share Tech Mono',monospace;">Task</span><p class="opacity-85 mt-1">Analyze a complex event, identify risk indicators, and deliver a clear, concise operational briefing.</p></div>
+              <div><span class="text-accent text-xs tracking-widest uppercase" style="font-family:'Share Tech Mono',monospace;">Action</span><p class="opacity-85 mt-1">Organized the information logically, prioritizing actionable intelligence over lengthy explanations, and delivered the findings with calm professionalism.</p></div>
+              <div><span class="text-accent text-xs tracking-widest uppercase" style="font-family:'Share Tech Mono',monospace;">Result</span><p class="opacity-85 mt-1">Received excellent feedback from instructors for professional clarity, precision, and the ability to communicate decisions based strictly on risk rather than assumptions.</p></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- COMMUNITY -->
+    <section id="community" class="fade-section py-24 px-6">
+      <div class="max-w-6xl mx-auto space-y-10">
+        <div>
+          <div class="section-tag">// Community Impact</div>
+          <h2 class="section-title text-3xl md:text-4xl mt-2">Volunteer Service</h2>
+        </div>
+        <div class="grid md:grid-cols-2 gap-6">
+          <div class="glow-card corner-accent p-6 space-y-4">
+            <div class="flex items-center gap-3">
+              <div class="w-10 h-10 rounded-lg bg-accent/10 flex items-center justify-center">
+                <i data-lucide="utensils" style="width:20px;height:20px;color:#00e5ff;"></i>
+              </div>
+              <h3 class="text-white font-semibold text-lg" style="font-family:'Rajdhani',sans-serif;">Caldwell Family Services</h3>
+            </div>
+            <p class="text-sm leading-relaxed opacity-85">Committed numerous volunteer hours assisting across departments, including extensive kitchen prep and meal coordination for local families.</p>
+            <div class="mt-4 glow-card corner-accent overflow-hidden">
+              <img src="https://i.imgur.com/mYniTZY.png" alt="Caldwell Family Services Volunteer Work" class="lightbox-trigger" loading="lazy" style="width:100%; height:180px; object-fit:cover;">
+              <div class="p-2 border-t border-accent/20">
+                <p class="text-xs opacity-70" style="font-family:'Share Tech Mono',monospace;">Community Service in Action</p>
+              </div>
+            </div>
+          </div>
+          <div class="glow-card corner-accent p-6 space-y-4">
+            <div class="flex items-center gap-3">
+              <div class="w-10 h-10 rounded-lg bg-accent/10 flex items-center justify-center">
+                <i data-lucide="hand-helping" style="width:20px;height:20px;color:#00e5ff;"></i>
+              </div>
+              <h3 class="text-white font-semibold text-lg" style="font-family:'Rajdhani',sans-serif;">Gurudwara Seva</h3>
+            </div>
+            <p class="text-sm leading-relaxed opacity-85">Regular, dedicated volunteer work focused on cleaning, maintenance, and dishwashing to support the community langar, directly applying my philosophy of selfless service.</p>
+            <div class="mt-4 glow-card corner-accent overflow-hidden">
+              <img src="https://i.imgur.com/rC0Liar.png" alt="Gurudwara Seva Community Work" class="lightbox-trigger" loading="lazy" style="width:100%; height:180px; object-fit:cover;">
+              <div class="p-2 border-t border-accent/20">
+                <p class="text-xs opacity-70" style="font-family:'Share Tech Mono',monospace;">Selfless Service & Community Care</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="glow-card corner-accent p-6 space-y-5 max-w-3xl">
+          <div class="flex items-center justify-between">
+            <h3 class="text-white font-semibold text-lg" style="font-family:'Rajdhani',sans-serif;">Community Service Reflection</h3>
+            <span class="star-badge">STAR</span>
+          </div>
+          <div class="space-y-4 text-sm leading-relaxed">
+            <div><span class="text-accent text-xs tracking-widest uppercase" style="font-family:'Share Tech Mono',monospace;">Situation</span><p class="opacity-85 mt-1">Diverse community members relying on local food banks and service centers.</p></div>
+            <div><span class="text-accent text-xs tracking-widest uppercase" style="font-family:'Share Tech Mono',monospace;">Task</span><p class="opacity-85 mt-1">Coordinate volunteers and manage frontline food service operations.</p></div>
+            <div><span class="text-accent text-xs tracking-widest uppercase" style="font-family:'Share Tech Mono',monospace;">Action</span><p class="opacity-85 mt-1">Provided clear instructions to volunteer teams, confirmed understanding, and adapted communication styles to build trust with individuals from diverse backgrounds.</p></div>
+            <div><span class="text-accent text-xs tracking-widest uppercase" style="font-family:'Share Tech Mono',monospace;">Result</span><p class="opacity-85 mt-1">Streamlined volunteer coordination, improved service efficiency, and built meaningful trust with community members from varied cultural backgrounds.</p></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CERTIFICATIONS -->
+    <section id="certifications" class="fade-section py-24 px-6">
+      <div class="max-w-6xl mx-auto space-y-10">
+        <div>
+          <div class="section-tag">// Technical Credentials</div>
+          <h2 class="section-title text-3xl md:text-4xl mt-2">Certifications & Technical Achievement</h2>
+        </div>
+        <div class="grid md:grid-cols-2 gap-6">
+          <div class="space-y-6">
+            <div class="glow-card corner-accent p-6 space-y-5">
+              <div class="flex items-center justify-between">
+                <div class="flex items-center gap-3">
+                  <div class="w-10 h-10 rounded-lg bg-accent/10 flex items-center justify-center">
+                    <i data-lucide="shield-alert" style="width:20px;height:20px;color:#00e5ff;"></i>
+                  </div>
+                  <h3 class="text-white font-semibold text-lg" style="font-family:'Rajdhani',sans-serif;">CBRNE Expertise</h3>
+                </div>
+                <span class="star-badge">STAR</span>
+              </div>
+              <div class="space-y-4 text-sm leading-relaxed">
+                <div><span class="text-accent text-xs tracking-widest uppercase" style="font-family:'Share Tech Mono',monospace;">Situation</span><p class="opacity-85 mt-1">Public safety threats involving weapons of mass destruction (WMD) and CBRNE hazards require specialized technical knowledge and rapid threat assessment protocols.</p></div>
+                <div><span class="text-accent text-xs tracking-widest uppercase" style="font-family:'Share Tech Mono',monospace;">Task</span><p class="opacity-85 mt-1">Obtain advanced certifications in Chemical, Biological, Radiological, Nuclear, and Explosive threat assessment and emergency response.</p></div>
+                <div><span class="text-accent text-xs tracking-widest uppercase" style="font-family:'Share Tech Mono',monospace;">Action</span><p class="opacity-85 mt-1">Completed 18+ hours of intensive FEMA/TEEX and SPCHTC training, mastering hazard identification, decontamination protocols, and incident command integration.</p></div>
+                <div><span class="text-accent text-xs tracking-widest uppercase" style="font-family:'Share Tech Mono',monospace;">Result</span><p class="opacity-85 mt-1">Developed a reusable technical framework for rapid hazard identification and risk communication, now applicable to intelligence analysis and threat prevention.</p></div>
+              </div>
+              <div class="mt-4 p-3 bg-accent/5 border border-accent/20 rounded text-xs opacity-80" style="font-family:'Share Tech Mono',monospace;">📋 Certificate: FEMA/TEEX CBRNE Certification (18+ hours)</div>
+            </div>
+            <div class="grid grid-cols-2 gap-4">
+              <div class="glow-card corner-accent overflow-hidden">
+                <img src="https://i.imgur.com/leLBsEL.png" alt="Bioterrorism Certificate" class="lightbox-trigger" loading="lazy" style="width:100%; height:180px; object-fit:cover;">
+                <div class="p-3 border-t border-accent/20"><p class="text-xs font-semibold text-white" style="font-family:'Rajdhani',sans-serif;">Bioterrorism</p></div>
+              </div>
+              <div class="glow-card corner-accent overflow-hidden">
+                <img src="https://i.imgur.com/0VyaFjh.png" alt="Terrorism Awareness Certificate" class="lightbox-trigger" loading="lazy" style="width:100%; height:180px; object-fit:cover;">
+                <div class="p-3 border-t border-accent/20"><p class="text-xs font-semibold text-white" style="font-family:'Rajdhani',sans-serif;">Terrorism Awareness</p></div>
+              </div>
+              <div class="glow-card corner-accent overflow-hidden">
+                <img src="https://i.imgur.com/hbEKeMp.png" alt="Chemical Response Certificate" class="lightbox-trigger" loading="lazy" style="width:100%; height:180px; object-fit:cover;">
+                <div class="p-3 border-t border-accent/20"><p class="text-xs font-semibold text-white" style="font-family:'Rajdhani',sans-serif;">Chemical Response</p></div>
+              </div>
+              <div class="glow-card corner-accent overflow-hidden">
+                <img src="https://i.imgur.com/PcO0bgc.png" alt="Radiological Events Certificate" class="lightbox-trigger" loading="lazy" style="width:100%; height:180px; object-fit:cover;">
+                <div class="p-3 border-t border-accent/20"><p class="text-xs font-semibold text-white" style="font-family:'Rajdhani',sans-serif;">Radiological Events</p></div>
+              </div>
+            </div>
+          </div>
+          <div class="glow-card corner-accent p-6 space-y-5">
+            <div class="flex items-center justify-between">
+              <div class="flex items-center gap-3">
+                <div class="w-10 h-10 rounded-lg bg-accent/10 flex items-center justify-center">
+                  <i data-lucide="cpu" style="width:20px;height:20px;color:#00e5ff;"></i>
+                </div>
+                <h3 class="text-white font-semibold text-lg" style="font-family:'Rajdhani',sans-serif;">Cybersecurity Architecture</h3>
+              </div>
+              <span class="star-badge">STAR</span>
+            </div>
+            <div class="space-y-4 text-sm leading-relaxed">
+              <div><span class="text-accent text-xs tracking-widest uppercase" style="font-family:'Share Tech Mono',monospace;">Situation</span><p class="opacity-85 mt-1">The Minerva 2k12 National Symposium featured an elite ethical hacking competition requiring advanced systems thinking and vulnerability analysis.</p></div>
+              <div><span class="text-accent text-xs tracking-widest uppercase" style="font-family:'Share Tech Mono',monospace;">Task</span><p class="opacity-85 mt-1">Compete against national teams to identify, document, and resolve critical cybersecurity vulnerabilities under time constraints.</p></div>
+              <div><span class="text-accent text-xs tracking-widest uppercase" style="font-family:'Share Tech Mono',monospace;">Action</span><p class="opacity-85 mt-1">Applied systems thinking principles to conduct forensic analysis, mapped attack vectors, hardened network architecture, and documented remediation strategies.</p></div>
+              <div><span class="text-accent text-xs tracking-widest uppercase" style="font-family:'Share Tech Mono',monospace;">Result</span><p class="opacity-85 mt-1">Secured <strong class="text-accent">1st Place Nationally</strong>, demonstrating mastery of threat analysis, system design, and proactive defense strategies applicable to intelligence and infrastructure protection.</p></div>
+            </div>
+            <div class="mt-4 p-3 bg-accent/5 border border-accent/20 rounded text-xs opacity-80" style="font-family:'Share Tech Mono',monospace;">🏆 Award: Minerva 2k12 — 1st Place National Winner</div>
+            <div class="mt-4 glow-card corner-accent overflow-hidden">
+              <img src="https://i.imgur.com/SCU5hZP.png" alt="Cybersecurity Excellence Certificate" class="lightbox-trigger" loading="lazy" style="width:100%; height:280px; object-fit:cover;">
+              <div class="p-3 border-t border-accent/20">
+                <p class="text-xs opacity-70" style="font-family:'Share Tech Mono',monospace;">Cybersecurity Achievement Recognition</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- LEADERSHIP -->
+    <section id="leadership" class="fade-section py-24 px-6">
+      <div class="max-w-6xl mx-auto space-y-10">
+        <div>
+          <div class="section-tag">// Leadership Profile</div>
+          <h2 class="section-title text-3xl md:text-4xl mt-2">Leadership & Cultural Competency</h2>
+        </div>
+        <div class="grid md:grid-cols-2 gap-6">
+          <div class="glow-card corner-accent p-6 space-y-5">
+            <div class="flex items-center gap-3 mb-4">
+              <i data-lucide="quote" style="width:20px;height:20px;color:#00e5ff;"></i>
+              <h3 class="text-white font-semibold text-lg" style="font-family:'Rajdhani',sans-serif;">Professional Reference</h3>
+            </div>
+            <p class="text-base leading-relaxed italic opacity-90" style="border-left: 2px solid rgba(0,229,255,0.4); padding-left: 16px;">"Outstanding reliability and leadership under pressure. Demonstrated exceptional ability to navigate complex cultural contexts with genuine respect and commitment to community service."</p>
+            <div class="flex items-center gap-2 pt-2">
+              <div class="w-2 h-2 rounded-full bg-accent/60"></div>
+              <p class="text-sm font-semibold text-white" style="font-family:'Rajdhani',sans-serif;">Shayanne Keeper</p>
+            </div>
+            <p class="text-xs opacity-70" style="font-family:'Share Tech Mono',monospace;letter-spacing:1px;">Native Northwest</p>
+
+            <div class="mt-4">
+              <button onclick="openLightbox('https://i.imgur.com/2rjCd5T.png')" class="flex items-center gap-2 text-accent hover:text-white transition text-sm font-semibold">
+                <i data-lucide="file-text" style="width:16px;height:16px;"></i> View Full Reference Letter
+              </button>
+            </div>
+          </div>
+
+          <div class="glow-card corner-accent p-6 space-y-5">
+            <div class="flex items-center gap-3 mb-4">
+              <div class="w-10 h-10 rounded-lg bg-accent/10 flex items-center justify-center">
+                <i data-lucide="hand-helping" style="width:20px;height:20px;color:#00e5ff;"></i>
+              </div>
+              <h3 class="text-white font-semibold text-lg" style="font-family:'Rajdhani',sans-serif;">Indigenous Advocacy</h3>
+            </div>
+            <div class="space-y-3 text-sm leading-relaxed">
+              <p class="opacity-85"><strong class="text-white">Missing & Murdered Indigenous Women & Girls (MMIWG)</strong><br>Active participant in Indigenous awareness initiatives and reconciliation efforts.</p>
+              <p class="opacity-85"><strong class="text-white">Every Child Matters Day</strong><br>Supported cultural awareness campaigns honoring Indigenous children and families.</p>
+              <p class="opacity-85"><strong class="text-white">Employee Mentorship</strong><br>Guided new team members through professional development with cultural sensitivity and actionable leadership.</p>
+            </div>
+            <div class="mt-4 glow-card corner-accent overflow-hidden">
+              <img src="https://i.imgur.com/nqyCsoL.png" alt="Indigenous Advocacy Community Work" class="lightbox-trigger" loading="lazy" style="width:100%; height:220px; object-fit:cover;">
+              <div class="p-3 border-t border-accent/20">
+                <p class="text-xs opacity-70" style="font-family:'Share Tech Mono',monospace;">Community Advocacy & Cultural Leadership</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- LAND ACKNOWLEDGEMENT + FOOTER -->
+    <footer class="py-10 px-6 border-t border-cyan-900/20 text-center space-y-6">
+      <div class="max-w-2xl mx-auto">
+        <div class="section-tag mb-2">Land Acknowledgement</div>
+        <p class="text-sm leading-relaxed opacity-80">
+          This portfolio is situated on the unceded traditional territory of the Algonquin Anishinaabe people. I acknowledge the ongoing presence and contributions of First Nations, Inuit, and Métis peoples, and I am committed to learning and acting in ways that support reconciliation.
+        </p>
+      </div>
+      <div class="text-xs tracking-widest uppercase opacity-80" style="font-family:'Share Tech Mono',monospace;">
+        Contact: <a href="mailto:sing0642@algonquinlive.com" class="text-accent hover:underline">sing0642@algonquinlive.com</a> | +1 873 660 6327
+      </div>
+      <div class="text-xs tracking-widest uppercase opacity-40" style="font-family:'Share Tech Mono',monospace;">
+        © 2026 Ikjot Singh — Public Safety Portfolio
+      </div>
+    </footer>
+  </div>
+
+  <!-- LIGHTBOX -->
+  <div id="lightbox" class="lightbox">
+    <button class="lightbox-close" onclick="closeLightbox()">&times;</button>
+    <img id="lightbox-img" src="" alt="Enlarged view">
+  </div>
+
+  <script>
+    function scrollToSection(id) {
+      document.getElementById(id)?.scrollIntoView({ behavior: 'smooth' });
+      document.querySelectorAll('.nav-link').forEach(l => l.classList.remove('active'));
+      document.querySelectorAll('.nav-link').forEach(l => {
+        if (l.getAttribute('onclick')?.includes(id)) l.classList.add('active');
+      });
+    }
+    function toggleMobileMenu() {
+      document.getElementById('mobile-menu').classList.toggle('open');
+    }
+
+    const lightbox = document.getElementById('lightbox');
+    const lightboxImg = document.getElementById('lightbox-img');
+
+    function openLightbox(src) {
+      lightboxImg.src = src;
+      lightbox.classList.add('active');
+    }
+
+    document.querySelectorAll('.lightbox-trigger').forEach(img => {
+      img.addEventListener('click', () => openLightbox(img.src));
+    });
+
+    function closeLightbox() {
+      lightbox.classList.remove('active');
+    }
+
+    lightbox.addEventListener('click', (e) => {
+      if (e.target === lightbox) closeLightbox();
+    });
+
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') closeLightbox();
+    });
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
+    }, { threshold: 0.1 });
+    document.querySelectorAll('.fade-section').forEach(s => observer.observe(s));
+    lucide.createIcons();
+  </script>
+</body>
+</html>
