@@ -1,0 +1,1327 @@
+<!doctype html>
+
+<html lang="en" class="h-full">
+
+ <head>
+
+  <meta charset="UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Public Safety Portfolio</title>
+
+  <script src="https://cdn.tailwindcss.com/3.4.17"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/lucide@0.263.0/dist/umd/lucide.min.js"></script>
+
+  <script src="/_sdk/element_sdk.js"></script>
+
+  <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500;600;700&amp;family=Share+Tech+Mono&amp;family=Outfit:wght@300;400;500;600&amp;display=swap" rel="stylesheet">
+
+  <script>
+
+tailwind.config = {
+
+  theme: {
+
+    extend: {
+
+      colors: {
+
+        'bg-primary': '#0a0e17',
+
+        'surface': '#111927',
+
+        'text-main': '#c8d6e5',
+
+        'accent': '#00e5ff',
+
+        'accent-dim': '#00a8bb',
+
+      }
+
+    }
+
+  }
+
+}
+
+</script>
+
+  <style>
+
+html, body { height: 100%; margin: 0; }
+
+* { box-sizing: border-box; }
+
+body { background: #0a0e17; color: #c8d6e5; font-family: 'Outfit', sans-serif; }
+
+
+
+/* Scrollbar */
+
+::-webkit-scrollbar { width: 6px; }
+
+::-webkit-scrollbar-track { background: #0a0e17; }
+
+::-webkit-scrollbar-thumb { background: #00e5ff33; border-radius: 3px; }
+
+
+
+/* Scan line overlay */
+
+.scan-overlay {
+
+  pointer-events: none;
+
+  position: fixed; inset: 0; z-index: 9999;
+
+  background: repeating-linear-gradient(
+
+    0deg, transparent, transparent 2px, rgba(0,229,255,0.015) 2px, rgba(0,229,255,0.015) 4px
+
+  );
+
+}
+
+
+
+/* Grid bg */
+
+.grid-bg {
+
+  background-image:
+
+    linear-gradient(rgba(0,229,255,0.04) 1px, transparent 1px),
+
+    linear-gradient(90deg, rgba(0,229,255,0.04) 1px, transparent 1px);
+
+  background-size: 40px 40px;
+
+}
+
+
+
+/* Glow border */
+
+.glow-card {
+
+  background: #111927;
+
+  border: 1px solid rgba(0,229,255,0.15);
+
+  border-radius: 8px;
+
+  transition: border-color 0.3s, box-shadow 0.3s;
+
+}
+
+.glow-card:hover {
+
+  border-color: rgba(0,229,255,0.4);
+
+  box-shadow: 0 0 20px rgba(0,229,255,0.08);
+
+}
+
+
+
+/* Nav */
+
+.nav-link {
+
+  position: relative; padding: 8px 0; color: #c8d6e5;
+
+  font-family: 'Share Tech Mono', monospace; font-size: 13px;
+
+  text-transform: uppercase; letter-spacing: 2px;
+
+  transition: color 0.3s; cursor: pointer;
+
+}
+
+.nav-link:hover, .nav-link.active { color: #00e5ff; }
+
+.nav-link::after {
+
+  content: ''; position: absolute; bottom: 0; left: 0;
+
+  width: 0; height: 1px; background: #00e5ff;
+
+  transition: width 0.3s;
+
+}
+
+.nav-link:hover::after, .nav-link.active::after { width: 100%; }
+
+
+
+/* Section headers */
+
+.section-tag {
+
+  font-family: 'Share Tech Mono', monospace;
+
+  font-size: 11px; letter-spacing: 3px; text-transform: uppercase;
+
+  color: #00e5ff; opacity: 0.7;
+
+}
+
+.section-title {
+
+  font-family: 'Rajdhani', sans-serif;
+
+  font-weight: 700; color: #fff;
+
+}
+
+
+
+/* Typing cursor */
+
+.cursor-blink::after {
+
+  content: '▍'; animation: blink 1s step-end infinite; color: #00e5ff;
+
+}
+
+@keyframes blink { 50% { opacity: 0; } }
+
+
+
+/* Fade in */
+
+.fade-section { opacity: 0; transform: translateY(30px); transition: opacity 0.6s, transform 0.6s; }
+
+.fade-section.visible { opacity: 1; transform: translateY(0); }
+
+
+
+/* STAR badge */
+
+.star-badge {
+
+  display: inline-block; padding: 2px 10px; border-radius: 3px;
+
+  font-family: 'Share Tech Mono', monospace; font-size: 11px;
+
+  letter-spacing: 2px; text-transform: uppercase;
+
+  background: rgba(0,229,255,0.1); color: #00e5ff;
+
+  border: 1px solid rgba(0,229,255,0.25);
+
+}
+
+
+
+/* Pulse dot */
+
+.pulse-dot {
+
+  width: 8px; height: 8px; border-radius: 50%; background: #00e5ff;
+
+  box-shadow: 0 0 8px #00e5ff; animation: pulse-glow 2s infinite;
+
+}
+
+@keyframes pulse-glow { 0%,100% { opacity: 1; } 50% { opacity: 0.4; } }
+
+
+
+/* Corner accents */
+
+.corner-accent { position: relative; }
+
+.corner-accent::before, .corner-accent::after {
+
+  content: ''; position: absolute; width: 12px; height: 12px;
+
+  border-color: rgba(0,229,255,0.3); border-style: solid; border-width: 0;
+
+}
+
+.corner-accent::before { top: -1px; left: -1px; border-top-width: 1px; border-left-width: 1px; }
+
+.corner-accent::after { bottom: -1px; right: -1px; border-bottom-width: 1px; border-right-width: 1px; }
+
+
+
+/* Mobile nav */
+
+.mobile-menu { transform: translateX(100%); transition: transform 0.3s; }
+
+.mobile-menu.open { transform: translateX(0); }
+
+</style>
+
+  <style>body { box-sizing: border-box; }</style>
+
+  <script src="/_sdk/data_sdk.js" type="text/javascript"></script>
+
+ </head>
+
+ <body class="h-full">
+
+  <div id="app-wrapper" class="h-full w-full overflow-auto grid-bg relative">
+
+   <div class="scan-overlay"></div><!-- NAV -->
+
+   <nav class="fixed top-0 left-0 right-0 z-50 bg-bg-primary/90 backdrop-blur border-b border-cyan-900/20">
+
+    <div class="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
+
+     <div class="flex items-center gap-3">
+
+      <div class="pulse-dot"></div><span id="nav-title" class="font-semibold text-white tracking-wider" style="font-family:'Rajdhani',sans-serif; font-size:18px;">PORTFOLIO</span>
+
+     </div>
+
+     <div class="hidden md:flex items-center gap-8">
+
+      <a class="nav-link active" onclick="scrollToSection('hero')">Home</a> <a class="nav-link" onclick="scrollToSection('academics')">Mission</a> <a class="nav-link" onclick="scrollToSection('skills')">Skills</a> <a class="nav-link" onclick="scrollToSection('certifications')">Certifications</a> <a class="nav-link" onclick="scrollToSection('community')">Community</a> <a class="nav-link" onclick="scrollToSection('leadership')">Leadership</a>
+
+     </div><button id="mobile-toggle" class="md:hidden text-accent" onclick="toggleMobileMenu()"> <i data-lucide="menu" style="width:24px;height:24px;"></i> </button>
+
+    </div>
+
+   </nav><!-- MOBILE MENU -->
+
+   <div id="mobile-menu" class="mobile-menu fixed top-0 right-0 bottom-0 w-64 z-50 bg-bg-primary/95 backdrop-blur border-l border-cyan-900/20 p-8 flex flex-col gap-6 pt-20">
+
+    <button class="absolute top-5 right-5 text-accent" onclick="toggleMobileMenu()"> <i data-lucide="x" style="width:24px;height:24px;"></i> </button> <a class="nav-link" onclick="scrollToSection('hero');toggleMobileMenu()">Home</a> <a class="nav-link" onclick="scrollToSection('academics');toggleMobileMenu()">Mission</a> <a class="nav-link" onclick="scrollToSection('skills');toggleMobileMenu()">Skills</a> <a class="nav-link" onclick="scrollToSection('certifications');toggleMobileMenu()">Certifications</a> <a class="nav-link" onclick="scrollToSection('community');toggleMobileMenu()">Community</a> <a class="nav-link" onclick="scrollToSection('leadership');toggleMobileMenu()">Leadership</a>
+
+   </div><!-- HERO -->
+
+   <section id="hero" class="fade-section min-h-screen flex items-center pt-20 px-6">
+
+    <div class="max-w-6xl mx-auto w-full grid md:grid-cols-5 gap-10 items-center">
+
+     <div class="md:col-span-3 space-y-6">
+
+      <div class="section-tag">
+
+       // Operational Profile
+
+      </div>
+
+      <h1 id="hero-headline" class="section-title text-4xl md:text-5xl lg:text-6xl leading-tight">Resilient. Analytical.<br>
+
+        Committed.</h1>
+
+      <div class="w-16 h-0.5 bg-accent/50"></div>
+
+      <p id="hero-pitch" class="text-base md:text-lg leading-relaxed opacity-90 max-w-2xl">Bridging digital infrastructure with frontline community security. After surviving an unprovoked hate crime and successfully defending against a subsequent home intrusion in 2019, I redirected my computer science background toward a career in public safety. I bring lived resilience, structured systems thinking, and a service-oriented mindset to proactive risk identification.</p>
+
+      <div class="glow-card corner-accent p-5 max-w-xl">
+
+       <div class="flex items-center gap-2 mb-3">
+
+        <i data-lucide="shield" style="width:16px;height:16px;color:#00e5ff;"></i> <span class="text-xs tracking-widest uppercase" style="font-family:'Share Tech Mono',monospace;color:#00e5ff;">Unique Edge</span>
+
+       </div>
+
+       <p class="text-sm leading-relaxed opacity-85">16 years of martial arts discipline, fluency in 5 languages (English, Punjabi, Hindi, Urdu, Gujarati), and the ability to maintain absolute composure and strict adherence to legal procedures under extreme pressure.</p>
+
+      </div>
+
+     </div>
+
+     <div class="md:col-span-2 flex justify-center">
+
+      <div class="relative">
+
+       <div class="w-52 h-52 md:w-64 md:h-64 rounded-full border-2 border-accent/20 overflow-hidden flex items-center justify-center" style="background: radial-gradient(circle, #111927 0%, #0a0e17 100%);"><img src="https://i.imgur.com/IENzRUP.png" alt="Profile" loading="lazy" style="width:100%; height:100%; object-fit:cover;" onerror="console.error('Image failed to load:', this.src); this.style.display='none';">
+
+        <div class="absolute inset-0 flex items-center justify-center bg-gradient-to-b from-transparent to-rgba(0,0,0,0.3)">
+
+         <div style="font-family:'Share Tech Mono',monospace;font-size:11px;color:#00e5ff;letter-spacing:2px;position:absolute;bottom:8px;">
+
+          ACTIVE
+
+         </div>
+
+        </div>
+
+       </div>
+
+      </div>
+
+      <div class="absolute -top-2 -right-2 w-4 h-4 border border-accent/40 rounded-sm rotate-45"></div>
+
+      <div class="absolute -bottom-2 -left-2 w-4 h-4 border border-accent/40 rounded-sm rotate-45"></div>
+
+     </div>
+
+    </div>
+
+   </section>
+
+  </div><!-- ACADEMICS & MISSION -->
+
+  <section id="academics" class="fade-section py-24 px-6">
+
+   <div class="max-w-6xl mx-auto space-y-10">
+
+    <div>
+
+     <div class="section-tag">
+
+      // Aspirations &amp; Mission
+
+     </div>
+
+     <h2 class="section-title text-3xl md:text-4xl mt-2">Long-Term Trajectory</h2>
+
+    </div>
+
+    <div class="grid md:grid-cols-2 gap-6">
+
+     <div class="glow-card corner-accent p-6 space-y-4">
+
+      <div class="flex items-center gap-3">
+
+       <div class="w-10 h-10 rounded-lg bg-accent/10 flex items-center justify-center">
+
+        <i data-lucide="radar" style="width:20px;height:20px;color:#00e5ff;"></i>
+
+       </div>
+
+       <h3 class="text-white font-semibold text-lg" style="font-family:'Rajdhani',sans-serif;">Career Aspirations</h3>
+
+      </div>
+
+      <p class="text-sm leading-relaxed opacity-85">Targeting an <strong class="text-white">Intelligence Support or Public Safety Analyst role</strong> within the <strong class="text-white">Canada Border Services Agency (CBSA)</strong> or the <strong class="text-white">Canadian Security Intelligence Service (CSIS)</strong>. Focused on translating complex information into actionable intelligence to prevent harm and protect communities at critical infrastructure points.</p>
+
+     </div>
+
+     <div class="glow-card corner-accent p-6 space-y-4">
+
+      <div class="flex items-center gap-3">
+
+       <div class="w-10 h-10 rounded-lg bg-accent/10 flex items-center justify-center">
+
+        <i data-lucide="heart-handshake" style="width:20px;height:20px;color:#00e5ff;"></i>
+
+       </div>
+
+       <h3 class="text-white font-semibold text-lg" style="font-family:'Rajdhani',sans-serif;">Core Value: Seva (Service)</h3>
+
+      </div>
+
+      <p class="text-sm leading-relaxed opacity-85">Guided by the philosophy instilled by my grandmother: <em class="text-accent/80">"You find God in performing seva (selfless service) for others."</em> <br><br><strong class="text-white">Public safety is a responsibility and a sacrifice, not a position of power.</strong> Every decision and action is grounded in this commitment to serve, not to dominate.</p>
+
+     </div>
+
+    </div>
+
+   </div>
+
+  </section><!-- APPLIED COURSEWORK & TRANSFERABLE SKILLS -->
+
+  <section id="skills" class="fade-section py-24 px-6">
+
+   <div class="max-w-6xl mx-auto space-y-10">
+
+    <div>
+
+     <div class="section-tag">
+
+      // Applied Coursework
+
+     </div>
+
+     <h2 class="section-title text-3xl md:text-4xl mt-2">Transferable Skills</h2>
+
+    </div>
+
+    <div class="grid md:grid-cols-2 gap-6">
+
+     <!-- STAR Card 1 with Artifact -->
+
+     <div class="space-y-6">
+
+      <div class="glow-card corner-accent p-6 space-y-5">
+
+       <div class="flex items-center justify-between">
+
+        <h3 class="text-white font-semibold text-lg" style="font-family:'Rajdhani',sans-serif;">Systems Thinking &amp; Analytical Communication</h3><span class="star-badge">STAR</span>
+
+       </div>
+
+       <div class="space-y-4 text-sm leading-relaxed">
+
+        <div>
+
+         <div class="flex items-center gap-2 mb-1">
+
+          <i data-lucide="crosshair" style="width:13px;height:13px;color:#00e5ff;"></i> <span class="text-accent text-xs tracking-widest uppercase" style="font-family:'Share Tech Mono',monospace;">Situation</span>
+
+         </div>
+
+         <p class="opacity-85 pl-5">Preparing for complex Bachelor of Public Safety final exams requiring the synthesis of dense rules and technical regulations.</p>
+
+        </div>
+
+        <div>
+
+         <div class="flex items-center gap-2 mb-1">
+
+          <i data-lucide="target" style="width:13px;height:13px;color:#00e5ff;"></i> <span class="text-accent text-xs tracking-widest uppercase" style="font-family:'Share Tech Mono',monospace;">Task</span>
+
+         </div>
+
+         <p class="opacity-85 pl-5">Review complex research topics and explain findings in a clear, interactive manner to improve retention and understanding.</p>
+
+        </div>
+
+        <div>
+
+         <div class="flex items-center gap-2 mb-1">
+
+          <i data-lucide="zap" style="width:13px;height:13px;color:#00e5ff;"></i> <span class="text-accent text-xs tracking-widest uppercase" style="font-family:'Share Tech Mono',monospace;">Action</span>
+
+         </div>
+
+         <p class="opacity-85 pl-5">Designed and programmed complex interactive learning flow charts and videos that mapped out how information flows, how systems are interconnected, and how weaknesses create cascading risks.</p>
+
+        </div>
+
+        <div>
+
+         <div class="flex items-center gap-2 mb-1">
+
+          <i data-lucide="check-circle" style="width:13px;height:13px;color:#00e5ff;"></i> <span class="text-accent text-xs tracking-widest uppercase" style="font-family:'Share Tech Mono',monospace;">Result</span>
+
+         </div>
+
+         <p class="opacity-85 pl-5">Mastered the concepts personally and distributed the interactive tools to my study group, directly resulting in peers achieving higher-than-expected grades.</p>
+
+        </div>
+
+       </div>
+
+      </div><!-- STAR Card 2 -->
+
+      <div class="glow-card corner-accent p-6 space-y-5">
+
+       <div class="flex items-center justify-between">
+
+        <h3 class="text-white font-semibold text-lg" style="font-family:'Rajdhani',sans-serif;">Incident Analysis &amp; Professional Briefing</h3><span class="star-badge">STAR</span>
+
+       </div>
+
+       <div class="space-y-4 text-sm leading-relaxed">
+
+        <div>
+
+         <div class="flex items-center gap-2 mb-1">
+
+          <i data-lucide="crosshair" style="width:13px;height:13px;color:#00e5ff;"></i> <span class="text-accent text-xs tracking-widest uppercase" style="font-family:'Share Tech Mono',monospace;">Situation</span>
+
+         </div>
+
+         <p class="opacity-85 pl-5">Assigned a critical incident analysis presentation in Police Foundations coursework.</p>
+
+        </div>
+
+        <div>
+
+         <div class="flex items-center gap-2 mb-1">
+
+          <i data-lucide="target" style="width:13px;height:13px;color:#00e5ff;"></i> <span class="text-accent text-xs tracking-widest uppercase" style="font-family:'Share Tech Mono',monospace;">Task</span>
+
+         </div>
+
+         <p class="opacity-85 pl-5">Analyze a complex event, identify risk indicators, and deliver a clear, concise operational briefing.</p>
+
+        </div>
+
+        <div>
+
+         <div class="flex items-center gap-2 mb-1">
+
+          <i data-lucide="zap" style="width:13px;height:13px;color:#00e5ff;"></i> <span class="text-accent text-xs tracking-widest uppercase" style="font-family:'Share Tech Mono',monospace;">Action</span>
+
+         </div>
+
+         <p class="opacity-85 pl-5">Organized the information logically, prioritizing actionable intelligence over lengthy explanations, and delivered the findings with calm professionalism.</p>
+
+        </div>
+
+        <div>
+
+         <div class="flex items-center gap-2 mb-1">
+
+          <i data-lucide="check-circle" style="width:13px;height:13px;color:#00e5ff;"></i> <span class="text-accent text-xs tracking-widest uppercase" style="font-family:'Share Tech Mono',monospace;">Result</span>
+
+         </div>
+
+         <p class="opacity-85 pl-5">Received excellent feedback from instructors for professional clarity, precision, and the ability to communicate decisions based strictly on risk rather than assumptions.</p>
+
+        </div>
+
+       </div>
+
+      </div>
+
+     </div>
+
+    </div>
+
+   </div>
+
+  </section><!-- COMMUNITY IMPACT -->
+
+  <section id="community" class="fade-section py-24 px-6">
+
+   <div class="max-w-6xl mx-auto space-y-10">
+
+    <div>
+
+     <div class="section-tag">
+
+      // Community Impact
+
+     </div>
+
+     <h2 class="section-title text-3xl md:text-4xl mt-2">Volunteer Service</h2>
+
+    </div>
+
+    <div class="grid md:grid-cols-2 gap-6">
+
+     <!-- Caldwell -->
+
+     <div class="glow-card corner-accent p-6 space-y-4">
+
+      <div class="flex items-center gap-3">
+
+       <div class="w-10 h-10 rounded-lg bg-accent/10 flex items-center justify-center">
+
+        <i data-lucide="utensils" style="width:20px;height:20px;color:#00e5ff;"></i>
+
+       </div>
+
+       <h3 class="text-white font-semibold text-lg" style="font-family:'Rajdhani',sans-serif;">Caldwell Family Services</h3>
+
+      </div>
+
+      <p class="text-sm leading-relaxed opacity-85">Committed numerous volunteer hours assisting across departments, including extensive kitchen prep and meal coordination for local families.</p><!-- Caldwell Volunteer Photo -->
+
+      <div class="mt-4 glow-card corner-accent overflow-hidden"><img src="https://i.imgur.com/mYniTZY.png" alt="Caldwell Family Services Volunteer Work" loading="lazy" style="width:100%; height:180px; object-fit:cover; background:#111927;" onerror="console.error('Image failed to load:', this.src); this.style.background='#1a2332'; this.alt='Photo unavailable';">
+
+       <div class="p-2 border-t border-accent/20">
+
+        <p class="text-xs opacity-70" style="font-family:'Share Tech Mono',monospace;">Community Service in Action</p>
+
+       </div>
+
+      </div>
+
+     </div><!-- Gurudwara -->
+
+     <div class="glow-card corner-accent p-6 space-y-4">
+
+      <div class="flex items-center gap-3">
+
+       <div class="w-10 h-10 rounded-lg bg-accent/10 flex items-center justify-center">
+
+        <i data-lucide="hand-helping" style="width:20px;height:20px;color:#00e5ff;"></i>
+
+       </div>
+
+       <h3 class="text-white font-semibold text-lg" style="font-family:'Rajdhani',sans-serif;">Gurudwara Seva</h3>
+
+      </div>
+
+      <p class="text-sm leading-relaxed opacity-85">Regular, dedicated volunteer work focused on cleaning, maintenance, and dishwashing to support the community langar, directly applying my philosophy of selfless service.</p><!-- Gurudwara Volunteer Photo -->
+
+      <div class="mt-4 glow-card corner-accent overflow-hidden"><img src="https://i.imgur.com/rC0Liar.png" alt="Gurudwara Seva Community Work" loading="lazy" style="width:100%; height:180px; object-fit:cover; background:#111927;" onerror="console.error('Image failed to load:', this.src); this.style.background='#1a2332'; this.alt='Photo unavailable';">
+
+       <div class="p-2 border-t border-accent/20">
+
+        <p class="text-xs opacity-70" style="font-family:'Share Tech Mono',monospace;">Selfless Service &amp; Community Care</p>
+
+       </div>
+
+      </div>
+
+     </div>
+
+    </div><!-- Community STAR -->
+
+    <div class="glow-card corner-accent p-6 space-y-5 max-w-3xl">
+
+     <div class="flex items-center justify-between">
+
+      <h3 class="text-white font-semibold text-lg" style="font-family:'Rajdhani',sans-serif;">Community Service Reflection</h3><span class="star-badge">STAR</span>
+
+     </div>
+
+     <div class="space-y-4 text-sm leading-relaxed">
+
+      <div>
+
+       <div class="flex items-center gap-2 mb-1">
+
+        <i data-lucide="crosshair" style="width:13px;height:13px;color:#00e5ff;"></i> <span class="text-accent text-xs tracking-widest uppercase" style="font-family:'Share Tech Mono',monospace;">Situation</span>
+
+       </div>
+
+       <p class="opacity-85 pl-5">Diverse community members relying on local food banks and service centers.</p>
+
+      </div>
+
+      <div>
+
+       <div class="flex items-center gap-2 mb-1">
+
+        <i data-lucide="target" style="width:13px;height:13px;color:#00e5ff;"></i> <span class="text-accent text-xs tracking-widest uppercase" style="font-family:'Share Tech Mono',monospace;">Task</span>
+
+       </div>
+
+       <p class="opacity-85 pl-5">Coordinate volunteers and manage frontline food service operations.</p>
+
+      </div>
+
+      <div>
+
+       <div class="flex items-center gap-2 mb-1">
+
+        <i data-lucide="zap" style="width:13px;height:13px;color:#00e5ff;"></i> <span class="text-accent text-xs tracking-widest uppercase" style="font-family:'Share Tech Mono',monospace;">Action</span>
+
+       </div>
+
+       <p class="opacity-85 pl-5">Provided clear instructions to volunteer teams, confirmed understanding, and adapted communication styles to build trust with individuals from diverse backgrounds.</p>
+
+      </div>
+
+      <div>
+
+       <div class="flex items-center gap-2 mb-1">
+
+        <i data-lucide="check-circle" style="width:13px;height:13px;color:#00e5ff;"></i> <span class="text-accent text-xs tracking-widest uppercase" style="font-family:'Share Tech Mono',monospace;">Result</span>
+
+       </div>
+
+       <p class="opacity-85 pl-5">Streamlined volunteer coordination, improved service efficiency, and built meaningful trust with community members from varied cultural backgrounds.</p>
+
+      </div>
+
+     </div>
+
+    </div>
+
+   </div>
+
+  </section><!-- TECHNICAL CREDENTIALS WITH STAR -->
+
+  <section id="certifications" class="fade-section py-24 px-6">
+
+   <div class="max-w-6xl mx-auto space-y-10">
+
+    <div>
+
+     <div class="section-tag">
+
+      // Technical Credentials
+
+     </div>
+
+     <h2 class="section-title text-3xl md:text-4xl mt-2">Certifications &amp; Technical Achievement</h2>
+
+    </div>
+
+    <div class="grid md:grid-cols-2 gap-6">
+
+     <!-- CBRNE STAR with Certification Artifact -->
+
+     <div class="space-y-6">
+
+      <div class="glow-card corner-accent p-6 space-y-5">
+
+       <div class="flex items-center justify-between">
+
+        <div class="flex items-center gap-3">
+
+         <div class="w-10 h-10 rounded-lg bg-accent/10 flex items-center justify-center">
+
+          <i data-lucide="shield-alert" style="width:20px;height:20px;color:#00e5ff;"></i>
+
+         </div>
+
+         <h3 class="text-white font-semibold text-lg" style="font-family:'Rajdhani',sans-serif;">CBRNE Expertise</h3>
+
+        </div><span class="star-badge">STAR</span>
+
+       </div>
+
+       <div class="space-y-4 text-sm leading-relaxed">
+
+        <div>
+
+         <div class="flex items-center gap-2 mb-1">
+
+          <i data-lucide="crosshair" style="width:13px;height:13px;color:#00e5ff;"></i> <span class="text-accent text-xs tracking-widest uppercase" style="font-family:'Share Tech Mono',monospace;">Situation</span>
+
+         </div>
+
+         <p class="opacity-85 pl-5">Public safety threats involving weapons of mass destruction (WMD) and CBRNE hazards require specialized technical knowledge and rapid threat assessment protocols.</p>
+
+        </div>
+
+        <div>
+
+         <div class="flex items-center gap-2 mb-1">
+
+          <i data-lucide="target" style="width:13px;height:13px;color:#00e5ff;"></i> <span class="text-accent text-xs tracking-widest uppercase" style="font-family:'Share Tech Mono',monospace;">Task</span>
+
+         </div>
+
+         <p class="opacity-85 pl-5">Obtain advanced certifications in Chemical, Biological, Radiological, Nuclear, and Explosive threat assessment and emergency response.</p>
+
+        </div>
+
+        <div>
+
+         <div class="flex items-center gap-2 mb-1">
+
+          <i data-lucide="zap" style="width:13px;height:13px;color:#00e5ff;"></i> <span class="text-accent text-xs tracking-widest uppercase" style="font-family:'Share Tech Mono',monospace;">Action</span>
+
+         </div>
+
+         <p class="opacity-85 pl-5">Completed 18+ hours of intensive FEMA/TEEX and SPCHTC training, mastering hazard identification, decontamination protocols, and incident command integration.</p>
+
+        </div>
+
+        <div>
+
+         <div class="flex items-center gap-2 mb-1">
+
+          <i data-lucide="check-circle" style="width:13px;height:13px;color:#00e5ff;"></i> <span class="text-accent text-xs tracking-widest uppercase" style="font-family:'Share Tech Mono',monospace;">Result</span>
+
+         </div>
+
+         <p class="opacity-85 pl-5">Developed a reusable technical framework for rapid hazard identification and risk communication, now applicable to intelligence analysis and threat prevention.</p>
+
+        </div>
+
+       </div>
+
+       <div class="mt-4 p-3 bg-accent/5 border border-accent/20 rounded text-xs opacity-80" style="font-family:'Share Tech Mono',monospace;">
+
+        📋 Certificate: FEMA/TEEX CBRNE Certification (18+ hours)
+
+       </div>
+
+      </div><!-- CBRNE Certification Gallery (4 frames) -->
+
+      <div class="grid grid-cols-2 gap-4">
+
+       <div class="glow-card corner-accent overflow-hidden"><img src="https://i.imgur.com/leLBsEL.png" alt="Bioterrorism Certificate" loading="lazy" style="width:100%; height:180px; object-fit:cover; background:#111927;" onerror="console.error('Image failed to load:', this.src); this.style.background='#1a2332'; this.alt='Certificate unavailable';">
+
+        <div class="p-3 border-t border-accent/20">
+
+         <p class="text-xs font-semibold text-white" style="font-family:'Rajdhani',sans-serif;">Bioterrorism</p>
+
+        </div>
+
+       </div>
+
+       <div class="glow-card corner-accent overflow-hidden"><img src="https://i.imgur.com/0VyaFjh.png" alt="Terrorism Awareness Certificate" loading="lazy" style="width:100%; height:180px; object-fit:cover; background:#111927;" onerror="console.error('Image failed to load:', this.src); this.style.background='#1a2332'; this.alt='Certificate unavailable';">
+
+        <div class="p-3 border-t border-accent/20">
+
+         <p class="text-xs font-semibold text-white" style="font-family:'Rajdhani',sans-serif;">Terrorism Awareness</p>
+
+        </div>
+
+       </div>
+
+       <div class="glow-card corner-accent overflow-hidden"><img src="https://i.imgur.com/hbEKeMp.png" alt="Chemical Terrorism Certificate" loading="lazy" style="width:100%; height:180px; object-fit:cover; background:#111927;" onerror="console.error('Image failed to load:', this.src); this.style.background='#1a2332'; this.alt='Certificate unavailable';">
+
+        <div class="p-3 border-t border-accent/20">
+
+         <p class="text-xs font-semibold text-white" style="font-family:'Rajdhani',sans-serif;">Chemical Response</p>
+
+        </div>
+
+       </div>
+
+       <div class="glow-card corner-accent overflow-hidden"><img src="https://i.imgur.com/PcO0bgc.png" alt="Radiological Events Certificate" loading="lazy" style="width:100%; height:180px; object-fit:cover; background:#111927;" onerror="console.error('Image failed to load:', this.src); this.style.background='#1a2332'; this.alt='Certificate unavailable';">
+
+        <div class="p-3 border-t border-accent/20">
+
+         <p class="text-xs font-semibold text-white" style="font-family:'Rajdhani',sans-serif;">Radiological Events</p>
+
+        </div>
+
+       </div>
+
+      </div>
+
+     </div><!-- CYBERSECURITY STAR -->
+
+     <div class="glow-card corner-accent p-6 space-y-5">
+
+      <div class="flex items-center justify-between">
+
+       <div class="flex items-center gap-3">
+
+        <div class="w-10 h-10 rounded-lg bg-accent/10 flex items-center justify-center">
+
+         <i data-lucide="cpu" style="width:20px;height:20px;color:#00e5ff;"></i>
+
+        </div>
+
+        <h3 class="text-white font-semibold text-lg" style="font-family:'Rajdhani',sans-serif;">Cybersecurity Architecture</h3>
+
+       </div><span class="star-badge">STAR</span>
+
+      </div>
+
+      <div class="space-y-4 text-sm leading-relaxed">
+
+       <div>
+
+        <div class="flex items-center gap-2 mb-1">
+
+         <i data-lucide="crosshair" style="width:13px;height:13px;color:#00e5ff;"></i> <span class="text-accent text-xs tracking-widest uppercase" style="font-family:'Share Tech Mono',monospace;">Situation</span>
+
+        </div>
+
+        <p class="opacity-85 pl-5">The Minerva 2k12 National Symposium featured an elite ethical hacking competition requiring advanced systems thinking and vulnerability analysis.</p>
+
+       </div>
+
+       <div>
+
+        <div class="flex items-center gap-2 mb-1">
+
+         <i data-lucide="target" style="width:13px;height:13px;color:#00e5ff;"></i> <span class="text-accent text-xs tracking-widest uppercase" style="font-family:'Share Tech Mono',monospace;">Task</span>
+
+        </div>
+
+        <p class="opacity-85 pl-5">Compete against national teams to identify, document, and resolve critical cybersecurity vulnerabilities under time constraints.</p>
+
+       </div>
+
+       <div>
+
+        <div class="flex items-center gap-2 mb-1">
+
+         <i data-lucide="zap" style="width:13px;height:13px;color:#00e5ff;"></i> <span class="text-accent text-xs tracking-widest uppercase" style="font-family:'Share Tech Mono',monospace;">Action</span>
+
+        </div>
+
+        <p class="opacity-85 pl-5">Applied systems thinking principles to conduct forensic analysis, mapped attack vectors, hardened network architecture, and documented remediation strategies.</p>
+
+       </div>
+
+       <div>
+
+        <div class="flex items-center gap-2 mb-1">
+
+         <i data-lucide="check-circle" style="width:13px;height:13px;color:#00e5ff;"></i> <span class="text-accent text-xs tracking-widest uppercase" style="font-family:'Share Tech Mono',monospace;">Result</span>
+
+        </div>
+
+        <p class="opacity-85 pl-5">Secured <strong class="text-accent">1st Place Nationally</strong>, demonstrating mastery of threat analysis, system design, and proactive defense strategies applicable to intelligence and infrastructure protection.</p>
+
+       </div>
+
+      </div>
+
+      <div class="mt-4 p-3 bg-accent/5 border border-accent/20 rounded text-xs opacity-80" style="font-family:'Share Tech Mono',monospace;">
+
+       🏆 Award: Minerva 2k12 — 1st Place National Winner
+
+      </div>
+
+      <div class="mt-4 glow-card corner-accent overflow-hidden"><img src="https://i.imgur.com/SCU5hZP.png" alt="Cybersecurity Excellence Certificate" loading="lazy" style="width:100%; height:280px; object-fit:cover; background:#111927;" onerror="console.error('Image failed to load:', this.src); this.style.background='#1a2332'; this.alt='Certificate unavailable';">
+
+       <div class="p-3 border-t border-accent/20">
+
+        <p class="text-xs opacity-70" style="font-family:'Share Tech Mono',monospace;">Cybersecurity Achievement Recognition</p>
+
+       </div>
+
+      </div>
+
+     </div>
+
+    </div>
+
+   </div>
+
+  </section><!-- LEADERSHIP & CULTURAL COMPETENCY -->
+
+  <section id="leadership" class="fade-section py-24 px-6">
+
+   <div class="max-w-6xl mx-auto space-y-10">
+
+    <div>
+
+     <div class="section-tag">
+
+      // Leadership Profile
+
+     </div>
+
+     <h2 class="section-title text-3xl md:text-4xl mt-2">Leadership &amp; Cultural Competency</h2>
+
+    </div>
+
+    <div class="grid md:grid-cols-2 gap-6">
+
+     <!-- Testimonial Card -->
+
+     <div class="glow-card corner-accent p-6 space-y-5">
+
+      <div class="flex items-center gap-3 mb-4">
+
+       <i data-lucide="quote" style="width:20px;height:20px;color:#00e5ff;"></i>
+
+       <h3 class="text-white font-semibold text-lg" style="font-family:'Rajdhani',sans-serif;">Professional Reference</h3>
+
+      </div>
+
+      <div class="space-y-4">
+
+       <p class="text-base leading-relaxed italic opacity-90" style="border-left: 2px solid rgba(0,229,255,0.4); padding-left: 16px;">"Outstanding reliability and leadership under pressure. Demonstrated exceptional ability to navigate complex cultural contexts with genuine respect and commitment to community service."</p>
+
+       <div class="flex items-center gap-2 pt-2">
+
+        <div class="w-2 h-2 rounded-full bg-accent/60"></div>
+
+        <p class="text-sm font-semibold text-white" style="font-family:'Rajdhani',sans-serif;">Shayanne Keeper</p>
+
+       </div>
+
+       <p class="text-xs opacity-70" style="font-family:'Share Tech Mono',monospace;letter-spacing:1px;">Native Northwest</p>
+
+      </div><!-- Reference Letter -->
+
+      <div class="mt-6 p-4 bg-accent/5 border border-accent/20 rounded"><button onclick="toggleRefLetter()" class="flex items-center gap-2 text-accent hover:text-white transition text-sm font-semibold mb-3"> <i data-lucide="file-text" style="width:16px;height:16px;"></i> View Full Reference Letter </button>
+
+       <div id="ref-letter" class="hidden space-y-3"><img src="https://i.imgur.com/2rjCd5T.png" alt="Shayanne Keeper Reference Letter" loading="lazy" style="width:100%; max-height:600px; object-fit:contain; border-radius:4px; margin-bottom:12px;" onerror="console.error('Image failed to load:', this.src); this.alt='Reference letter unavailable';"> <img src="https://i.imgur.com/nqyCsoL.png" alt="Native Northwest Reference" loading="lazy" style="width:100%; max-height:600px; object-fit:contain; border-radius:4px; margin-bottom:12px;" onerror="console.error('Image failed to load:', this.src); this.alt='Native Northwest image unavailable';">
+
+        <div class="pt-3 border-t border-accent/20">
+
+         <p class="text-xs leading-relaxed opacity-85"><strong style="color:#00e5ff;">Reference from:</strong> Shayanne Keeper</p>
+
+         <p style="font-family:'Share Tech Mono',monospace; font-size:10px; margin-top:4px; opacity:0.7;">Program Director, Native Northwest</p>
+
+         <p class="text-xs opacity-70 mt-2" style="font-style:italic;">Full professional reference letter highlighting cultural competency, composure under pressure, and fitness for CSIS/CBSA roles.</p>
+
+        </div>
+
+       </div>
+
+      </div>
+
+     </div><!-- Indigenous Advocacy Card -->
+
+     <div class="glow-card corner-accent p-6 space-y-5">
+
+      <div class="flex items-center gap-3 mb-4">
+
+       <div class="w-10 h-10 rounded-lg bg-accent/10 flex items-center justify-center">
+
+        <i data-lucide="hand-helping" style="width:20px;height:20px;color:#00e5ff;"></i>
+
+       </div>
+
+       <h3 class="text-white font-semibold text-lg" style="font-family:'Rajdhani',sans-serif;">Indigenous Advocacy</h3>
+
+      </div>
+
+      <div class="space-y-3 text-sm leading-relaxed">
+
+       <p class="opacity-85"><strong class="text-white">Missing &amp; Murdered Indigenous Women &amp; Girls (MMIWG)</strong><br>
+
+         Active participant in Indigenous awareness initiatives and reconciliation efforts.</p>
+
+       <p class="opacity-85"><strong class="text-white">Every Child Matters Day</strong><br>
+
+         Supported cultural awareness campaigns honoring Indigenous children and families.</p>
+
+       <p class="opacity-85"><strong class="text-white">Employee Mentorship</strong><br>
+
+         Guided new team members through professional development with cultural sensitivity and actionable leadership.</p>
+
+      </div>
+
+      <div class="mt-4 glow-card corner-accent overflow-hidden"><img src="https://i.imgur.com/nqyCsoL.png" alt="Indigenous Advocacy Community Work" loading="lazy" style="width:100%; height:220px; object-fit:cover; background:#111927;" onerror="console.error('Image failed to load:', this.src); this.style.background='#1a2332'; this.alt='Photo unavailable';">
+
+       <div class="p-3 border-t border-accent/20">
+
+        <p class="text-xs opacity-70" style="font-family:'Share Tech Mono',monospace;">Community Advocacy &amp; Cultural Leadership</p>
+
+       </div>
+
+      </div>
+
+     </div>
+
+    </div>
+
+   </div>
+
+  </section><!-- FOOTER -->
+
+  <footer class="py-10 px-6 border-t border-cyan-900/20 text-center">
+
+   <div class="text-xs tracking-widest uppercase opacity-40" style="font-family:'Share Tech Mono',monospace;">
+
+    © 2025 — Portfolio // All Rights Reserved
+
+   </div>
+
+  </footer>
+
+  <script>
+
+// === Element SDK ===
+
+const defaultConfig = {
+
+  hero_headline: 'Resilient. Analytical. Committed.',
+
+  site_title: 'PORTFOLIO',
+
+  background_color: '#0a0e17',
+
+  surface_color: '#111927',
+
+  text_color: '#c8d6e5',
+
+  accent_color: '#00e5ff',
+
+  secondary_action_color: '#00a8bb',
+
+  font_family: 'Outfit',
+
+  font_size: 16
+
+};
+
+
+
+function applyConfig(config) {
+
+  const bg = config.background_color || defaultConfig.background_color;
+
+  const surface = config.surface_color || defaultConfig.surface_color;
+
+  const text = config.text_color || defaultConfig.text_color;
+
+  const accent = config.accent_color || defaultConfig.accent_color;
+
+  const secAction = config.secondary_action_color || defaultConfig.secondary_action_color;
+
+  const font = config.font_family || defaultConfig.font_family;
+
+  const baseSize = config.font_size || defaultConfig.font_size;
+
+
+
+  const root = document.documentElement;
+
+  document.body.style.background = bg;
+
+  document.body.style.color = text;
+
+  document.body.style.fontFamily = `${font}, Outfit, sans-serif`;
+
+
+
+  // headline
+
+  const h = document.getElementById('hero-headline');
+
+  if (h) h.innerHTML = (config.hero_headline || defaultConfig.hero_headline).replace(/\.\s*/g, '.<br>');
+
+
+
+  const nt = document.getElementById('nav-title');
+
+  if (nt) nt.textContent = config.site_title || defaultConfig.site_title;
+
+
+
+  // colors
+
+  document.querySelectorAll('.glow-card').forEach(el => {
+
+    el.style.background = surface;
+
+    el.style.borderColor = accent + '26';
+
+  });
+
+  document.querySelectorAll('.section-tag, .star-badge, [style*="color:#00e5ff"]').forEach(el => {
+
+    el.style.color = accent;
+
+  });
+
+  document.querySelectorAll('.star-badge').forEach(el => {
+
+    el.style.background = accent + '1a';
+
+    el.style.borderColor = accent + '40';
+
+  });
+
+  document.querySelectorAll('.section-title').forEach(el => el.style.color = '#fff');
+
+  document.querySelectorAll('.pulse-dot').forEach(el => {
+
+    el.style.background = accent;
+
+    el.style.boxShadow = `0 0 8px ${accent}`;
+
+  });
+
+
+
+  // font sizing
+
+  document.getElementById('hero-headline').style.fontSize = `${baseSize * 2.8}px`;
+
+  document.getElementById('hero-pitch').style.fontSize = `${baseSize}px`;
+
+  document.querySelectorAll('.section-title').forEach(el => el.style.fontSize = `${baseSize * 2}px`);
+
+
+
+  // nav
+
+  document.querySelector('nav').style.background = bg + 'e6';
+
+  document.querySelector('nav').style.borderColor = accent + '14';
+
+}
+
+
+
+if (window.elementSdk) {
+
+  window.elementSdk.init({
+
+    defaultConfig,
+
+    onConfigChange: async (config) => applyConfig(config),
+
+    mapToCapabilities: (config) => ({
+
+      recolorables: [
+
+        { get: () => config.background_color || defaultConfig.background_color, set: (v) => { config.background_color = v; window.elementSdk.setConfig({ background_color: v }); } },
+
+        { get: () => config.surface_color || defaultConfig.surface_color, set: (v) => { config.surface_color = v; window.elementSdk.setConfig({ surface_color: v }); } },
+
+        { get: () => config.text_color || defaultConfig.text_color, set: (v) => { config.text_color = v; window.elementSdk.setConfig({ text_color: v }); } },
+
+        { get: () => config.accent_color || defaultConfig.accent_color, set: (v) => { config.accent_color = v; window.elementSdk.setConfig({ accent_color: v }); } },
+
+        { get: () => config.secondary_action_color || defaultConfig.secondary_action_color, set: (v) => { config.secondary_action_color = v; window.elementSdk.setConfig({ secondary_action_color: v }); } },
+
+      ],
+
+      borderables: [],
+
+      fontEditable: {
+
+        get: () => config.font_family || defaultConfig.font_family,
+
+        set: (v) => { config.font_family = v; window.elementSdk.setConfig({ font_family: v }); }
+
+      },
+
+      fontSizeable: {
+
+        get: () => config.font_size || defaultConfig.font_size,
+
+        set: (v) => { config.font_size = v; window.elementSdk.setConfig({ font_size: v }); }
+
+      }
+
+    }),
+
+    mapToEditPanelValues: (config) => new Map([
+
+      ['hero_headline', config.hero_headline || defaultConfig.hero_headline],
+
+      ['site_title', config.site_title || defaultConfig.site_title]
+
+    ])
+
+  });
+
+}
+
+
+
+// === Navigation ===
+
+function scrollToSection(id) {
+
+  document.getElementById(id)?.scrollIntoView({ behavior: 'smooth' });
+
+  document.querySelectorAll('.nav-link').forEach(l => l.classList.remove('active'));
+
+  document.querySelectorAll(`.nav-link`).forEach(l => {
+
+    if (l.getAttribute('onclick')?.includes(id)) l.classList.add('active');
+
+  });
+
+}
+
+
+
+function toggleMobileMenu() {
+
+  document.getElementById('mobile-menu').classList.toggle('open');
+
+}
+
+
+
+function toggleRefLetter() {
+
+  const letter = document.getElementById('ref-letter');
+
+  letter.classList.toggle('hidden');
+
+  lucide.createIcons();
+
+}
+
+
+
+// === Scroll animations ===
+
+const observer = new IntersectionObserver((entries) => {
+
+  entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
+
+}, { threshold: 0.1 });
+
+document.querySelectorAll('.fade-section').forEach(s => observer.observe(s));
+
+
+
+// Init icons
+
+lucide.createIcons();
+
+</script>
+
+ <script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'9f0139df5665178c',t:'MTc3NjgyNTIzMS4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+
+</html>
