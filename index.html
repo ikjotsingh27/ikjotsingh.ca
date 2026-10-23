@@ -161,6 +161,15 @@
       border: none;
       font-family: 'Share Tech Mono', monospace;
     }
+    .reflect-card { transition: opacity 0.6s, transform 0.6s, border-color 0.3s, box-shadow 0.3s; }
+    .reflect-card.visible:hover { transform: translateY(-3px); }
+    .reflect-steps > div { opacity: 0; transform: translateY(12px); transition: opacity 0.5s ease, transform 0.5s ease; border-left: 2px solid rgba(0,229,255,0.25); padding-left: 12px; }
+    .reflect-card.visible .reflect-steps > div { opacity: 1; transform: translateY(0); }
+    .reflect-card.visible .reflect-steps > div:nth-child(1) { transition-delay: 0.15s; }
+    .reflect-card.visible .reflect-steps > div:nth-child(2) { transition-delay: 0.3s; }
+    .reflect-card.visible .reflect-steps > div:nth-child(3) { transition-delay: 0.45s; }
+    .reflect-card.visible .reflect-steps > div:nth-child(4) { transition-delay: 0.6s; }
+    @media (prefers-reduced-motion: reduce) { .reflect-steps > div, .reflect-card { transition: none; opacity: 1; transform: none; } }
   </style>
 </head>
 <body class="h-full">
@@ -333,12 +342,12 @@
             </div>
           </div>
         </div>
-        <div class="glow-card corner-accent p-6 space-y-5 max-w-3xl">
+        <div class="glow-card corner-accent p-6 space-y-5 fade-section reflect-card">
           <div class="flex items-center justify-between">
             <h3 class="text-white font-semibold text-lg" style="font-family:'Rajdhani',sans-serif;">Community Service Reflection</h3>
             <span class="star-badge">STAR</span>
           </div>
-          <div class="space-y-4 text-sm leading-relaxed">
+          <div class="grid md:grid-cols-2 gap-x-8 gap-y-5 text-sm leading-relaxed reflect-steps">
             <div><span class="text-accent text-xs tracking-widest uppercase" style="font-family:'Share Tech Mono',monospace;">Situation</span><p class="opacity-85 mt-1">Diverse community members relying on local food banks and service centers.</p></div>
             <div><span class="text-accent text-xs tracking-widest uppercase" style="font-family:'Share Tech Mono',monospace;">Task</span><p class="opacity-85 mt-1">Coordinate volunteers and manage frontline food service operations.</p></div>
             <div><span class="text-accent text-xs tracking-widest uppercase" style="font-family:'Share Tech Mono',monospace;">Action</span><p class="opacity-85 mt-1">Provided clear instructions to volunteer teams, confirmed understanding, and adapted communication styles to build trust with individuals from diverse backgrounds.</p></div>
