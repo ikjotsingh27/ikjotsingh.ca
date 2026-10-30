@@ -1006,7 +1006,7 @@ body { background: #0a0e17; color: #c8d6e5; font-family: 'Outfit', sans-serif; }
 
       <div class="mt-6 p-4 bg-accent/5 border border-accent/20 rounded"><button onclick="toggleRefLetter()" class="flex items-center gap-2 text-accent hover:text-white transition text-sm font-semibold mb-3"> <i data-lucide="file-text" style="width:16px;height:16px;"></i> View Full Reference Letter </button>
 
-       <div id="ref-letter" class="hidden space-y-3"><img src="https://i.imgur.com/2rjCd5T.png" alt="Shayanne Keeper Reference Letter" loading="lazy" style="width:100%; max-height:600px; object-fit:contain; border-radius:4px; margin-bottom:12px;" onerror="console.error('Image failed to load:', this.src); this.alt='Reference letter unavailable';"> <img src="https://i.imgur.com/nqyCsoL.png" alt="Native Northwest Reference" loading="lazy" style="width:100%; max-height:600px; object-fit:contain; border-radius:4px; margin-bottom:12px;" onerror="console.error('Image failed to load:', this.src); this.alt='Native Northwest image unavailable';">
+       <div id="ref-letter" class="hidden space-y-3"><img src="reference_letter.png" alt="Shayanne Keeper Reference Letter" loading="lazy" style="width:100%; max-height:600px; object-fit:contain; border-radius:4px; margin-bottom:12px;" onerror="console.error('Image failed to load:', this.src); this.alt='Reference letter unavailable';"> <img src="https://i.imgur.com/nqyCsoL.png" alt="Native Northwest Reference" loading="lazy" style="width:100%; max-height:600px; object-fit:contain; border-radius:4px; margin-bottom:12px;" onerror="console.error('Image failed to load:', this.src); this.alt='Native Northwest image unavailable';">
 
         <div class="pt-3 border-t border-accent/20">
 
