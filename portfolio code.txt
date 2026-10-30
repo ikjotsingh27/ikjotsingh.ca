@@ -332,7 +332,7 @@ body { background: #0a0e17; color: #c8d6e5; font-family: 'Outfit', sans-serif; }
 
       <div class="relative">
 
-       <div class="w-52 h-52 md:w-64 md:h-64 rounded-full border-2 border-accent/20 overflow-hidden flex items-center justify-center" style="background: radial-gradient(circle, #111927 0%, #0a0e17 100%);"><img src="https://i.imgur.com/IENzRUP.png" alt="Profile" loading="lazy" style="width:100%; height:100%; object-fit:cover;" onerror="console.error('Image failed to load:', this.src); this.style.display='none';">
+       <div class="w-52 h-52 md:w-64 md:h-64 rounded-full border-2 border-accent/20 overflow-hidden flex items-center justify-center" style="background: radial-gradient(circle, #111927 0%, #0a0e17 100%);"><img src="images/ikjot-singh-profile.png" alt="Profile" loading="lazy" style="width:100%; height:100%; object-fit:cover;" onerror="console.error('Image failed to load:', this.src); this.style.display='none';">
 
         <div class="absolute inset-0 flex items-center justify-center bg-gradient-to-b from-transparent to-rgba(0,0,0,0.3)">
 
@@ -610,7 +610,7 @@ body { background: #0a0e17; color: #c8d6e5; font-family: 'Outfit', sans-serif; }
 
       <p class="text-sm leading-relaxed opacity-85">Committed numerous volunteer hours assisting across departments, including extensive kitchen prep and meal coordination for local families.</p><!-- Caldwell Volunteer Photo -->
 
-      <div class="mt-4 glow-card corner-accent overflow-hidden"><img src="https://i.imgur.com/mYniTZY.png" alt="Caldwell Family Services Volunteer Work" loading="lazy" style="width:100%; height:180px; object-fit:cover; background:#111927;" onerror="console.error('Image failed to load:', this.src); this.style.background='#1a2332'; this.alt='Photo unavailable';">
+      <div class="mt-4 glow-card corner-accent overflow-hidden"><img src="images/caldwell-family-services.png" alt="Caldwell Family Services Volunteer Work" loading="lazy" style="width:100%; height:180px; object-fit:cover; background:#111927;" onerror="console.error('Image failed to load:', this.src); this.style.background='#1a2332'; this.alt='Photo unavailable';">
 
        <div class="p-2 border-t border-accent/20">
 
@@ -638,7 +638,7 @@ body { background: #0a0e17; color: #c8d6e5; font-family: 'Outfit', sans-serif; }
 
       <p class="text-sm leading-relaxed opacity-85">Regular, dedicated volunteer work focused on cleaning, maintenance, and dishwashing to support the community langar, directly applying my philosophy of selfless service.</p><!-- Gurudwara Volunteer Photo -->
 
-      <div class="mt-4 glow-card corner-accent overflow-hidden"><img src="https://i.imgur.com/rC0Liar.png" alt="Gurudwara Seva Community Work" loading="lazy" style="width:100%; height:180px; object-fit:cover; background:#111927;" onerror="console.error('Image failed to load:', this.src); this.style.background='#1a2332'; this.alt='Photo unavailable';">
+      <div class="mt-4 glow-card corner-accent overflow-hidden"><img src="images/gurudwara-seva.png" alt="Gurudwara Seva Community Work" loading="lazy" style="width:100%; height:180px; object-fit:cover; background:#111927;" onerror="console.error('Image failed to load:', this.src); this.style.background='#1a2332'; this.alt='Photo unavailable';">
 
        <div class="p-2 border-t border-accent/20">
 
@@ -820,7 +820,7 @@ body { background: #0a0e17; color: #c8d6e5; font-family: 'Outfit', sans-serif; }
 
       <div class="grid grid-cols-2 gap-4">
 
-       <div class="glow-card corner-accent overflow-hidden"><img src="https://i.imgur.com/leLBsEL.png" alt="Bioterrorism Certificate" loading="lazy" style="width:100%; height:180px; object-fit:cover; background:#111927;" onerror="console.error('Image failed to load:', this.src); this.style.background='#1a2332'; this.alt='Certificate unavailable';">
+       <div class="glow-card corner-accent overflow-hidden"><img src="images/bioterrorism-certificate.png" alt="Bioterrorism Certificate" loading="lazy" style="width:100%; height:180px; object-fit:cover; background:#111927;" onerror="console.error('Image failed to load:', this.src); this.style.background='#1a2332'; this.alt='Certificate unavailable';">
 
         <div class="p-3 border-t border-accent/20">
 
@@ -830,7 +830,7 @@ body { background: #0a0e17; color: #c8d6e5; font-family: 'Outfit', sans-serif; }
 
        </div>
 
-       <div class="glow-card corner-accent overflow-hidden"><img src="https://i.imgur.com/0VyaFjh.png" alt="Terrorism Awareness Certificate" loading="lazy" style="width:100%; height:180px; object-fit:cover; background:#111927;" onerror="console.error('Image failed to load:', this.src); this.style.background='#1a2332'; this.alt='Certificate unavailable';">
+       <div class="glow-card corner-accent overflow-hidden"><img src="images/terrorism-awareness-certificate.png" alt="Terrorism Awareness Certificate" loading="lazy" style="width:100%; height:180px; object-fit:cover; background:#111927;" onerror="console.error('Image failed to load:', this.src); this.style.background='#1a2332'; this.alt='Certificate unavailable';">
 
         <div class="p-3 border-t border-accent/20">
 
@@ -840,7 +840,7 @@ body { background: #0a0e17; color: #c8d6e5; font-family: 'Outfit', sans-serif; }
 
        </div>
 
-       <div class="glow-card corner-accent overflow-hidden"><img src="https://i.imgur.com/hbEKeMp.png" alt="Chemical Terrorism Certificate" loading="lazy" style="width:100%; height:180px; object-fit:cover; background:#111927;" onerror="console.error('Image failed to load:', this.src); this.style.background='#1a2332'; this.alt='Certificate unavailable';">
+       <div class="glow-card corner-accent overflow-hidden"><img src="images/chemical-response-certificate.png" alt="Chemical Terrorism Certificate" loading="lazy" style="width:100%; height:180px; object-fit:cover; background:#111927;" onerror="console.error('Image failed to load:', this.src); this.style.background='#1a2332'; this.alt='Certificate unavailable';">
 
         <div class="p-3 border-t border-accent/20">
 
@@ -850,7 +850,7 @@ body { background: #0a0e17; color: #c8d6e5; font-family: 'Outfit', sans-serif; }
 
        </div>
 
-       <div class="glow-card corner-accent overflow-hidden"><img src="https://i.imgur.com/PcO0bgc.png" alt="Radiological Events Certificate" loading="lazy" style="width:100%; height:180px; object-fit:cover; background:#111927;" onerror="console.error('Image failed to load:', this.src); this.style.background='#1a2332'; this.alt='Certificate unavailable';">
+       <div class="glow-card corner-accent overflow-hidden"><img src="images/radiological-events-certificate.png" alt="Radiological Events Certificate" loading="lazy" style="width:100%; height:180px; object-fit:cover; background:#111927;" onerror="console.error('Image failed to load:', this.src); this.style.background='#1a2332'; this.alt='Certificate unavailable';">
 
         <div class="p-3 border-t border-accent/20">
 
@@ -940,11 +940,127 @@ body { background: #0a0e17; color: #c8d6e5; font-family: 'Outfit', sans-serif; }
 
       </div>
 
-      <div class="mt-4 glow-card corner-accent overflow-hidden"><img src="https://i.imgur.com/SCU5hZP.png" alt="Cybersecurity Excellence Certificate" loading="lazy" style="width:100%; height:280px; object-fit:cover; background:#111927;" onerror="console.error('Image failed to load:', this.src); this.style.background='#1a2332'; this.alt='Certificate unavailable';">
+      <div class="mt-4 glow-card corner-accent overflow-hidden"><img src="images/cybersecurity-certificate.png" alt="Cybersecurity Excellence Certificate" loading="lazy" style="width:100%; height:280px; object-fit:cover; background:#111927;" onerror="console.error('Image failed to load:', this.src); this.style.background='#1a2332'; this.alt='Certificate unavailable';">
 
        <div class="p-3 border-t border-accent/20">
 
         <p class="text-xs opacity-70" style="font-family:'Share Tech Mono',monospace;">Cybersecurity Achievement Recognition</p>
+
+       </div>
+
+      </div>
+
+     </div>
+
+     <div class="space-y-6 md:col-span-2">
+
+      <div class="glow-card corner-accent p-6 space-y-5">
+
+       <div class="flex items-center justify-between gap-3">
+
+        <div class="flex items-center gap-3 min-w-0">
+
+         <div class="w-10 h-10 rounded-lg bg-accent/10 flex items-center justify-center shrink-0">
+
+          <i data-lucide="clipboard-list" style="width:20px;height:20px;color:#00e5ff;"></i>
+
+         </div>
+
+         <h3 class="text-white font-semibold text-lg leading-tight" style="font-family:'Rajdhani',sans-serif;">Emergency Management and First Responder Training</h3>
+
+        </div><span class="star-badge shrink-0">STAR</span>
+
+       </div>
+
+       <div class="space-y-4 text-sm leading-relaxed">
+
+        <div>
+
+         <div class="flex items-center gap-2 mb-1">
+
+          <i data-lucide="crosshair" style="width:13px;height:13px;color:#00e5ff;"></i> <span class="text-accent text-xs tracking-widest uppercase" style="font-family:'Share Tech Mono',monospace;">Situation</span>
+
+         </div>
+
+         <p class="opacity-85 pl-5">In an emergency, police, fire, paramedics and other agencies have to work together, and that only works when everyone uses the same structure and terminology.</p>
+
+        </div>
+
+        <div>
+
+         <div class="flex items-center gap-2 mb-1">
+
+          <i data-lucide="target" style="width:13px;height:13px;color:#00e5ff;"></i> <span class="text-accent text-xs tracking-widest uppercase" style="font-family:'Share Tech Mono',monospace;">Task</span>
+
+         </div>
+
+         <p class="opacity-85 pl-5">Learn Ontario’s Incident Management System (IMS) and how it organizes the response to an incident.</p>
+
+        </div>
+
+        <div>
+
+         <div class="flex items-center gap-2 mb-1">
+
+          <i data-lucide="zap" style="width:13px;height:13px;color:#00e5ff;"></i> <span class="text-accent text-xs tracking-widest uppercase" style="font-family:'Share Tech Mono',monospace;">Action</span>
+
+         </div>
+
+         <p class="opacity-85 pl-5">Completed the IMS 100 e-learning course through Emergency Management Ontario in October 2026, alongside the SEC1009 Incident Management course at Algonquin College. It covered IMS principles, the IMS functions (command, operations, planning, logistics, and finance/administration), and how an incident organization is set up. I also completed Victim Rights in Canada (Dec 2024) and Mental Health Self-Awareness for First Responders (Nov 2024) through the Professional Security Knowledge Network.</p>
+
+        </div>
+
+        <div>
+
+         <div class="flex items-center gap-2 mb-1">
+
+          <i data-lucide="check-circle" style="width:13px;height:13px;color:#00e5ff;"></i> <span class="text-accent text-xs tracking-widest uppercase" style="font-family:'Share Tech Mono',monospace;">Result</span>
+
+         </div>
+
+         <p class="opacity-85 pl-5">I can understand and work within a coordinated incident structure, support victims, and look after my own mental health on the job. This builds on my CBRNE training.</p>
+
+        </div>
+
+       </div>
+
+       <div class="mt-4 p-3 bg-accent/5 border border-accent/20 rounded text-xs opacity-80" style="font-family:'Share Tech Mono',monospace;">
+
+        Emergency Management Ontario · Certificate No. 399266-IMS 100-102026
+
+       </div>
+
+      </div>
+
+      <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+
+       <div class="glow-card corner-accent overflow-hidden"><img src="images/ims100-certificate.png" alt="IMS 100 Certificate of Completion from Emergency Management Ontario" class="lightbox-trigger" loading="lazy" width="1779" height="1312" style="width:100%; height:180px; object-fit:cover; object-position:top; background:#fff;" onerror="console.error('Image failed to load:', this.src); this.style.background='#1a2332'; this.alt='Certificate unavailable';">
+
+        <div class="p-3 border-t border-accent/20">
+
+         <p class="text-xs font-semibold text-white" style="font-family:'Rajdhani',sans-serif;">Incident Management (IMS 100)</p>
+
+        </div>
+
+       </div>
+
+       <div class="glow-card corner-accent overflow-hidden"><img src="certificates/victim_rights_in_canada.png" alt="Victim Rights in Canada certificate from the Professional Security Knowledge Network" class="lightbox-trigger" loading="lazy" width="1650" height="1275" style="width:100%; height:180px; object-fit:cover; object-position:top; background:#fff;" onerror="console.error('Image failed to load:', this.src); this.style.background='#1a2332'; this.alt='Certificate unavailable';">
+
+        <div class="p-3 border-t border-accent/20">
+
+         <p class="text-xs font-semibold text-white" style="font-family:'Rajdhani',sans-serif;">Victim Rights in Canada, Dec 2024</p>
+
+        </div>
+
+       </div>
+
+       <div class="glow-card corner-accent overflow-hidden"><img src="certificates/mental_health_first_responders.png" alt="Mental Health Self-Awareness for First Responders certificate from the Professional Security Knowledge Network" class="lightbox-trigger" loading="lazy" width="1650" height="1275" style="width:100%; height:180px; object-fit:cover; object-position:top; background:#fff;" onerror="console.error('Image failed to load:', this.src); this.style.background='#1a2332'; this.alt='Certificate unavailable';">
+
+        <div class="p-3 border-t border-accent/20">
+
+         <p class="text-xs font-semibold text-white" style="font-family:'Rajdhani',sans-serif;">Mental Health Self-Awareness for First Responders, Nov 2024</p>
+
+        </div>
 
        </div>
 
@@ -1006,7 +1122,7 @@ body { background: #0a0e17; color: #c8d6e5; font-family: 'Outfit', sans-serif; }
 
       <div class="mt-6 p-4 bg-accent/5 border border-accent/20 rounded"><button onclick="toggleRefLetter()" class="flex items-center gap-2 text-accent hover:text-white transition text-sm font-semibold mb-3"> <i data-lucide="file-text" style="width:16px;height:16px;"></i> View Full Reference Letter </button>
 
-       <div id="ref-letter" class="hidden space-y-3"><img src="reference_letter.png" alt="Shayanne Keeper Reference Letter" loading="lazy" style="width:100%; max-height:600px; object-fit:contain; border-radius:4px; margin-bottom:12px;" onerror="console.error('Image failed to load:', this.src); this.alt='Reference letter unavailable';"> <img src="https://i.imgur.com/nqyCsoL.png" alt="Native Northwest Reference" loading="lazy" style="width:100%; max-height:600px; object-fit:contain; border-radius:4px; margin-bottom:12px;" onerror="console.error('Image failed to load:', this.src); this.alt='Native Northwest image unavailable';">
+       <div id="ref-letter" class="hidden space-y-3"><img src="reference_letter.png" alt="Shayanne Keeper Reference Letter" loading="lazy" style="width:100%; max-height:600px; object-fit:contain; border-radius:4px; margin-bottom:12px;" onerror="console.error('Image failed to load:', this.src); this.alt='Reference letter unavailable';"> <img src="images/indigenous-advocacy.png" alt="Native Northwest Reference" loading="lazy" style="width:100%; max-height:600px; object-fit:contain; border-radius:4px; margin-bottom:12px;" onerror="console.error('Image failed to load:', this.src); this.alt='Native Northwest image unavailable';">
 
         <div class="pt-3 border-t border-accent/20">
 
@@ -1054,7 +1170,7 @@ body { background: #0a0e17; color: #c8d6e5; font-family: 'Outfit', sans-serif; }
 
       </div>
 
-      <div class="mt-4 glow-card corner-accent overflow-hidden"><img src="https://i.imgur.com/nqyCsoL.png" alt="Indigenous Advocacy Community Work" loading="lazy" style="width:100%; height:220px; object-fit:cover; background:#111927;" onerror="console.error('Image failed to load:', this.src); this.style.background='#1a2332'; this.alt='Photo unavailable';">
+      <div class="mt-4 glow-card corner-accent overflow-hidden"><img src="images/indigenous-advocacy.png" alt="Indigenous Advocacy Community Work" loading="lazy" style="width:100%; height:220px; object-fit:cover; background:#111927;" onerror="console.error('Image failed to load:', this.src); this.style.background='#1a2332'; this.alt='Photo unavailable';">
 
        <div class="p-3 border-t border-accent/20">
 
