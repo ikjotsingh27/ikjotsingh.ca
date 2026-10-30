@@ -952,21 +952,117 @@ body { background: #0a0e17; color: #c8d6e5; font-family: 'Outfit', sans-serif; }
 
      </div>
 
-     <div class="glow-card corner-accent overflow-hidden"><img src="certificates/victim_rights_in_canada.png" alt="Victim Rights in Canada certificate from the Professional Security Knowledge Network" class="lightbox-trigger" loading="lazy" width="1650" height="1275" style="width:100%; height:auto; display:block; background:#fff;" onerror="console.error('Image failed to load:', this.src); this.style.background='#1a2332'; this.alt='Certificate unavailable';">
+     <div class="space-y-6 md:col-span-2">
 
-      <div class="p-3 border-t border-accent/20">
+      <div class="glow-card corner-accent p-6 space-y-5">
 
-       <p class="text-xs font-semibold text-white" style="font-family:'Rajdhani',sans-serif;">Victim Rights in Canada, Dec 2024</p>
+       <div class="flex items-center justify-between gap-3">
+
+        <div class="flex items-center gap-3 min-w-0">
+
+         <div class="w-10 h-10 rounded-lg bg-accent/10 flex items-center justify-center shrink-0">
+
+          <i data-lucide="clipboard-list" style="width:20px;height:20px;color:#00e5ff;"></i>
+
+         </div>
+
+         <h3 class="text-white font-semibold text-lg leading-tight" style="font-family:'Rajdhani',sans-serif;">Emergency Management and First Responder Training</h3>
+
+        </div><span class="star-badge shrink-0">STAR</span>
+
+       </div>
+
+       <div class="space-y-4 text-sm leading-relaxed">
+
+        <div>
+
+         <div class="flex items-center gap-2 mb-1">
+
+          <i data-lucide="crosshair" style="width:13px;height:13px;color:#00e5ff;"></i> <span class="text-accent text-xs tracking-widest uppercase" style="font-family:'Share Tech Mono',monospace;">Situation</span>
+
+         </div>
+
+         <p class="opacity-85 pl-5">In an emergency, police, fire, paramedics and other agencies have to work together, and that only works when everyone uses the same structure and terminology.</p>
+
+        </div>
+
+        <div>
+
+         <div class="flex items-center gap-2 mb-1">
+
+          <i data-lucide="target" style="width:13px;height:13px;color:#00e5ff;"></i> <span class="text-accent text-xs tracking-widest uppercase" style="font-family:'Share Tech Mono',monospace;">Task</span>
+
+         </div>
+
+         <p class="opacity-85 pl-5">Learn Ontario’s Incident Management System (IMS) and how it organizes the response to an incident.</p>
+
+        </div>
+
+        <div>
+
+         <div class="flex items-center gap-2 mb-1">
+
+          <i data-lucide="zap" style="width:13px;height:13px;color:#00e5ff;"></i> <span class="text-accent text-xs tracking-widest uppercase" style="font-family:'Share Tech Mono',monospace;">Action</span>
+
+         </div>
+
+         <p class="opacity-85 pl-5">Completed the IMS 100 e-learning course through Emergency Management Ontario in October 2026, alongside the SEC1009 Incident Management course at Algonquin College. It covered IMS principles, the IMS functions (command, operations, planning, logistics, and finance/administration), and how an incident organization is set up.</p>
+
+        </div>
+
+        <div>
+
+         <div class="flex items-center gap-2 mb-1">
+
+          <i data-lucide="check-circle" style="width:13px;height:13px;color:#00e5ff;"></i> <span class="text-accent text-xs tracking-widest uppercase" style="font-family:'Share Tech Mono',monospace;">Result</span>
+
+         </div>
+
+         <p class="opacity-85 pl-5">Able to understand and work within a coordinated incident structure, which builds on my CBRNE training.</p>
+
+        </div>
+
+       </div>
+
+       <div class="mt-4 p-3 bg-accent/5 border border-accent/20 rounded text-xs opacity-80" style="font-family:'Share Tech Mono',monospace;">
+
+        Emergency Management Ontario · Certificate No. 399266-IMS 100-102026
+
+       </div>
 
       </div>
 
-     </div>
+      <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
 
-     <div class="glow-card corner-accent overflow-hidden"><img src="certificates/mental_health_first_responders.png" alt="Mental Health Self-Awareness for First Responders certificate from the Professional Security Knowledge Network" class="lightbox-trigger" loading="lazy" width="1650" height="1275" style="width:100%; height:auto; display:block; background:#fff;" onerror="console.error('Image failed to load:', this.src); this.style.background='#1a2332'; this.alt='Certificate unavailable';">
+       <div class="glow-card corner-accent overflow-hidden"><img src="images/ims100-certificate.png" alt="IMS 100 Certificate of Completion from Emergency Management Ontario" class="lightbox-trigger" loading="lazy" width="1779" height="1312" style="width:100%; height:180px; object-fit:cover; object-position:top; background:#fff;" onerror="console.error('Image failed to load:', this.src); this.style.background='#1a2332'; this.alt='Certificate unavailable';">
 
-      <div class="p-3 border-t border-accent/20">
+        <div class="p-3 border-t border-accent/20">
 
-       <p class="text-xs font-semibold text-white" style="font-family:'Rajdhani',sans-serif;">Mental Health Self-Awareness for First Responders, Nov 2024</p>
+         <p class="text-xs font-semibold text-white" style="font-family:'Rajdhani',sans-serif;">Incident Management (IMS 100)</p>
+
+        </div>
+
+       </div>
+
+       <div class="glow-card corner-accent overflow-hidden"><img src="certificates/victim_rights_in_canada.png" alt="Victim Rights in Canada certificate from the Professional Security Knowledge Network" class="lightbox-trigger" loading="lazy" width="1650" height="1275" style="width:100%; height:180px; object-fit:cover; object-position:top; background:#fff;" onerror="console.error('Image failed to load:', this.src); this.style.background='#1a2332'; this.alt='Certificate unavailable';">
+
+        <div class="p-3 border-t border-accent/20">
+
+         <p class="text-xs font-semibold text-white" style="font-family:'Rajdhani',sans-serif;">Victim Rights in Canada, Dec 2024</p>
+
+        </div>
+
+       </div>
+
+       <div class="glow-card corner-accent overflow-hidden"><img src="certificates/mental_health_first_responders.png" alt="Mental Health Self-Awareness for First Responders certificate from the Professional Security Knowledge Network" class="lightbox-trigger" loading="lazy" width="1650" height="1275" style="width:100%; height:180px; object-fit:cover; object-position:top; background:#fff;" onerror="console.error('Image failed to load:', this.src); this.style.background='#1a2332'; this.alt='Certificate unavailable';">
+
+        <div class="p-3 border-t border-accent/20">
+
+         <p class="text-xs font-semibold text-white" style="font-family:'Rajdhani',sans-serif;">Mental Health Self-Awareness for First Responders, Nov 2024</p>
+
+        </div>
+
+       </div>
 
       </div>
 
