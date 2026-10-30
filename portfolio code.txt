@@ -1006,7 +1006,7 @@ body { background: #0a0e17; color: #c8d6e5; font-family: 'Outfit', sans-serif; }
 
          </div>
 
-         <p class="opacity-85 pl-5">Completed the IMS 100 e-learning course through Emergency Management Ontario in October 2026, alongside the SEC1009 Incident Management course at Algonquin College. It covered IMS principles, the IMS functions (command, operations, planning, logistics, and finance/administration), and how an incident organization is set up.</p>
+         <p class="opacity-85 pl-5">Completed the IMS 100 e-learning course through Emergency Management Ontario in October 2026, alongside the SEC1009 Incident Management course at Algonquin College. It covered IMS principles, the IMS functions (command, operations, planning, logistics, and finance/administration), and how an incident organization is set up. I also completed Victim Rights in Canada (Dec 2024) and Mental Health Self-Awareness for First Responders (Nov 2024) through the Professional Security Knowledge Network.</p>
 
         </div>
 
@@ -1018,7 +1018,7 @@ body { background: #0a0e17; color: #c8d6e5; font-family: 'Outfit', sans-serif; }
 
          </div>
 
-         <p class="opacity-85 pl-5">Able to understand and work within a coordinated incident structure, which builds on my CBRNE training.</p>
+         <p class="opacity-85 pl-5">I can understand and work within a coordinated incident structure, support victims, and look after my own mental health on the job. This builds on my CBRNE training.</p>
 
         </div>
 
