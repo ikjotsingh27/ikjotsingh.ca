@@ -76,6 +76,12 @@ test("english and french pages share one contact form", () => {
   assert.match(en, />Send message</);
   assert.equal(en.match(/id="contact-help">([^<]+)/)[1], "I'll get back to you within 24 hours.");
   assert.equal(fr.match(/id="contact-help">([^<]+)/)[1], "Je vous répondrai dans les 24 heures.");
+  assert.equal(en.match(/data-success="([^"]+)"/)[1], "Thank you. Have a great day.");
+  assert.equal(fr.match(/data-success="([^"]+)"/)[1], "Merci. Passez une belle journée.");
+  assert.equal(en.includes("Thank you. Your message is on its way."), false);
+  assert.equal(fr.includes("Merci. Votre message a bien été envoyé."), false);
+  assert.equal(html.includes("Thank you. Your message is on its way."), false);
+  assert.equal(html.includes("Merci. Votre message a bien été envoyé."), false);
   assert.equal(en.includes("I usually reply within a couple of days."), false);
   assert.equal(fr.includes("Je réponds habituellement en quelques jours."), false);
   assert.equal(html.includes("I usually reply within a couple of days."), false);
@@ -282,7 +288,7 @@ test("contact form submits in place in both languages", async () => {
         name: form.querySelector("[name=name]").value
       };
     })()`);
-    assert.equal(success.status, "Thank you. Your message is on its way.");
+    assert.equal(success.status, "Thank you. Have a great day.");
     assert.equal(success.state, "ok");
     assert.equal(success.stayed, "127.0.0.1");
     assert.equal(success.url, "https://api.web3forms.com/submit");
@@ -313,6 +319,7 @@ test("contact form submits in place in both languages", async () => {
         nav: document.querySelector(".desk [data-nav=contact]").textContent.trim(),
         hero: document.querySelector(".hero .btn.line").textContent.trim(),
         help: document.getElementById("contact-help").textContent,
+        successCopy: form.getAttribute("data-success"),
         send: form.querySelector("[type=submit]").textContent.trim(),
         status: document.querySelector("[data-status]").textContent,
         state: document.querySelector("[data-status]").dataset.state,
@@ -322,6 +329,7 @@ test("contact form submits in place in both languages", async () => {
     assert.equal(french.nav, "Contact");
     assert.equal(french.hero, "Me joindre");
     assert.equal(french.help, "Je vous répondrai dans les 24 heures.");
+    assert.equal(french.successCopy, "Merci. Passez une belle journée.");
     assert.equal(french.send, "Envoyer le message");
     assert.equal(french.status, "Le message n’a pas pu être envoyé. Réessayez dans un moment.");
     assert.equal(french.state, "err");
