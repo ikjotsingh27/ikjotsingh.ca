@@ -1,917 +1,337 @@
-<!doctype html>
-<html lang="en" class="h-full">
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Ikjot Singh | Public Safety Portfolio — Intelligence & Risk Analyst Candidate</title>
-  <meta id="meta-desc" name="description" content="Ikjot Singh — Bachelor of Public Safety (Honours) candidate with CBRNE certifications, cybersecurity experience, and 16 years of martial arts discipline. Targeting intelligence support and public safety analyst roles with CBSA, CSIS, and federal agencies.">
-  <meta name="keywords" content="Ikjot Singh, Public Safety Portfolio, CBRNE, Intelligence Analyst, CBSA, CSIS, Algonquin College, Risk Assessment, Cybersecurity, Ottawa">
-  <meta name="author" content="Ikjot Singh">
-  <meta name="robots" content="index, follow">
-  <link rel="canonical" href="https://ikjotsingh.ca/">
-  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%230a0e17'/%3E%3Cpath d='M32 6 L54 14 V30 C54 44 44 54 32 58 C20 54 10 44 10 30 V14 Z' fill='none' stroke='%2300e5ff' stroke-width='4' stroke-linejoin='round'/%3E%3Ctext x='32' y='40' text-anchor='middle' font-family='Arial,Helvetica,sans-serif' font-size='18' font-weight='700' fill='%2300e5ff'%3EIS%3C/text%3E%3C/svg%3E">
-
-  <!-- Open Graph / Social -->
-  <meta id="meta-og-title" property="og:title" content="Ikjot Singh | Public Safety Portfolio">
-  <meta id="meta-og-desc" property="og:description" content="Resilient public safety professional with CBRNE certifications, systems thinking, and lived experience. Targeting intelligence and analyst roles.">
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://ikjotsingh.ca/">
-  <meta property="og:image" content="https://ikjotsingh.ca/images/ikjot-singh-profile.png">
-
-  <!-- Structured Data -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Person",
-    "name": "Ikjot Singh",
-    "url": "https://ikjotsingh.ca/",
-    "jobTitle": "Public Safety Candidate / Intelligence Support Aspirant",
-    "alumniOf": "Algonquin College",
-    "knowsAbout": ["Public Safety", "CBRNE", "Risk Assessment", "Cybersecurity", "Emergency Management"],
-    "address": {
-      "@type": "PostalAddress",
-      "addressLocality": "Ottawa",
-      "addressRegion": "Ontario",
-      "addressCountry": "CA"
-    }
-  }
-  </script>
-
-  <script>try{if(localStorage.getItem('lang')==='fr'){document.documentElement.classList.add('i18n-pending');setTimeout(function(){document.documentElement.classList.remove('i18n-pending')},3000);}}catch(e){}</script>
-  <script src="https://cdn.tailwindcss.com/3.4.17"></script>
-  <script src="https://cdn.jsdelivr.net/npm/lucide@0.263.0/dist/umd/lucide.min.js"></script>
-  <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500;600;700&family=Share+Tech+Mono&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
-  <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          colors: {
-            'bg-primary': '#0a0e17',
-            'surface': '#111927',
-            'text-main': '#c8d6e5',
-            'accent': '#00e5ff',
-            'accent-dim': '#00a8bb',
-          }
-        }
-      }
-    }
-  </script>
-  <style>
-    html, body { height: 100%; margin: 0; }
-    * { box-sizing: border-box; }
-    body { background: #0a0e17; color: #c8d6e5; font-family: 'Outfit', sans-serif; }
-    ::-webkit-scrollbar { width: 6px; }
-    ::-webkit-scrollbar-track { background: #0a0e17; }
-    ::-webkit-scrollbar-thumb { background: #00e5ff33; border-radius: 3px; }
-    .scan-overlay {
-      pointer-events: none;
-      position: fixed; inset: 0; z-index: 9999;
-      background: repeating-linear-gradient(
-        0deg, transparent, transparent 2px, rgba(0,229,255,0.015) 2px, rgba(0,229,255,0.015) 4px
-      );
-    }
-    .grid-bg {
-      background-image:
-        linear-gradient(rgba(0,229,255,0.04) 1px, transparent 1px),
-        linear-gradient(90deg, rgba(0,229,255,0.04) 1px, transparent 1px);
-      background-size: 40px 40px;
-    }
-    .glow-card {
-      background: #111927;
-      border: 1px solid rgba(0,229,255,0.15);
-      border-radius: 8px;
-      transition: border-color 0.3s, box-shadow 0.3s;
-    }
-    .glow-card:hover {
-      border-color: rgba(0,229,255,0.4);
-      box-shadow: 0 0 20px rgba(0,229,255,0.08);
-    }
-    .nav-link {
-      position: relative; padding: 8px 0; color: #c8d6e5;
-      font-family: 'Share Tech Mono', monospace; font-size: 13px;
-      text-transform: uppercase; letter-spacing: 2px;
-      transition: color 0.3s; cursor: pointer;
-    }
-    .nav-link:hover, .nav-link.active { color: #00e5ff; }
-    .nav-link::after {
-      content: ''; position: absolute; bottom: 0; left: 0;
-      width: 0; height: 1px; background: #00e5ff;
-      transition: width 0.3s;
-    }
-    .nav-link:hover::after, .nav-link.active::after { width: 100%; }
-    .section-tag {
-      font-family: 'Share Tech Mono', monospace;
-      font-size: 11px; letter-spacing: 3px; text-transform: uppercase;
-      color: #00e5ff; opacity: 0.7;
-    }
-    .section-title {
-      font-family: 'Rajdhani', sans-serif;
-      font-weight: 700; color: #fff;
-    }
-    .star-badge {
-      display: inline-block; padding: 2px 10px; border-radius: 3px;
-      font-family: 'Share Tech Mono', monospace; font-size: 11px;
-      letter-spacing: 2px; text-transform: uppercase;
-      background: rgba(0,229,255,0.1); color: #00e5ff;
-      border: 1px solid rgba(0,229,255,0.25);
-    }
-    .pulse-dot {
-      width: 8px; height: 8px; border-radius: 50%; background: #00e5ff;
-      box-shadow: 0 0 8px #00e5ff; animation: pulse-glow 2s infinite;
-    }
-    @keyframes pulse-glow { 0%,100% { opacity: 1; } 50% { opacity: 0.4; } }
-    .corner-accent { position: relative; }
-    .corner-accent::before, .corner-accent::after {
-      content: ''; position: absolute; width: 12px; height: 12px;
-      border-color: rgba(0,229,255,0.3); border-style: solid; border-width: 0;
-    }
-    .corner-accent::before { top: -1px; left: -1px; border-top-width: 1px; border-left-width: 1px; }
-    .corner-accent::after { bottom: -1px; right: -1px; border-bottom-width: 1px; border-right-width: 1px; }
-    .mobile-menu { transform: translateX(100%); transition: transform 0.3s; }
-    .mobile-menu.open { transform: translateX(0); }
-    .fade-section { opacity: 0; transform: translateY(30px); transition: opacity 0.6s, transform 0.6s; }
-    .fade-section.visible { opacity: 1; transform: translateY(0); }
-    img.lightbox-trigger { cursor: zoom-in; transition: opacity 0.2s; }
-    img.lightbox-trigger:hover { opacity: 0.85; }
-    .lightbox {
-      display: none;
-      position: fixed;
-      inset: 0;
-      background: rgba(0,0,0,0.92);
-      z-index: 10000;
-      align-items: center;
-      justify-content: center;
-      padding: 20px;
-    }
-    .lightbox.active { display: flex; }
-    .lightbox img {
-      max-width: 90vw;
-      max-height: 90vh;
-      object-fit: contain;
-      border-radius: 8px;
-      box-shadow: 0 0 40px rgba(0,229,255,0.2);
-    }
-    .lightbox-close {
-      position: absolute;
-      top: 20px;
-      right: 24px;
-      color: #00e5ff;
-      font-size: 32px;
-      cursor: pointer;
-      background: none;
-      border: none;
-      font-family: 'Share Tech Mono', monospace;
-    }
-    .reflect-card { transition: opacity 0.6s, transform 0.6s, border-color 0.3s, box-shadow 0.3s; }
-    .reflect-card.visible:hover { transform: translateY(-3px); }
-    .reflect-steps > div { opacity: 0; transform: translateY(12px); transition: opacity 0.5s ease, transform 0.5s ease; border-left: 2px solid rgba(0,229,255,0.25); padding-left: 12px; }
-    .reflect-card.visible .reflect-steps > div { opacity: 1; transform: translateY(0); }
-    .reflect-card.visible .reflect-steps > div:nth-child(1) { transition-delay: 0.15s; }
-    .reflect-card.visible .reflect-steps > div:nth-child(2) { transition-delay: 0.3s; }
-    .reflect-card.visible .reflect-steps > div:nth-child(3) { transition-delay: 0.45s; }
-    .reflect-card.visible .reflect-steps > div:nth-child(4) { transition-delay: 0.6s; }
-    @media (prefers-reduced-motion: reduce) { .reflect-steps > div, .reflect-card { transition: none; opacity: 1; transform: none; } }
-
-    /* i18n */
-    .i18n-pending body { visibility: hidden; }
-    .fr-only { display: none; }
-    html[lang="fr"] .fr-only { display: block; }
-    .lang-toggle { display: inline-flex; align-items: center; gap: 6px; font-family: 'Share Tech Mono', monospace; font-size: 12px; letter-spacing: 1px; }
-    .lang-btn { background: none; border: 1px solid transparent; border-radius: 3px; padding: 2px 6px; color: #c8d6e5; opacity: 0.6; cursor: pointer; transition: color 0.3s, opacity 0.3s, border-color 0.3s; font: inherit; letter-spacing: inherit; }
-    .lang-btn:hover { opacity: 1; color: #00e5ff; }
-    .lang-btn.active { color: #00e5ff; opacity: 1; border-color: rgba(0,229,255,0.4); background: rgba(0,229,255,0.08); }
-    .lang-btn:focus-visible, .lang-choice:focus-visible { outline: 2px solid #00e5ff; outline-offset: 2px; }
-    .lang-sep { color: rgba(0,229,255,0.35); }
-    .lang-modal { position: fixed; inset: 0; z-index: 10001; display: flex; align-items: center; justify-content: center; padding: 20px; background: rgba(5,8,14,0.82); backdrop-filter: blur(4px); opacity: 0; transition: opacity 0.2s ease; }
-    .lang-modal[hidden] { display: none; }
-    .lang-modal.show { opacity: 1; }
-    .lang-modal-card { background: #111927; border: 1px solid rgba(0,229,255,0.4); border-radius: 8px; box-shadow: 0 0 30px rgba(0,229,255,0.12); padding: 28px 32px; max-width: 380px; width: 100%; text-align: center; }
-    .lang-modal-title { font-family: 'Rajdhani', sans-serif; font-weight: 600; font-size: 18px; color: #fff; line-height: 1.4; }
-    .lang-choice { min-width: 120px; padding: 10px 16px; border-radius: 4px; border: 1px solid rgba(0,229,255,0.4); background: rgba(0,229,255,0.06); color: #00e5ff; font-family: 'Share Tech Mono', monospace; font-size: 13px; letter-spacing: 2px; text-transform: uppercase; cursor: pointer; transition: background 0.2s, color 0.2s; }
-    .lang-choice:hover { background: rgba(0,229,255,0.18); color: #fff; }
-    @media (prefers-reduced-motion: reduce) { .lang-modal { transition: none; } }
-    @media (min-width: 768px) and (max-width: 1099px) {
-      nav .desktop-nav { gap: 18px; margin-left: 16px; }
-      .desktop-nav .nav-link { font-size: 12px; letter-spacing: 1px; }
-      html[lang="fr"] .desktop-nav .nav-link { letter-spacing: 0.5px; }
-      .desktop-nav .lang-toggle { gap: 2px; }
-    }
-    @media (min-width: 768px) and (max-width: 899px) {
-      nav .desktop-nav { gap: 12px; margin-left: 12px; }
-    }
-  </style>
-</head>
-<body class="h-full">
-  <div id="app-wrapper" class="h-full w-full overflow-auto grid-bg relative">
-    <div class="scan-overlay"></div>
-
-    <!-- NAV -->
-    <nav class="fixed top-0 left-0 right-0 z-50 bg-bg-primary/90 backdrop-blur border-b border-cyan-900/20">
-      <div class="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
-        <div class="flex items-center gap-3">
-          <div class="pulse-dot"></div>
-          <span class="font-semibold text-white tracking-wider whitespace-nowrap" style="font-family:'Rajdhani',sans-serif; font-size:18px;">IKJOT SINGH</span>
-        </div>
-        <div class="desktop-nav hidden md:flex items-center gap-8">
-          <a class="nav-link active" onclick="scrollToSection('hero')" data-i18n="nav.home">Home</a>
-          <a class="nav-link" onclick="scrollToSection('academics')" data-i18n="nav.mission">Mission</a>
-          <a class="nav-link" onclick="scrollToSection('skills')" data-i18n="nav.skills">Skills</a>
-          <a class="nav-link" onclick="scrollToSection('community')" data-i18n="nav.community">Community</a>
-          <a class="nav-link" onclick="scrollToSection('certifications')" data-i18n="nav.certs">Certifications</a>
-          <a class="nav-link" onclick="scrollToSection('leadership')" data-i18n="nav.leadership">Leadership</a>
-          <div class="lang-toggle" role="group" aria-label="Language / Langue">
-            <button type="button" class="lang-btn" data-lang="en" lang="en" aria-label="English" onclick="setLang('en')">EN</button><span class="lang-sep" aria-hidden="true">|</span><button type="button" class="lang-btn" data-lang="fr" lang="fr" aria-label="Français" onclick="setLang('fr')">FR</button>
-          </div>
-        </div>
-        <button class="md:hidden text-accent" onclick="toggleMobileMenu()" aria-label="Open menu" data-i18n-attr="aria-label:aria.openMenu">
-          <i data-lucide="menu" style="width:24px;height:24px;"></i>
-        </button>
-      </div>
-    </nav>
-
-    <!-- MOBILE MENU -->
-    <div id="mobile-menu" class="mobile-menu fixed top-0 right-0 bottom-0 w-64 z-50 bg-bg-primary/95 backdrop-blur border-l border-cyan-900/20 p-8 flex flex-col gap-6 pt-20">
-      <button class="absolute top-5 right-5 text-accent" onclick="toggleMobileMenu()" aria-label="Close menu" data-i18n-attr="aria-label:aria.closeMenu">
-        <i data-lucide="x" style="width:24px;height:24px;"></i>
-      </button>
-      <a class="nav-link" onclick="scrollToSection('hero');toggleMobileMenu()" data-i18n="nav.home">Home</a>
-      <a class="nav-link" onclick="scrollToSection('academics');toggleMobileMenu()" data-i18n="nav.mission">Mission</a>
-      <a class="nav-link" onclick="scrollToSection('skills');toggleMobileMenu()" data-i18n="nav.skills">Skills</a>
-      <a class="nav-link" onclick="scrollToSection('community');toggleMobileMenu()" data-i18n="nav.community">Community</a>
-      <a class="nav-link" onclick="scrollToSection('certifications');toggleMobileMenu()" data-i18n="nav.certs">Certifications</a>
-      <a class="nav-link" onclick="scrollToSection('leadership');toggleMobileMenu()" data-i18n="nav.leadership">Leadership</a>
-      <div class="mt-2">
-          <div class="lang-toggle" role="group" aria-label="Language / Langue">
-            <button type="button" class="lang-btn" data-lang="en" lang="en" aria-label="English" onclick="setLang('en')">EN</button><span class="lang-sep" aria-hidden="true">|</span><button type="button" class="lang-btn" data-lang="fr" lang="fr" aria-label="Français" onclick="setLang('fr')">FR</button>
-          </div>
-      </div>
-    </div>
-
-    <!-- HERO -->
-    <section id="hero" class="fade-section min-h-screen flex items-center pt-20 px-6">
-      <div class="max-w-6xl mx-auto w-full grid md:grid-cols-5 gap-10 items-center">
-        <div class="md:col-span-3 space-y-6">
-          <div class="section-tag" data-i18n="hero.tag">// Ikjot Singh — Public Safety Portfolio</div>
-          <h1 class="section-title text-4xl md:text-5xl lg:text-6xl leading-tight" data-i18n="hero.title">Resilient. Analytical.<br>Committed to Service.</h1>
-          <div class="w-16 h-0.5 bg-accent/50"></div>
-          <p class="text-base md:text-lg leading-relaxed opacity-90 max-w-2xl" data-i18n="hero.bio">Bachelor of Public Safety (Honours) candidate combining CBRNE certifications, cybersecurity experience, and 16 years of martial arts discipline. After surviving an unprovoked hate crime and defending against a home intrusion, I redirected a computer science background toward proactive risk identification and public safety. Multilingual (English, Punjabi, Hindi, Urdu, Gujarati) with proven composure under pressure.</p>
-          <div class="glow-card corner-accent p-5 max-w-xl">
-            <div class="flex items-center gap-2 mb-3">
-              <i data-lucide="shield" style="width:16px;height:16px;color:#00e5ff;"></i>
-              <span class="text-xs tracking-widest uppercase" style="font-family:'Share Tech Mono',monospace;color:#00e5ff;" data-i18n="hero.edgeTag">Distinctive Edge</span>
-            </div>
-            <p class="text-sm leading-relaxed opacity-85" data-i18n="hero.edge">Lived resilience + systems thinking + multilingual communication. Targeting Intelligence Support / Public Safety Analyst roles with CBSA, CSIS, and federal agencies. Prepared for security clearance processes.</p>
-          </div>
-        </div>
-        <div class="md:col-span-2 flex justify-center">
-          <div class="relative">
-            <div class="w-52 h-52 md:w-64 md:h-64 rounded-full border-2 border-accent/20 overflow-hidden flex items-center justify-center" style="background: radial-gradient(circle, #111927 0%, #0a0e17 100%);">
-              <img src="images/ikjot-singh-profile.png" alt="Ikjot Singh Profile" data-i18n-attr="alt:alt.profile" class="lightbox-trigger" loading="lazy" style="width:100%; height:100%; object-fit:cover;">
-              <div style="font-family:'Share Tech Mono',monospace;font-size:11px;color:#00e5ff;letter-spacing:2px;position:absolute;bottom:8px;" data-i18n="hero.status">ACTIVE</div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ASPIRATIONS & MISSION -->
-    <section id="academics" class="fade-section py-24 px-6">
-      <div class="max-w-6xl mx-auto space-y-10">
-        <div>
-          <div class="section-tag" data-i18n="mission.tag">// Aspirations & Mission</div>
-          <h2 class="section-title text-3xl md:text-4xl mt-2" data-i18n="mission.title">Long-Term Trajectory</h2>
-        </div>
-        <div class="grid md:grid-cols-2 gap-6">
-          <div class="glow-card corner-accent p-6 space-y-4">
-            <div class="flex items-center gap-3">
-              <div class="w-10 h-10 rounded-lg bg-accent/10 flex items-center justify-center">
-                <i data-lucide="radar" style="width:20px;height:20px;color:#00e5ff;"></i>
-              </div>
-              <h3 class="text-white font-semibold text-lg" style="font-family:'Rajdhani',sans-serif;" data-i18n="mission.careerTitle">Career Aspirations</h3>
-            </div>
-            <p class="text-sm leading-relaxed opacity-85" data-i18n="mission.career">Targeting an <strong class="text-white">Intelligence Support or Public Safety Analyst role</strong> within the <strong class="text-white">Canada Border Services Agency (CBSA)</strong> or the <strong class="text-white">Canadian Security Intelligence Service (CSIS)</strong>. Focused on translating complex information into actionable intelligence to prevent harm and protect communities at critical infrastructure points.</p>
-          </div>
-          <div class="glow-card corner-accent p-6 space-y-4">
-            <div class="flex items-center gap-3">
-              <div class="w-10 h-10 rounded-lg bg-accent/10 flex items-center justify-center">
-                <i data-lucide="heart-handshake" style="width:20px;height:20px;color:#00e5ff;"></i>
-              </div>
-              <h3 class="text-white font-semibold text-lg" style="font-family:'Rajdhani',sans-serif;" data-i18n="mission.sevaTitle">Core Value: Seva (Service)</h3>
-            </div>
-            <p class="text-sm leading-relaxed opacity-85" data-i18n="mission.seva">Guided by the philosophy instilled by my grandmother: <em class="text-accent/80">"You find God in performing seva (selfless service) for others."</em><br><br><strong class="text-white">Public safety is a responsibility and a sacrifice, not a position of power.</strong> Every decision and action is grounded in this commitment to serve, not to dominate.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- SKILLS -->
-    <section id="skills" class="fade-section py-24 px-6">
-      <div class="max-w-6xl mx-auto space-y-10">
-        <div>
-          <div class="section-tag" data-i18n="skills.tag">// Applied Coursework</div>
-          <h2 class="section-title text-3xl md:text-4xl mt-2" data-i18n="skills.title">Transferable Skills</h2>
-        </div>
-        <div class="grid md:grid-cols-2 gap-6">
-          <div class="glow-card corner-accent p-6 space-y-5">
-            <div class="flex items-center justify-between">
-              <h3 class="text-white font-semibold text-lg" style="font-family:'Rajdhani',sans-serif;" data-i18n="skills.c1.title">Systems Thinking & Analytical Communication</h3>
-              <span class="star-badge">STAR</span>
-            </div>
-            <div class="space-y-4 text-sm leading-relaxed">
-              <div><span class="text-accent text-xs tracking-widest uppercase" style="font-family:'Share Tech Mono',monospace;" data-i18n="star.s">Situation</span><p class="opacity-85 mt-1" data-i18n="skills.c1.s">Preparing for complex Bachelor of Public Safety final exams requiring the synthesis of dense rules and technical regulations.</p></div>
-              <div><span class="text-accent text-xs tracking-widest uppercase" style="font-family:'Share Tech Mono',monospace;" data-i18n="star.t">Task</span><p class="opacity-85 mt-1" data-i18n="skills.c1.t">Review complex research topics and explain findings in a clear, interactive manner to improve retention and understanding.</p></div>
-              <div><span class="text-accent text-xs tracking-widest uppercase" style="font-family:'Share Tech Mono',monospace;" data-i18n="star.a">Action</span><p class="opacity-85 mt-1" data-i18n="skills.c1.a">Designed and programmed complex interactive learning flow charts and videos that mapped out how information flows, how systems are interconnected, and how weaknesses create cascading risks.</p></div>
-              <div><span class="text-accent text-xs tracking-widest uppercase" style="font-family:'Share Tech Mono',monospace;" data-i18n="star.r">Result</span><p class="opacity-85 mt-1" data-i18n="skills.c1.r">Mastered the concepts personally and distributed the interactive tools to my study group, directly resulting in peers achieving higher-than-expected grades.</p></div>
-            </div>
-          </div>
-          <div class="glow-card corner-accent p-6 space-y-5">
-            <div class="flex items-center justify-between">
-              <h3 class="text-white font-semibold text-lg" style="font-family:'Rajdhani',sans-serif;" data-i18n="skills.c2.title">Incident Analysis & Professional Briefing</h3>
-              <span class="star-badge">STAR</span>
-            </div>
-            <div class="space-y-4 text-sm leading-relaxed">
-              <div><span class="text-accent text-xs tracking-widest uppercase" style="font-family:'Share Tech Mono',monospace;" data-i18n="star.s">Situation</span><p class="opacity-85 mt-1" data-i18n="skills.c2.s">Assigned a critical incident analysis presentation in Police Foundations coursework.</p></div>
-              <div><span class="text-accent text-xs tracking-widest uppercase" style="font-family:'Share Tech Mono',monospace;" data-i18n="star.t">Task</span><p class="opacity-85 mt-1" data-i18n="skills.c2.t">Analyze a complex event, identify risk indicators, and deliver a clear, concise operational briefing.</p></div>
-              <div><span class="text-accent text-xs tracking-widest uppercase" style="font-family:'Share Tech Mono',monospace;" data-i18n="star.a">Action</span><p class="opacity-85 mt-1" data-i18n="skills.c2.a">Organized the information logically, prioritizing actionable intelligence over lengthy explanations, and delivered the findings with calm professionalism.</p></div>
-              <div><span class="text-accent text-xs tracking-widest uppercase" style="font-family:'Share Tech Mono',monospace;" data-i18n="star.r">Result</span><p class="opacity-85 mt-1" data-i18n="skills.c2.r">Received excellent feedback from instructors for professional clarity, precision, and the ability to communicate decisions based strictly on risk rather than assumptions.</p></div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- COMMUNITY -->
-    <section id="community" class="fade-section py-24 px-6">
-      <div class="max-w-6xl mx-auto space-y-10">
-        <div>
-          <div class="section-tag" data-i18n="comm.tag">// Community Impact</div>
-          <h2 class="section-title text-3xl md:text-4xl mt-2" data-i18n="comm.title">Volunteer Service</h2>
-        </div>
-        <div class="grid md:grid-cols-2 gap-6">
-          <div class="glow-card corner-accent p-6 space-y-4">
-            <div class="flex items-center gap-3">
-              <div class="w-10 h-10 rounded-lg bg-accent/10 flex items-center justify-center">
-                <i data-lucide="utensils" style="width:20px;height:20px;color:#00e5ff;"></i>
-              </div>
-              <h3 class="text-white font-semibold text-lg" style="font-family:'Rajdhani',sans-serif;">Caldwell Family Services</h3>
-            </div>
-            <p class="text-sm leading-relaxed opacity-85" data-i18n="comm.caldwell">Committed numerous volunteer hours assisting across departments, including extensive kitchen prep and meal coordination for local families.</p>
-            <div class="mt-4 glow-card corner-accent overflow-hidden">
-              <img src="images/caldwell-family-services.png" alt="Caldwell Family Services Volunteer Work" data-i18n-attr="alt:alt.caldwell" class="lightbox-trigger" loading="lazy" style="width:100%; height:180px; object-fit:cover;">
-              <div class="p-2 border-t border-accent/20">
-                <p class="text-xs opacity-70" style="font-family:'Share Tech Mono',monospace;" data-i18n="comm.caldwellCap">Community Service in Action</p>
-              </div>
-            </div>
-          </div>
-          <div class="glow-card corner-accent p-6 space-y-4">
-            <div class="flex items-center gap-3">
-              <div class="w-10 h-10 rounded-lg bg-accent/10 flex items-center justify-center">
-                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 256 256" fill="currentColor" style="width:20px;height:20px;color:#00e5ff;" aria-hidden="true"><path d="M235.32,180l-36.24-36.25L162.62,23.46A21.76,21.76,0,0,0,128,12.93,21.76,21.76,0,0,0,93.38,23.46L56.92,143.76,20.68,180a16,16,0,0,0,0,22.62l32.69,32.69a16,16,0,0,0,22.63,0L124.28,187a40.68,40.68,0,0,0,3.72-4.29,40.68,40.68,0,0,0,3.72,4.29L180,235.32a16,16,0,0,0,22.63,0l32.69-32.69A16,16,0,0,0,235.32,180ZM64.68,224,32,191.32l12.69-12.69,32.69,32.69ZM120,158.75a23.85,23.85,0,0,1-7,17L88.68,200,56,167.32l13.65-13.66a8,8,0,0,0,2-3.34l37-122.22A5.78,5.78,0,0,1,120,29.78Zm23,17a23.85,23.85,0,0,1-7-17v-129a5.78,5.78,0,0,1,11.31-1.68l37,122.22a8,8,0,0,0,2,3.34l14.49,14.49-33.4,32ZM191.32,224l-12.56-12.57,33.39-32L224,191.32Z"/></svg>
-              </div>
-              <h3 class="text-white font-semibold text-lg" style="font-family:'Rajdhani',sans-serif;">Gurudwara Seva</h3>
-            </div>
-            <p class="text-sm leading-relaxed opacity-85" data-i18n="comm.gurudwara">Regular, dedicated volunteer work focused on cleaning, maintenance, and dishwashing to support the community langar, directly applying my philosophy of selfless service.</p>
-            <div class="mt-4 glow-card corner-accent overflow-hidden">
-              <img src="images/gurudwara-seva.png" alt="Gurudwara Seva Community Work" data-i18n-attr="alt:alt.gurudwara" class="lightbox-trigger" loading="lazy" style="width:100%; height:180px; object-fit:cover;">
-              <div class="p-2 border-t border-accent/20">
-                <p class="text-xs opacity-70" style="font-family:'Share Tech Mono',monospace;" data-i18n="comm.gurudwaraCap">Selfless Service & Community Care</p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="glow-card corner-accent p-6 space-y-5 fade-section reflect-card">
-          <div class="flex items-center justify-between">
-            <h3 class="text-white font-semibold text-lg" style="font-family:'Rajdhani',sans-serif;" data-i18n="comm.refl.title">Community Service Reflection</h3>
-            <span class="star-badge">STAR</span>
-          </div>
-          <div class="grid md:grid-cols-2 gap-x-8 gap-y-5 text-sm leading-relaxed reflect-steps">
-            <div><span class="text-accent text-xs tracking-widest uppercase" style="font-family:'Share Tech Mono',monospace;" data-i18n="star.s">Situation</span><p class="opacity-85 mt-1" data-i18n="comm.refl.s">Diverse community members relying on local food banks and service centers.</p></div>
-            <div><span class="text-accent text-xs tracking-widest uppercase" style="font-family:'Share Tech Mono',monospace;" data-i18n="star.t">Task</span><p class="opacity-85 mt-1" data-i18n="comm.refl.t">Coordinate volunteers and manage frontline food service operations.</p></div>
-            <div><span class="text-accent text-xs tracking-widest uppercase" style="font-family:'Share Tech Mono',monospace;" data-i18n="star.a">Action</span><p class="opacity-85 mt-1" data-i18n="comm.refl.a">Provided clear instructions to volunteer teams, confirmed understanding, and adapted communication styles to build trust with individuals from diverse backgrounds.</p></div>
-            <div><span class="text-accent text-xs tracking-widest uppercase" style="font-family:'Share Tech Mono',monospace;" data-i18n="star.r">Result</span><p class="opacity-85 mt-1" data-i18n="comm.refl.r">Streamlined volunteer coordination, improved service efficiency, and built meaningful trust with community members from varied cultural backgrounds.</p></div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- CERTIFICATIONS -->
-    <section id="certifications" class="fade-section py-24 px-6">
-      <div class="max-w-6xl mx-auto space-y-10">
-        <div>
-          <div class="section-tag" data-i18n="certs.tag">// Technical Credentials</div>
-          <h2 class="section-title text-3xl md:text-4xl mt-2" data-i18n="certs.title">Certifications & Technical Achievement</h2>
-        </div>
-        <div class="grid md:grid-cols-2 gap-6">
-          <div class="space-y-6">
-            <div class="glow-card corner-accent p-6 space-y-5">
-              <div class="flex items-center justify-between">
-                <div class="flex items-center gap-3">
-                  <div class="w-10 h-10 rounded-lg bg-accent/10 flex items-center justify-center">
-                    <i data-lucide="shield-alert" style="width:20px;height:20px;color:#00e5ff;"></i>
-                  </div>
-                  <h3 class="text-white font-semibold text-lg" style="font-family:'Rajdhani',sans-serif;" data-i18n="certs.cbrne.title">CBRNE Expertise</h3>
-                </div>
-                <span class="star-badge">STAR</span>
-              </div>
-              <div class="space-y-4 text-sm leading-relaxed">
-                <div><span class="text-accent text-xs tracking-widest uppercase" style="font-family:'Share Tech Mono',monospace;" data-i18n="star.s">Situation</span><p class="opacity-85 mt-1" data-i18n="certs.cbrne.s">Public safety threats involving weapons of mass destruction (WMD) and CBRNE hazards require specialized technical knowledge and rapid threat assessment protocols.</p></div>
-                <div><span class="text-accent text-xs tracking-widest uppercase" style="font-family:'Share Tech Mono',monospace;" data-i18n="star.t">Task</span><p class="opacity-85 mt-1" data-i18n="certs.cbrne.t">Obtain advanced certifications in Chemical, Biological, Radiological, Nuclear, and Explosive threat assessment and emergency response.</p></div>
-                <div><span class="text-accent text-xs tracking-widest uppercase" style="font-family:'Share Tech Mono',monospace;" data-i18n="star.a">Action</span><p class="opacity-85 mt-1" data-i18n="certs.cbrne.a">Completed 18+ hours of intensive FEMA/TEEX and SPCHTC training, mastering hazard identification, decontamination protocols, and incident command integration.</p></div>
-                <div><span class="text-accent text-xs tracking-widest uppercase" style="font-family:'Share Tech Mono',monospace;" data-i18n="star.r">Result</span><p class="opacity-85 mt-1" data-i18n="certs.cbrne.r">Developed a reusable technical framework for rapid hazard identification and risk communication, now applicable to intelligence analysis and threat prevention.</p></div>
-              </div>
-              <div class="mt-4 p-3 bg-accent/5 border border-accent/20 rounded text-xs opacity-80" style="font-family:'Share Tech Mono',monospace;" data-i18n="certs.cbrne.cert">📋 Certificate: FEMA/TEEX CBRNE Certification (18+ hours)</div>
-            </div>
-            <div class="grid grid-cols-2 gap-4">
-              <div class="glow-card corner-accent overflow-hidden">
-                <img src="images/bioterrorism-certificate.png" alt="Bioterrorism Certificate" data-i18n-attr="alt:alt.bio" class="lightbox-trigger" loading="lazy" style="width:100%; height:180px; object-fit:cover;">
-                <div class="p-3 border-t border-accent/20"><p class="text-xs font-semibold text-white" style="font-family:'Rajdhani',sans-serif;" data-i18n="certs.cap.bio">Bioterrorism</p></div>
-              </div>
-              <div class="glow-card corner-accent overflow-hidden">
-                <img src="images/terrorism-awareness-certificate.png" alt="Terrorism Awareness Certificate" data-i18n-attr="alt:alt.terror" class="lightbox-trigger" loading="lazy" style="width:100%; height:180px; object-fit:cover;">
-                <div class="p-3 border-t border-accent/20"><p class="text-xs font-semibold text-white" style="font-family:'Rajdhani',sans-serif;" data-i18n="certs.cap.terror">Terrorism Awareness</p></div>
-              </div>
-              <div class="glow-card corner-accent overflow-hidden">
-                <img src="images/chemical-response-certificate.png" alt="Chemical Response Certificate" data-i18n-attr="alt:alt.chem" class="lightbox-trigger" loading="lazy" style="width:100%; height:180px; object-fit:cover;">
-                <div class="p-3 border-t border-accent/20"><p class="text-xs font-semibold text-white" style="font-family:'Rajdhani',sans-serif;" data-i18n="certs.cap.chem">Chemical Response</p></div>
-              </div>
-              <div class="glow-card corner-accent overflow-hidden">
-                <img src="images/radiological-events-certificate.png" alt="Radiological Events Certificate" data-i18n-attr="alt:alt.rad" class="lightbox-trigger" loading="lazy" style="width:100%; height:180px; object-fit:cover;">
-                <div class="p-3 border-t border-accent/20"><p class="text-xs font-semibold text-white" style="font-family:'Rajdhani',sans-serif;" data-i18n="certs.cap.rad">Radiological Events</p></div>
-              </div>
-            </div>
-          </div>
-          <div class="glow-card corner-accent p-6 space-y-5">
-            <div class="flex items-center justify-between">
-              <div class="flex items-center gap-3">
-                <div class="w-10 h-10 rounded-lg bg-accent/10 flex items-center justify-center">
-                  <i data-lucide="cpu" style="width:20px;height:20px;color:#00e5ff;"></i>
-                </div>
-                <h3 class="text-white font-semibold text-lg" style="font-family:'Rajdhani',sans-serif;" data-i18n="certs.cyber.title">Cybersecurity Architecture</h3>
-              </div>
-              <span class="star-badge">STAR</span>
-            </div>
-            <div class="space-y-4 text-sm leading-relaxed">
-              <div><span class="text-accent text-xs tracking-widest uppercase" style="font-family:'Share Tech Mono',monospace;" data-i18n="star.s">Situation</span><p class="opacity-85 mt-1" data-i18n="certs.cyber.s">The Minerva 2k12 National Symposium featured an elite ethical hacking competition requiring advanced systems thinking and vulnerability analysis.</p></div>
-              <div><span class="text-accent text-xs tracking-widest uppercase" style="font-family:'Share Tech Mono',monospace;" data-i18n="star.t">Task</span><p class="opacity-85 mt-1" data-i18n="certs.cyber.t">Compete against national teams to identify, document, and resolve critical cybersecurity vulnerabilities under time constraints.</p></div>
-              <div><span class="text-accent text-xs tracking-widest uppercase" style="font-family:'Share Tech Mono',monospace;" data-i18n="star.a">Action</span><p class="opacity-85 mt-1" data-i18n="certs.cyber.a">Applied systems thinking principles to conduct forensic analysis, mapped attack vectors, hardened network architecture, and documented remediation strategies.</p></div>
-              <div><span class="text-accent text-xs tracking-widest uppercase" style="font-family:'Share Tech Mono',monospace;" data-i18n="star.r">Result</span><p class="opacity-85 mt-1" data-i18n="certs.cyber.r">Secured <strong class="text-accent">1st Place Nationally</strong>, demonstrating mastery of threat analysis, system design, and proactive defense strategies applicable to intelligence and infrastructure protection.</p></div>
-            </div>
-            <div class="mt-4 p-3 bg-accent/5 border border-accent/20 rounded text-xs opacity-80" style="font-family:'Share Tech Mono',monospace;" data-i18n="certs.cyber.award">🏆 Award: Minerva 2k12 — 1st Place National Winner</div>
-            <div class="mt-4 glow-card corner-accent overflow-hidden">
-              <img src="images/cybersecurity-certificate.png" alt="Cybersecurity Excellence Certificate" data-i18n-attr="alt:alt.cyber" class="lightbox-trigger" loading="lazy" style="width:100%; height:280px; object-fit:cover;">
-              <div class="p-3 border-t border-accent/20">
-                <p class="text-xs opacity-70" style="font-family:'Share Tech Mono',monospace;" data-i18n="certs.cyber.cap">Cybersecurity Achievement Recognition</p>
-              </div>
-            </div>
-          </div>
-          <div class="space-y-6 md:col-span-2">
-            <div class="glow-card corner-accent p-6 space-y-5">
-              <div class="flex items-center justify-between gap-3">
-                <div class="flex items-center gap-3 min-w-0">
-                  <div class="w-10 h-10 rounded-lg bg-accent/10 flex items-center justify-center shrink-0">
-                    <!-- lucide clipboard-list (inline, lucide-static v1.61.0, ISC) -->
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="width:20px;height:20px;color:#00e5ff;"><rect width="8" height="4" x="8" y="2" rx="1" ry="1"/><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"/><path d="M12 11h4"/><path d="M12 16h4"/><path d="M8 11h.01"/><path d="M8 16h.01"/></svg>
-                  </div>
-                  <h3 class="text-white font-semibold text-lg leading-tight" style="font-family:'Rajdhani',sans-serif;" data-i18n="certs.em.title">Emergency Management and First Responder Training</h3>
-                </div>
-                <span class="star-badge shrink-0">STAR</span>
-              </div>
-              <div class="space-y-4 text-sm leading-relaxed">
-                <div><span class="text-accent text-xs tracking-widest uppercase" style="font-family:'Share Tech Mono',monospace;" data-i18n="star.s">Situation</span><p class="opacity-85 mt-1" data-i18n="certs.ims.s">In an emergency, police, fire, paramedics and other agencies have to work together, and that only works when everyone uses the same structure and terminology.</p></div>
-                <div><span class="text-accent text-xs tracking-widest uppercase" style="font-family:'Share Tech Mono',monospace;" data-i18n="star.t">Task</span><p class="opacity-85 mt-1" data-i18n="certs.ims.t">Learn Ontario’s Incident Management System (IMS) and how it organizes the response to an incident.</p></div>
-                <div><span class="text-accent text-xs tracking-widest uppercase" style="font-family:'Share Tech Mono',monospace;" data-i18n="star.a">Action</span><p class="opacity-85 mt-1" data-i18n="certs.ims.a">Completed the IMS 100 e-learning course through Emergency Management Ontario in October 2026, alongside the SEC1009 Incident Management course at Algonquin College. It covered IMS principles, the IMS functions (command, operations, planning, logistics, and finance/administration), and how an incident organization is set up. I also completed Victim Rights in Canada (Dec 2024) and Mental Health Self-Awareness for First Responders (Nov 2024) through the Professional Security Knowledge Network.</p></div>
-                <div><span class="text-accent text-xs tracking-widest uppercase" style="font-family:'Share Tech Mono',monospace;" data-i18n="star.r">Result</span><p class="opacity-85 mt-1" data-i18n="certs.ims.r">I can understand and work within a coordinated incident structure, support victims, and look after my own mental health on the job. This builds on my CBRNE training.</p></div>
-              </div>
-              <div class="mt-4 p-3 bg-accent/5 border border-accent/20 rounded text-xs opacity-80" style="font-family:'Share Tech Mono',monospace;" data-i18n="certs.ims.cap">Emergency Management Ontario · Certificate No. 399266-IMS 100-102026</div>
-            </div>
-            <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
-              <div class="glow-card corner-accent overflow-hidden">
-                <img src="images/ims100-certificate.png" alt="IMS 100 Certificate of Completion from Emergency Management Ontario" data-i18n-attr="alt:alt.ims" class="lightbox-trigger" loading="lazy" width="1779" height="1312" style="width:100%; height:180px; object-fit:cover; object-position:top; background:#fff;">
-                <div class="p-3 border-t border-accent/20"><p class="text-xs font-semibold text-white" style="font-family:'Rajdhani',sans-serif;" data-i18n="certs.ims.title">Incident Management (IMS 100)</p></div>
-              </div>
-              <div class="glow-card corner-accent overflow-hidden">
-                <img src="certificates/victim_rights_in_canada.png" alt="Victim Rights in Canada certificate from the Professional Security Knowledge Network" data-i18n-attr="alt:alt.victim" class="lightbox-trigger" loading="lazy" width="1650" height="1275" style="width:100%; height:180px; object-fit:cover; object-position:top; background:#fff;">
-                <div class="p-3 border-t border-accent/20"><p class="text-xs font-semibold text-white" style="font-family:'Rajdhani',sans-serif;" data-i18n="certs.cap.victim">Victim Rights in Canada, Dec 2024</p></div>
-              </div>
-              <div class="glow-card corner-accent overflow-hidden">
-                <img src="certificates/mental_health_first_responders.png" alt="Mental Health Self-Awareness for First Responders certificate from the Professional Security Knowledge Network" data-i18n-attr="alt:alt.mh" class="lightbox-trigger" loading="lazy" width="1650" height="1275" style="width:100%; height:180px; object-fit:cover; object-position:top; background:#fff;">
-                <div class="p-3 border-t border-accent/20"><p class="text-xs font-semibold text-white" style="font-family:'Rajdhani',sans-serif;" data-i18n="certs.cap.mh">Mental Health Self-Awareness for First Responders, Nov 2024</p></div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- LEADERSHIP -->
-    <section id="leadership" class="fade-section py-24 px-6">
-      <div class="max-w-6xl mx-auto space-y-10">
-        <div>
-          <div class="section-tag" data-i18n="lead.tag">// Leadership Profile</div>
-          <h2 class="section-title text-3xl md:text-4xl mt-2" data-i18n="lead.title">Leadership & Cultural Competency</h2>
-        </div>
-        <div class="grid md:grid-cols-2 gap-6">
-          <div class="glow-card corner-accent p-6 space-y-5">
-            <div class="flex items-center gap-3 mb-4">
-              <i data-lucide="quote" style="width:20px;height:20px;color:#00e5ff;"></i>
-              <h3 class="text-white font-semibold text-lg" style="font-family:'Rajdhani',sans-serif;" data-i18n="lead.refTitle">Professional Reference</h3>
-            </div>
-            <p class="text-base leading-relaxed italic opacity-90" style="border-left: 2px solid rgba(0,229,255,0.4); padding-left: 16px;" lang="en">"Outstanding reliability and leadership under pressure. Demonstrated exceptional ability to navigate complex cultural contexts with genuine respect and commitment to community service."</p>
-            <p class="fr-only text-xs opacity-60" style="font-family:'Share Tech Mono',monospace;letter-spacing:1px;margin-top:6px;" data-i18n="lead.quoteNote">(original quote in English)</p>
-            <div class="flex items-center gap-2 pt-2">
-              <div class="w-2 h-2 rounded-full bg-accent/60"></div>
-              <p class="text-sm font-semibold text-white" style="font-family:'Rajdhani',sans-serif;">Shayanne Keeper</p>
-            </div>
-            <p class="text-xs opacity-70" style="font-family:'Share Tech Mono',monospace;letter-spacing:1px;">Native Northwest</p>
-
-            <div class="mt-4">
-              <button onclick="openLightbox('reference_letter.png')" class="flex items-center gap-2 text-accent hover:text-white transition text-sm font-semibold">
-                <i data-lucide="file-text" style="width:16px;height:16px;"></i> <span data-i18n="lead.viewLetter">View Full Reference Letter</span>
-              </button>
-            </div>
-          </div>
-
-          <div class="glow-card corner-accent p-6 space-y-5">
-            <div class="flex items-center gap-3 mb-4">
-              <div class="w-10 h-10 rounded-lg bg-accent/10 flex items-center justify-center">
-                <i data-lucide="helping-hand" style="width:20px;height:20px;color:#00e5ff;"></i>
-              </div>
-              <h3 class="text-white font-semibold text-lg" style="font-family:'Rajdhani',sans-serif;" data-i18n="lead.advTitle">Indigenous Advocacy</h3>
-            </div>
-            <div class="space-y-3 text-sm leading-relaxed">
-              <p class="opacity-85" data-i18n="lead.mmiwg"><strong class="text-white">Missing & Murdered Indigenous Women & Girls (MMIWG)</strong><br>Active participant in Indigenous awareness initiatives and reconciliation efforts.</p>
-              <p class="opacity-85" data-i18n="lead.ecm"><strong class="text-white">Every Child Matters Day</strong><br>Supported cultural awareness campaigns honoring Indigenous children and families.</p>
-              <p class="opacity-85" data-i18n="lead.mentor"><strong class="text-white">Employee Mentorship</strong><br>Guided new team members through professional development with cultural sensitivity and actionable leadership.</p>
-            </div>
-            <div class="mt-4 glow-card corner-accent overflow-hidden">
-              <img src="images/indigenous-advocacy.png" alt="Indigenous Advocacy Community Work" data-i18n-attr="alt:alt.advocacy" class="lightbox-trigger" loading="lazy" style="width:100%; height:220px; object-fit:cover;">
-              <div class="p-3 border-t border-accent/20">
-                <p class="text-xs opacity-70" style="font-family:'Share Tech Mono',monospace;" data-i18n="lead.advCap">Community Advocacy & Cultural Leadership</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- LAND ACKNOWLEDGEMENT + FOOTER -->
-    <footer class="py-10 px-6 border-t border-cyan-900/20 text-center space-y-6">
-      <div class="max-w-2xl mx-auto">
-        <div class="section-tag mb-2" data-i18n="foot.landTag">Land Acknowledgement</div>
-        <p class="text-sm leading-relaxed opacity-80" data-i18n="foot.land">
-          This portfolio is situated on the unceded traditional territory of the Algonquin Anishinaabe people. I acknowledge the ongoing presence and contributions of First Nations, Inuit, and Métis peoples, and I am committed to learning and acting in ways that support reconciliation.
-        </p>
-      </div>
-      <div class="text-xs tracking-widest uppercase opacity-80" style="font-family:'Share Tech Mono',monospace;">
-        <span data-i18n="foot.contact">Contact:</span> <a href="mailto:sing0642@algonquinlive.com" class="text-accent hover:underline">sing0642@algonquinlive.com</a>
-      </div>
-      <div class="text-xs tracking-widest uppercase opacity-40" style="font-family:'Share Tech Mono',monospace;">
-        © 2026 Ikjot Singh — <span data-i18n="foot.portfolio">Public Safety Portfolio</span>
-      </div>
-    </footer>
-  </div>
-
-
-  <div id="lang-modal" class="lang-modal" role="dialog" aria-modal="true" aria-labelledby="lang-modal-title" hidden>
-    <div class="lang-modal-card corner-accent">
-      <div class="flex items-center justify-center gap-2 mb-3"><div class="pulse-dot"></div><span class="section-tag" style="opacity:0.9;">IKJOT SINGH</span></div>
-      <p id="lang-modal-title" class="lang-modal-title"><span lang="en" class="block">Choose your language</span><span class="sr-only"> / </span><span lang="fr" class="block" style="opacity:0.8;">Choisissez votre langue</span></p>
-      <div class="flex gap-3 justify-center mt-5">
-        <button type="button" class="lang-choice" lang="en" onclick="chooseLang('en')">English</button>
-        <button type="button" class="lang-choice" lang="fr" onclick="chooseLang('fr')">Français</button>
-      </div>
-    </div>
-  </div>
-
-  <!-- LIGHTBOX -->
-  <div id="lightbox" class="lightbox">
-    <button class="lightbox-close" onclick="closeLightbox()" aria-label="Close" data-i18n-attr="aria-label:aria.close">&times;</button>
-    <img id="lightbox-img" src="" alt="Enlarged view" data-i18n-attr="alt:alt.enlarged">
-  </div>
-
-  <script>
-    function scrollToSection(id) {
-      document.getElementById(id)?.scrollIntoView({ behavior: 'smooth' });
-      document.querySelectorAll('.nav-link').forEach(l => l.classList.remove('active'));
-      document.querySelectorAll('.nav-link').forEach(l => {
-        if (l.getAttribute('onclick')?.includes(id)) l.classList.add('active');
-      });
-    }
-    function toggleMobileMenu() {
-      document.getElementById('mobile-menu').classList.toggle('open');
-    }
-
-    const lightbox = document.getElementById('lightbox');
-    const lightboxImg = document.getElementById('lightbox-img');
-
-    function openLightbox(src) {
-      lightboxImg.src = src;
-      lightbox.classList.add('active');
-    }
-
-    document.querySelectorAll('.lightbox-trigger').forEach(img => {
-      img.addEventListener('click', () => openLightbox(img.src));
-    });
-
-    function closeLightbox() {
-      lightbox.classList.remove('active');
-    }
-
-    lightbox.addEventListener('click', (e) => {
-      if (e.target === lightbox) closeLightbox();
-    });
-
-    document.addEventListener('keydown', (e) => {
-      if (e.key === 'Escape') closeLightbox();
-    });
-
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
-    }, { threshold: 0.1 });
-    document.querySelectorAll('.fade-section').forEach(s => observer.observe(s));
-
-    /* i18n: English is the default HTML; French is applied at runtime */
-    const translations = {
-      en: {
-        "nav.home": "Home",
-        "nav.mission": "Mission",
-        "nav.skills": "Skills",
-        "nav.community": "Community",
-        "nav.certs": "Certifications",
-        "nav.leadership": "Leadership",
-        "hero.tag": "// Ikjot Singh — Public Safety Portfolio",
-        "hero.title": "Resilient. Analytical.<br>Committed to Service.",
-        "hero.bio": "Bachelor of Public Safety (Honours) candidate combining CBRNE certifications, cybersecurity experience, and 16 years of martial arts discipline. After surviving an unprovoked hate crime and defending against a home intrusion, I redirected a computer science background toward proactive risk identification and public safety. Multilingual (English, Punjabi, Hindi, Urdu, Gujarati) with proven composure under pressure.",
-        "hero.edgeTag": "Distinctive Edge",
-        "hero.edge": "Lived resilience + systems thinking + multilingual communication. Targeting Intelligence Support / Public Safety Analyst roles with CBSA, CSIS, and federal agencies. Prepared for security clearance processes.",
-        "hero.status": "ACTIVE",
-        "mission.tag": "// Aspirations & Mission",
-        "mission.title": "Long-Term Trajectory",
-        "mission.careerTitle": "Career Aspirations",
-        "mission.career": "Targeting an <strong class=\"text-white\">Intelligence Support or Public Safety Analyst role</strong> within the <strong class=\"text-white\">Canada Border Services Agency (CBSA)</strong> or the <strong class=\"text-white\">Canadian Security Intelligence Service (CSIS)</strong>. Focused on translating complex information into actionable intelligence to prevent harm and protect communities at critical infrastructure points.",
-        "mission.sevaTitle": "Core Value: Seva (Service)",
-        "mission.seva": "Guided by the philosophy instilled by my grandmother: <em class=\"text-accent/80\">\"You find God in performing seva (selfless service) for others.\"</em><br><br><strong class=\"text-white\">Public safety is a responsibility and a sacrifice, not a position of power.</strong> Every decision and action is grounded in this commitment to serve, not to dominate.",
-        "star.s": "Situation",
-        "star.t": "Task",
-        "star.a": "Action",
-        "star.r": "Result",
-        "skills.tag": "// Applied Coursework",
-        "skills.title": "Transferable Skills",
-        "skills.c1.title": "Systems Thinking & Analytical Communication",
-        "skills.c1.s": "Preparing for complex Bachelor of Public Safety final exams requiring the synthesis of dense rules and technical regulations.",
-        "skills.c1.t": "Review complex research topics and explain findings in a clear, interactive manner to improve retention and understanding.",
-        "skills.c1.a": "Designed and programmed complex interactive learning flow charts and videos that mapped out how information flows, how systems are interconnected, and how weaknesses create cascading risks.",
-        "skills.c1.r": "Mastered the concepts personally and distributed the interactive tools to my study group, directly resulting in peers achieving higher-than-expected grades.",
-        "skills.c2.title": "Incident Analysis & Professional Briefing",
-        "skills.c2.s": "Assigned a critical incident analysis presentation in Police Foundations coursework.",
-        "skills.c2.t": "Analyze a complex event, identify risk indicators, and deliver a clear, concise operational briefing.",
-        "skills.c2.a": "Organized the information logically, prioritizing actionable intelligence over lengthy explanations, and delivered the findings with calm professionalism.",
-        "skills.c2.r": "Received excellent feedback from instructors for professional clarity, precision, and the ability to communicate decisions based strictly on risk rather than assumptions.",
-        "comm.tag": "// Community Impact",
-        "comm.title": "Volunteer Service",
-        "comm.caldwell": "Committed numerous volunteer hours assisting across departments, including extensive kitchen prep and meal coordination for local families.",
-        "comm.caldwellCap": "Community Service in Action",
-        "comm.gurudwara": "Regular, dedicated volunteer work focused on cleaning, maintenance, and dishwashing to support the community langar, directly applying my philosophy of selfless service.",
-        "comm.gurudwaraCap": "Selfless Service & Community Care",
-        "comm.refl.title": "Community Service Reflection",
-        "comm.refl.s": "Diverse community members relying on local food banks and service centers.",
-        "comm.refl.t": "Coordinate volunteers and manage frontline food service operations.",
-        "comm.refl.a": "Provided clear instructions to volunteer teams, confirmed understanding, and adapted communication styles to build trust with individuals from diverse backgrounds.",
-        "comm.refl.r": "Streamlined volunteer coordination, improved service efficiency, and built meaningful trust with community members from varied cultural backgrounds.",
-        "certs.tag": "// Technical Credentials",
-        "certs.title": "Certifications & Technical Achievement",
-        "certs.cbrne.title": "CBRNE Expertise",
-        "certs.cbrne.s": "Public safety threats involving weapons of mass destruction (WMD) and CBRNE hazards require specialized technical knowledge and rapid threat assessment protocols.",
-        "certs.cbrne.t": "Obtain advanced certifications in Chemical, Biological, Radiological, Nuclear, and Explosive threat assessment and emergency response.",
-        "certs.cbrne.a": "Completed 18+ hours of intensive FEMA/TEEX and SPCHTC training, mastering hazard identification, decontamination protocols, and incident command integration.",
-        "certs.cbrne.r": "Developed a reusable technical framework for rapid hazard identification and risk communication, now applicable to intelligence analysis and threat prevention.",
-        "certs.cbrne.cert": "📋 Certificate: FEMA/TEEX CBRNE Certification (18+ hours)",
-        "certs.cap.bio": "Bioterrorism",
-        "certs.cap.terror": "Terrorism Awareness",
-        "certs.cap.chem": "Chemical Response",
-        "certs.cap.rad": "Radiological Events",
-        "certs.cap.victim": "Victim Rights in Canada, Dec 2024",
-        "certs.cap.mh": "Mental Health Self-Awareness for First Responders, Nov 2024",
-        "certs.cyber.title": "Cybersecurity Architecture",
-        "certs.cyber.s": "The Minerva 2k12 National Symposium featured an elite ethical hacking competition requiring advanced systems thinking and vulnerability analysis.",
-        "certs.cyber.t": "Compete against national teams to identify, document, and resolve critical cybersecurity vulnerabilities under time constraints.",
-        "certs.cyber.a": "Applied systems thinking principles to conduct forensic analysis, mapped attack vectors, hardened network architecture, and documented remediation strategies.",
-        "certs.cyber.r": "Secured <strong class=\"text-accent\">1st Place Nationally</strong>, demonstrating mastery of threat analysis, system design, and proactive defense strategies applicable to intelligence and infrastructure protection.",
-        "certs.cyber.award": "🏆 Award: Minerva 2k12 — 1st Place National Winner",
-        "certs.cyber.cap": "Cybersecurity Achievement Recognition",
-        "lead.tag": "// Leadership Profile",
-        "lead.title": "Leadership & Cultural Competency",
-        "lead.refTitle": "Professional Reference",
-        "lead.viewLetter": "View Full Reference Letter",
-        "lead.advTitle": "Indigenous Advocacy",
-        "lead.mmiwg": "<strong class=\"text-white\">Missing & Murdered Indigenous Women & Girls (MMIWG)</strong><br>Active participant in Indigenous awareness initiatives and reconciliation efforts.",
-        "lead.ecm": "<strong class=\"text-white\">Every Child Matters Day</strong><br>Supported cultural awareness campaigns honoring Indigenous children and families.",
-        "lead.mentor": "<strong class=\"text-white\">Employee Mentorship</strong><br>Guided new team members through professional development with cultural sensitivity and actionable leadership.",
-        "lead.advCap": "Community Advocacy & Cultural Leadership",
-        "foot.landTag": "Land Acknowledgement",
-        "foot.land": "This portfolio is situated on the unceded traditional territory of the Algonquin Anishinaabe people. I acknowledge the ongoing presence and contributions of First Nations, Inuit, and Métis peoples, and I am committed to learning and acting in ways that support reconciliation.",
-        "foot.contact": "Contact:",
-        "foot.portfolio": "Public Safety Portfolio",
-        "lead.quoteNote": "(original quote in English)",
-        "alt.profile": "Ikjot Singh Profile",
-        "alt.caldwell": "Caldwell Family Services Volunteer Work",
-        "alt.gurudwara": "Gurudwara Seva Community Work",
-        "alt.bio": "Bioterrorism Certificate",
-        "alt.terror": "Terrorism Awareness Certificate",
-        "alt.chem": "Chemical Response Certificate",
-        "alt.rad": "Radiological Events Certificate",
-        "alt.victim": "Victim Rights in Canada certificate from the Professional Security Knowledge Network",
-        "alt.mh": "Mental Health Self-Awareness for First Responders certificate from the Professional Security Knowledge Network",
-        "alt.cyber": "Cybersecurity Excellence Certificate",
-        "certs.em.title": "Emergency Management and First Responder Training",
-        "certs.ims.title": "Incident Management (IMS 100)",
-        "certs.ims.s": "In an emergency, police, fire, paramedics and other agencies have to work together, and that only works when everyone uses the same structure and terminology.",
-        "certs.ims.t": "Learn Ontario’s Incident Management System (IMS) and how it organizes the response to an incident.",
-        "certs.ims.a": "Completed the IMS 100 e-learning course through Emergency Management Ontario in October 2026, alongside the SEC1009 Incident Management course at Algonquin College. It covered IMS principles, the IMS functions (command, operations, planning, logistics, and finance/administration), and how an incident organization is set up. I also completed Victim Rights in Canada (Dec 2024) and Mental Health Self-Awareness for First Responders (Nov 2024) through the Professional Security Knowledge Network.",
-        "certs.ims.r": "I can understand and work within a coordinated incident structure, support victims, and look after my own mental health on the job. This builds on my CBRNE training.",
-        "certs.ims.cap": "Emergency Management Ontario · Certificate No. 399266-IMS 100-102026",
-        "alt.ims": "IMS 100 Certificate of Completion from Emergency Management Ontario",
-        "alt.advocacy": "Indigenous Advocacy Community Work",
-        "alt.enlarged": "Enlarged view",
-        "aria.openMenu": "Open menu",
-        "aria.closeMenu": "Close menu",
-        "aria.close": "Close",
-        "meta.title": "Ikjot Singh | Public Safety Portfolio — Intelligence & Risk Analyst Candidate",
-        "meta.desc": "Ikjot Singh — Bachelor of Public Safety (Honours) candidate with CBRNE certifications, cybersecurity experience, and 16 years of martial arts discipline. Targeting intelligence support and public safety analyst roles with CBSA, CSIS, and federal agencies.",
-        "meta.ogTitle": "Ikjot Singh | Public Safety Portfolio",
-        "meta.ogDesc": "Resilient public safety professional with CBRNE certifications, systems thinking, and lived experience. Targeting intelligence and analyst roles."
-},
-      fr: {
-        "nav.home": "Accueil",
-        "nav.mission": "Mission",
-        "nav.skills": "Compétences",
-        "nav.community": "Communauté",
-        "nav.certs": "Certifications",
-        "nav.leadership": "Leadership",
-        "hero.tag": "// Ikjot Singh — Portfolio en sécurité publique",
-        "hero.title": "Résilient. Analytique.<br>Dévoué au service.",
-        "hero.bio": "Candidat au baccalauréat en sécurité publique (spécialisé), je réunis des certifications CBRNE, une expérience en cybersécurité et 16 ans de discipline en arts martiaux. Après avoir survécu à un crime haineux non provoqué et m’être défendu lors d’une intrusion à domicile, j’ai réorienté ma formation en informatique vers l’identification proactive des risques et la sécurité publique. Multilingue (anglais, pendjabi, hindi, ourdou, gujarati), je fais preuve d’un sang-froid éprouvé sous pression.",
-        "hero.edgeTag": "Atout distinctif",
-        "hero.edge": "Résilience vécue + pensée systémique + communication multilingue. Je vise des postes de soutien au renseignement ou d’analyste en sécurité publique à l’ASFC, au SCRS et au sein d’organismes fédéraux. Prêt pour les processus d’habilitation de sécurité.",
-        "hero.status": "ACTIF",
-        "mission.tag": "// Aspirations et mission",
-        "mission.title": "Trajectoire à long terme",
-        "mission.careerTitle": "Aspirations professionnelles",
-        "mission.career": "Je vise un <strong class=\"text-white\">poste de soutien au renseignement ou d’analyste en sécurité publique</strong> au sein de l’<strong class=\"text-white\">Agence des services frontaliers du Canada (ASFC)</strong> ou du <strong class=\"text-white\">Service canadien du renseignement de sécurité (SCRS)</strong>. Je m’attache à transformer des informations complexes en renseignement exploitable afin de prévenir les préjudices et de protéger les collectivités aux points d’infrastructures essentielles.",
-        "mission.sevaTitle": "Valeur fondamentale\u00a0: seva (service)",
-        "mission.seva": "Je suis guidé par la philosophie que m’a transmise ma grand-mère\u00a0: <em class=\"text-accent/80\">«\u00a0C’est en faisant seva (service désintéressé) pour les autres que l’on trouve Dieu.\u00a0»</em><br><br><strong class=\"text-white\">La sécurité publique est une responsabilité et un sacrifice, et non une position de pouvoir.</strong> Chacune de mes décisions et de mes actions repose sur cet engagement à servir, et non à dominer.",
-        "star.s": "Situation",
-        "star.t": "Tâche",
-        "star.a": "Action",
-        "star.r": "Résultat",
-        "skills.tag": "// Formation appliquée",
-        "skills.title": "Compétences transférables",
-        "skills.c1.title": "Pensée systémique et communication analytique",
-        "skills.c1.s": "Préparation à des examens finaux complexes du baccalauréat en sécurité publique exigeant la synthèse de règles denses et de règlements techniques.",
-        "skills.c1.t": "Étudier des sujets de recherche complexes et en expliquer les constatations de façon claire et interactive afin d’améliorer la rétention et la compréhension.",
-        "skills.c1.a": "J’ai conçu et programmé des logigrammes et des vidéos d’apprentissage interactifs complexes illustrant la circulation de l’information, l’interconnexion des systèmes et la façon dont les failles engendrent des risques en cascade.",
-        "skills.c1.r": "J’ai moi-même maîtrisé les concepts et j’ai distribué les outils interactifs à mon groupe d’étude, ce qui a directement permis à mes pairs d’obtenir des notes supérieures aux attentes.",
-        "skills.c2.title": "Analyse d’incidents et breffage professionnel",
-        "skills.c2.s": "Présentation sur l’analyse d’un incident critique, confiée dans le cadre des cours de Techniques des services policiers.",
-        "skills.c2.t": "Analyser un événement complexe, cerner les indicateurs de risque et présenter un breffage opérationnel clair et concis.",
-        "skills.c2.a": "J’ai organisé l’information de façon logique, en privilégiant le renseignement exploitable plutôt que les longues explications, et j’ai présenté les constatations avec calme et professionnalisme.",
-        "skills.c2.r": "J’ai reçu d’excellents commentaires du corps enseignant pour ma clarté professionnelle, ma précision et ma capacité à communiquer des décisions fondées strictement sur le risque plutôt que sur des suppositions.",
-        "comm.tag": "// Impact communautaire",
-        "comm.title": "Bénévolat",
-        "comm.caldwell": "J’ai consacré de nombreuses heures de bénévolat à prêter main-forte dans divers services, notamment en effectuant de nombreuses tâches de préparation en cuisine et en coordonnant les repas pour des familles de la région.",
-        "comm.caldwellCap": "Le service communautaire en action",
-        "comm.gurudwara": "Bénévolat régulier et assidu axé sur le nettoyage, l’entretien et le lavage de la vaisselle pour soutenir le langar communautaire, en application directe de ma philosophie du service désintéressé.",
-        "comm.gurudwaraCap": "Service désintéressé et soutien à la communauté",
-        "comm.refl.title": "Réflexion sur le service communautaire",
-        "comm.refl.s": "Des membres de la collectivité de divers horizons qui comptent sur les banques alimentaires et les centres de services locaux.",
-        "comm.refl.t": "Coordonner les bénévoles et gérer les activités de service alimentaire de première ligne.",
-        "comm.refl.a": "J’ai donné des consignes claires aux équipes de bénévoles, vérifié leur compréhension et adapté mon style de communication pour établir un lien de confiance avec des personnes de divers horizons.",
-        "comm.refl.r": "J’ai simplifié la coordination des bénévoles, amélioré l’efficacité du service et bâti une véritable relation de confiance avec des membres de la collectivité issus de milieux culturels variés.",
-        "certs.tag": "// Titres de compétences techniques",
-        "certs.title": "Certifications et réalisations techniques",
-        "certs.cbrne.title": "Expertise CBRNE",
-        "certs.cbrne.s": "Les menaces à la sécurité publique mettant en cause des armes de destruction massive (ADM) et des dangers CBRNE exigent des connaissances techniques spécialisées et des protocoles d’évaluation rapide des menaces.",
-        "certs.cbrne.t": "Obtenir des certifications avancées en évaluation des menaces chimiques, biologiques, radiologiques, nucléaires et explosives, ainsi qu’en intervention d’urgence.",
-        "certs.cbrne.a": "J’ai suivi plus de 18 heures de formation intensive de la FEMA/TEEX et du SPCHTC, et j’ai acquis la maîtrise de l’identification des dangers, des protocoles de décontamination et de l’intégration au système de commandement en cas d’incident.",
-        "certs.cbrne.r": "J’ai élaboré un cadre technique réutilisable pour l’identification rapide des dangers et la communication des risques, désormais applicable à l’analyse du renseignement et à la prévention des menaces.",
-        "certs.cbrne.cert": "📋 Certificat\u00a0: certification CBRNE de la FEMA/TEEX (plus de 18 heures)",
-        "certs.cap.bio": "Bioterrorisme",
-        "certs.cap.terror": "Sensibilisation au terrorisme",
-        "certs.cap.chem": "Intervention en cas d’incident chimique",
-        "certs.cap.rad": "Événements radiologiques",
-        "certs.cap.victim": "Droits des victimes au Canada, déc. 2024",
-        "certs.cap.mh": "Conscience de soi en santé mentale pour les premiers intervenants, nov. 2024",
-        "certs.cyber.title": "Architecture de cybersécurité",
-        "certs.cyber.s": "Le symposium national Minerva 2k12 comprenait une compétition de piratage éthique de haut niveau exigeant une pensée systémique et une analyse des vulnérabilités avancées.",
-        "certs.cyber.t": "Affronter des équipes de tout le pays pour cerner, documenter et corriger des vulnérabilités critiques en cybersécurité dans des délais serrés.",
-        "certs.cyber.a": "J’ai appliqué les principes de la pensée systémique pour mener une analyse judiciaire, cartographié les vecteurs d’attaque, renforcé l’architecture réseau et documenté les stratégies de correction.",
-        "certs.cyber.r": "J’ai remporté la <strong class=\"text-accent\">1<sup>re</sup> place à l’échelle nationale</strong>, démontrant ainsi ma maîtrise de l’analyse des menaces, de la conception de systèmes et des stratégies de défense proactive applicables au renseignement et à la protection des infrastructures.",
-        "certs.cyber.award": "🏆 Prix\u00a0: Minerva 2k12 — Lauréat national, 1re place",
-        "certs.cyber.cap": "Reconnaissance d’une réalisation en cybersécurité",
-        "lead.tag": "// Profil de leadership",
-        "lead.title": "Leadership et compétence culturelle",
-        "lead.refTitle": "Référence professionnelle",
-        "lead.viewLetter": "Voir la lettre de référence complète",
-        "lead.advTitle": "Défense des droits des Autochtones",
-        "lead.mmiwg": "<strong class=\"text-white\">Femmes et filles autochtones disparues et assassinées (FFADA)</strong><br>Participation active à des initiatives de sensibilisation aux réalités autochtones et à des efforts de réconciliation.",
-        "lead.ecm": "<strong class=\"text-white\">Journée Chaque enfant compte</strong><br>Soutien à des campagnes de sensibilisation culturelle rendant hommage aux enfants et aux familles autochtones.",
-        "lead.mentor": "<strong class=\"text-white\">Mentorat du personnel</strong><br>Accompagnement des nouveaux membres de l’équipe dans leur perfectionnement professionnel, avec une sensibilité culturelle et un leadership axé sur l’action.",
-        "lead.advCap": "Défense des intérêts de la communauté et leadership culturel",
-        "foot.landTag": "Reconnaissance du territoire",
-        "foot.land": "Ce portfolio est situé sur le territoire traditionnel non cédé du peuple algonquin anishinaabe. Je reconnais la présence et les contributions continues des Premières Nations, des Inuits et des Métis, et je m’engage à apprendre et à agir de manière à soutenir la réconciliation.",
-        "foot.contact": "Coordonnées\u00a0:",
-        "foot.portfolio": "Portfolio en sécurité publique",
-        "lead.quoteNote": "(citation originale en anglais)",
-        "alt.profile": "Profil d’Ikjot Singh",
-        "alt.caldwell": "Bénévolat chez Caldwell Family Services",
-        "alt.gurudwara": "Gurudwara Seva\u00a0: travail communautaire",
-        "alt.bio": "Certificat en bioterrorisme",
-        "alt.terror": "Certificat de sensibilisation au terrorisme",
-        "alt.chem": "Certificat d’intervention en cas d’incident chimique",
-        "alt.rad": "Certificat sur les événements radiologiques",
-        "alt.victim": "Certificat Droits des victimes au Canada du Professional Security Knowledge Network",
-        "alt.mh": "Certificat Conscience de soi en santé mentale pour les premiers intervenants du Professional Security Knowledge Network",
-        "alt.cyber": "Certificat d’excellence en cybersécurité",
-        "certs.em.title": "Gestion des urgences et formation des premiers intervenants",
-        "certs.ims.title": "Gestion des incidents (IMS 100)",
-        "certs.ims.s": "Lors d’une urgence, la police, les pompiers, les paramédics et d’autres organismes doivent travailler ensemble, ce qui n’est possible que si tout le monde utilise la même structure et la même terminologie.",
-        "certs.ims.t": "Apprendre le Système de gestion des incidents (SGI) de l’Ontario et la façon dont il organise l’intervention lors d’un incident.",
-        "certs.ims.a": "J’ai suivi le cours en ligne IMS 100 offert par Gestion des situations d’urgence Ontario en octobre 2026, en parallèle avec le cours SEC1009 Incident Management au Collège Algonquin. Le cours portait sur les principes du SGI, ses fonctions (commandement, opérations, planification, logistique, et finances et administration) et la façon dont une organisation d’intervention est mise en place. J’ai aussi suivi Droits des victimes au Canada (déc. 2024) et Conscience de soi en santé mentale pour les premiers intervenants (nov. 2024), offerts par le Professional Security Knowledge Network.",
-        "certs.ims.r": "Je comprends le fonctionnement d’une structure d’intervention coordonnée et je suis en mesure d’y travailler, de soutenir les victimes et de prendre soin de ma santé mentale au travail. Cela complète ma formation CBRNE.",
-        "certs.ims.cap": "Gestion des situations d’urgence Ontario · Certificat n<sup>o</sup> 399266-IMS 100-102026",
-        "alt.ims": "Certificat de réussite IMS 100 de Gestion des situations d’urgence Ontario",
-        "alt.advocacy": "Travail communautaire de défense des droits des Autochtones",
-        "alt.enlarged": "Vue agrandie",
-        "aria.openMenu": "Ouvrir le menu",
-        "aria.closeMenu": "Fermer le menu",
-        "aria.close": "Fermer",
-        "meta.title": "Ikjot Singh | Portfolio en sécurité publique — Candidat à un poste d’analyste du renseignement et des risques",
-        "meta.desc": "Ikjot Singh — Candidat au baccalauréat en sécurité publique (spécialisé), titulaire de certifications CBRNE, avec une expérience en cybersécurité et 16 ans de discipline en arts martiaux. Vise des postes de soutien au renseignement et d’analyste en sécurité publique à l’ASFC, au SCRS et au sein d’organismes fédéraux.",
-        "meta.ogTitle": "Ikjot Singh | Portfolio en sécurité publique",
-        "meta.ogDesc": "Professionnel résilient de la sécurité publique, titulaire de certifications CBRNE, doté d’une pensée systémique et d’une expérience vécue. Vise des postes en renseignement et en analyse."
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#1b4336">
+<meta name="description" content="Ikjot Singh, Bachelor of Public Safety (Honours) candidate. Public safety portfolio for intelligence and analyst roles. Ottawa.">
+<title>Ikjot Singh | Public Safety Portfolio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,520;1,9..144,520&family=Outfit:wght@400;560;600&display=swap" rel="stylesheet">
+<style>
+:root { --paper:#f3eee6; --ink:#17211c; --forest:#1b4336; --muted:#5e584f; --line:#d9d0c2; --card:#faf7f2; }
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body { margin: 0; background: var(--paper); color: var(--ink); font-family: Outfit, ui-sans-serif, system-ui, sans-serif; }
+h1,h2,h3,.display { font-family: Fraunces, Georgia, serif; font-weight: 520; text-wrap: balance; }
+h1 { margin: .2em 0 0; font-size: clamp(3rem, 8vw, 5.5rem); line-height: .9; }
+h2 { margin: 0; font-size: 1.7rem; }
+h3 { margin: 0; font-size: 1.55rem; }
+p { margin: 0; line-height: 1.6; }
+img { max-width: 100%; display: block; }
+a { color: inherit; text-decoration: none; }
+button, a.btn { font: inherit; }
+button { cursor: pointer; }
+.wrap { width: min(72rem, calc(100% - 2.5rem)); margin-inline: auto; }
+.bar { height: 6px; background: var(--forest); }
+.kicker { font-family: Outfit, sans-serif; font-size: .75rem; font-weight: 560; letter-spacing: .14em; text-transform: uppercase; }
+.forest { color: var(--forest); }
+.muted { color: var(--muted); }
+.strong { font-weight: 600; }
+.bar-row, .tools, .langs, .desk, .actions { display: flex; align-items: center; }
+header { position: sticky; top: 0; z-index: 20; background: color-mix(in srgb, var(--paper) 94%, transparent); backdrop-filter: blur(8px); border-bottom: 1px solid var(--line); }
+.bar-row { justify-content: space-between; gap: 1rem; min-height: 4.25rem; }
+.brand { display: flex; align-items: center; gap: .75rem; }
+.mark { display: grid; place-items: center; width: 2.75rem; height: 2.75rem; border: 1px solid var(--forest); color: var(--forest); }
+.name { display: block; font-size: 1.15rem; }
+.desk { display: none; gap: 1.25rem; }
+.desk a[aria-current="true"] { color: var(--forest); }
+.desk a { color: var(--muted); font-size: .95rem; }
+.tools { gap: .5rem; }
+.langs { border: 1px solid var(--line); }
+.langs button, .menu, .btn, #lightbox button, .shot.line { min-height: 2.75rem; }
+.langs button { border: 0; background: var(--paper); color: var(--muted); padding: 0 .75rem; letter-spacing: .12em; }
+.langs button[aria-pressed="true"] { background: var(--forest); color: var(--paper); }
+.menu { display: grid; gap: 6px; place-content: center; width: 2.75rem; border: 1px solid var(--line); background: var(--paper); }
+.menu span { display: block; width: 1rem; height: 1px; background: var(--ink); }
+.mobile { display: grid; border-top: 1px solid var(--line); padding: .25rem 1.25rem 1rem; }
+.mobile a { min-height: 3rem; display: flex; align-items: center; border-bottom: 1px solid var(--line); }
+.hero { display: grid; gap: 2.5rem; padding: 3rem 0 2rem; }
+.hero-copy { order: 2; }
+.hero-photo { order: 1; }
+.tagline { margin-top: 1.1rem; max-width: 36rem; color: var(--forest); font-family: Fraunces, Georgia, serif; font-size: clamp(1.7rem, 3vw, 2.4rem); font-style: italic; line-height: 1.15; }
+.bio { margin-top: 1.25rem; max-width: 38rem; font-size: 1.05rem; }
+.actions { flex-direction: column; align-items: stretch; gap: .75rem; margin-top: 1.6rem; }
+.btn { display: inline-flex; align-items: center; justify-content: center; padding: 0 1.1rem; }
+.btn.solid { background: var(--forest); color: var(--paper); }
+.btn.line { border: 1px solid var(--line); background: var(--card); }
+.frame { position: relative; }
+.frame:before { content: ""; position: absolute; inset: 12px -12px -12px 12px; background: var(--forest); }
+.frame img { position: relative; width: 100%; object-fit: cover; }
+figcaption { margin-top: 1.4rem; color: var(--muted); font-size: .95rem; }
+figcaption span { display: block; color: var(--ink); }
+.stats { display: grid; grid-template-columns: 1fr 1fr; gap: 1px; background: var(--line); margin-bottom: 0; }
+.stats div { background: var(--paper); padding: 1.1rem .2rem; }
+.stats dt { font-family: Fraunces, Georgia, serif; font-size: 2.4rem; }
+.stats dd { margin: .2rem 0 0; color: var(--muted); }
+.basis { border-top: 1px solid var(--line); padding: 3rem 0; }
+.split, .thirds, .stack, .docs, .lead { display: grid; gap: 1.5rem; }
+.plain { list-style: none; margin: 1rem 0 0; padding: 0; }
+.plain li { border-top: 1px solid var(--line); padding: .8rem 0; }
+.edge { background: var(--forest); color: var(--paper); padding: 3.5rem 0; }
+.edge h2 { color: var(--paper); }
+.clearance { margin-top: 2rem; max-width: 46rem; border-top: 1px solid color-mix(in srgb, var(--paper) 35%, transparent); padding-top: 1.2rem; }
+.section { padding: 4rem 0; }
+section + section.section, #skills, #community, #certifications, #leadership { border-top: 1px solid var(--line); }
+.section-title { margin-top: .4rem; font-size: clamp(2.2rem, 5vw, 3.2rem); }
+.card { border: 1px solid var(--line); background: var(--card); padding: 1.5rem; }
+.card p + p, .card h3 + p, .card .note { margin-top: .8rem; }
+.note, .fine { color: var(--forest); font-size: .92rem; }
+.fine { color: var(--muted); }
+blockquote { margin: .8rem 0 0; font-family: Fraunces, Georgia, serif; font-size: clamp(1.5rem, 3vw, 2rem); font-style: italic; line-height: 1.25; }
+.star { list-style: none; display: grid; gap: 1rem; margin: 1.2rem 0 0; padding: 0; }
+.star li { border-top: 1px solid var(--line); padding-top: .7rem; }
+.star li.lead { border-top-color: var(--forest); }
+.story { padding: 0; }
+.story img, .docs img { width: 100%; aspect-ratio: 1; object-fit: cover; }
+.docs img { aspect-ratio: 16/9; object-fit: cover; object-position: top; border: 1px solid var(--line); }
+.pad { padding: 1.4rem; }
+.pad p { margin-top: .7rem; }
+.shot { display: block; width: 100%; border: 0; background: transparent; color: inherit; text-align: left; padding: 0; }
+.shot.letter { margin-top: 1.2rem; display: inline-flex; width: auto; min-height: 2.75rem; align-items: center; border: 1px solid var(--forest); color: var(--forest); padding: 0 1rem; }
+.docs { grid-template-columns: 1fr 1fr; }
+.docs .shot span, .story span { display: block; margin-top: .45rem; }
+.who { margin-top: 1.3rem; }
+.who span { display: block; }
+.later { margin-top: 1.5rem; }
+footer { background: var(--ink); color: var(--paper); padding: 3.2rem 0; }
+footer .kicker { color: var(--line); }
+footer p, footer a { margin-top: .7rem; }
+.foot-side { margin-top: 1.5rem; }
+.end-name { margin-top: 1.4rem; font-size: 1.3rem; }
+#lightbox { position: fixed; inset: 0; z-index: 50; background: color-mix(in srgb, var(--ink) 88%, transparent); display: flex; flex-direction: column; padding: .8rem; }
+#lightbox[hidden] { display: none; }
+#lightbox button { align-self: end; border: 0; background: var(--paper); color: var(--ink); padding: 0 1rem; }
+#lightbox img { margin-top: .8rem; min-height: 0; flex: 1; width: 100%; object-fit: contain; }
+::selection { background: var(--forest); color: var(--paper); }
+@media (min-width: 700px) {
+  .actions { flex-direction: row; }
+  .stats { grid-template-columns: repeat(4, 1fr); }
+  .split, .star, .lead { grid-template-columns: 1fr 1fr; }
+  .docs { grid-template-columns: repeat(4, 1fr); }
+  .foot { display: grid; grid-template-columns: 1.4fr .8fr; gap: 2rem; }
+  .foot-side { margin-top: 0; text-align: right; }
 }
-    };
-    const LANG_KEY = 'lang';
-    function applyLang(lang) {
-      if (!translations[lang]) lang = 'en';
-      const dict = translations[lang];
-      document.documentElement.lang = lang;
-      document.querySelectorAll('[data-i18n]').forEach(el => {
-        const v = dict[el.getAttribute('data-i18n')];
-        if (v !== undefined) el.innerHTML = v;
-      });
-      document.querySelectorAll('[data-i18n-attr]').forEach(el => {
-        el.getAttribute('data-i18n-attr').split(';').forEach(pair => {
-          const [attr, key] = pair.split(':').map(s => s.trim());
-          if (attr && dict[key] !== undefined) el.setAttribute(attr, dict[key]);
-        });
-      });
-      document.title = dict['meta.title'];
-      document.getElementById('meta-desc')?.setAttribute('content', dict['meta.desc']);
-      document.getElementById('meta-og-title')?.setAttribute('content', dict['meta.ogTitle']);
-      document.getElementById('meta-og-desc')?.setAttribute('content', dict['meta.ogDesc']);
-      document.querySelectorAll('.lang-btn').forEach(b => {
-        const on = b.dataset.lang === lang;
-        b.classList.toggle('active', on);
-        b.setAttribute('aria-pressed', on ? 'true' : 'false');
-      });
-    }
-    function setLang(lang) {
-      try { localStorage.setItem(LANG_KEY, lang); } catch (e) {}
-      applyLang(lang);
-    }
-    const langModal = document.getElementById('lang-modal');
-    let langModalReturnFocus = null;
-    function openLangModal() {
-      langModalReturnFocus = document.activeElement;
-      langModal.hidden = false;
-      requestAnimationFrame(() => langModal.classList.add('show'));
-      langModal.querySelector('.lang-choice')?.focus();
-    }
-    function chooseLang(lang) {
-      setLang(lang);
-      langModal.classList.remove('show');
-      setTimeout(() => { langModal.hidden = true; }, 200);
-      if (langModalReturnFocus && langModalReturnFocus !== document.body) langModalReturnFocus.focus?.();
-    }
-    document.addEventListener('keydown', (e) => {
-      if (langModal.hidden) return;
-      if (e.key === 'Escape') { e.preventDefault(); chooseLang('en'); return; }
-      if (e.key === 'Tab') {
-        const btns = [...langModal.querySelectorAll('.lang-choice')];
-        const i = btns.indexOf(document.activeElement);
-        e.preventDefault();
-        btns[(i + (e.shiftKey ? btns.length - 1 : 1)) % btns.length].focus();
-      }
+@media (min-width: 1024px) {
+  .desk { display: flex; }
+  .menu, .mobile { display: none; }
+  .hero { grid-template-columns: 1.3fr .9fr; align-items: end; padding-top: 4rem; }
+  .hero-copy { order: 1; }
+  .hero-photo { order: 2; }
+  .thirds { grid-template-columns: repeat(3, 1fr); }
+  .lead { grid-template-columns: .85fr 1.15fr; }
+}
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+</style>
+</head>
+<body>
+<div id="app"><div class="bar"></div>
+<header>
+  <div class="wrap bar-row">
+    <a class="brand" href="#home">
+      <span class="mark">IS</span>
+      <span><strong class="display name">Ikjot Singh</strong><span class="kicker muted">Public safety portfolio</span></span>
+    </a>
+    <nav class="desk" aria-label="Public safety portfolio"><a href="#home" data-nav="home" aria-current="true">Home</a><a href="#mission" data-nav="mission">Mission</a><a href="#skills" data-nav="skills">Skills</a><a href="#community" data-nav="community">Community</a><a href="#certifications" data-nav="certifications">Record</a><a href="#leadership" data-nav="leadership">Leadership</a></nav>
+    <div class="tools">
+      <div class="langs" role="group" aria-label="Language">
+        <button type="button" data-lang="en" aria-pressed="true">EN</button>
+        <button type="button" data-lang="fr" aria-pressed="false">FR</button>
+      </div>
+      <button type="button" class="menu" data-menu aria-expanded="false" aria-label="Open menu" data-open="Open menu" data-close-label="Close menu"><span></span><span></span></button>
+    </div>
+  </div>
+  <nav class="mobile" hidden aria-label="Public safety portfolio"><a href="#home" data-nav="home" aria-current="true">Home</a><a href="#mission" data-nav="mission">Mission</a><a href="#skills" data-nav="skills">Skills</a><a href="#community" data-nav="community">Community</a><a href="#certifications" data-nav="certifications">Record</a><a href="#leadership" data-nav="leadership">Leadership</a></nav>
+</header>
+<main id="main">
+  <section id="home">
+    <div class="wrap hero">
+      <div class="hero-copy">
+        <p class="kicker forest">Ottawa, Ontario</p>
+        <h1>Ikjot Singh</h1>
+        <p class="tagline">Resilient. Analytical. Committed to service.</p>
+        <p class="bio">Bachelor of Public Safety (Honours) candidate at Algonquin College, with completed diplomas in Computer Science, Computer Systems Technician, and Police Foundations (Dean&#39;s List). CBRNE awareness training, a 2012 national cybersecurity competition result, and 16 years of martial arts. After surviving an unprovoked hate crime and defending against a home intrusion, I redirected that technical background toward proactive risk identification and public safety. Multilingual (English, Punjabi, Hindi, Urdu, Gujarati), with proven composure under pressure.</p>
+        <div class="actions">
+          <a class="btn solid" href="#certifications">View the record</a>
+          <a class="btn line" href="mailto:sing0642@algonquinlive.com">sing0642@algonquinlive.com</a>
+        </div>
+      </div>
+      <figure class="hero-photo">
+        <div class="frame">
+          <img src="images/ikjot-singh-profile.png" alt="Ikjot Singh profile" width="1100" height="1374">
+        </div>
+        <figcaption><span>Bachelor of Public Safety (Honours)</span>Algonquin College</figcaption>
+      </figure>
+    </div>
+    <dl class="stats wrap"><div><dt>16</dt><dd>Years of martial arts</dd></div><div><dt>5</dt><dd>Languages</dd></div><div><dt>18+</dt><dd>Hours of CBRNE training</dd></div><div><dt>1st</dt><dd>Minerva 2k12, in 2012</dd></div></dl>
+  </section>
+  <section class="basis" aria-label="Education and work">
+    <div class="wrap split">
+      <div><h2>Education</h2><ul class="plain"><li><p class="strong">Bachelor of Public Safety (Honours)</p><p class="muted">In progress. Algonquin College.</p></li><li><p class="strong">Police Foundations</p><p class="muted">Completed. Dean&#39;s List. Algonquin College.</p></li><li><p class="strong">Computer Systems Technician</p><p class="muted">Completed diploma. Algonquin College.</p></li><li><p class="strong">Computer Science</p><p class="muted">Completed diploma. Guru Nanak Dev Polytechnic College.</p></li></ul></div>
+      <div><h2>Work</h2><ul class="plain"><li><p class="strong">Venvi Stonehaven, Kanata</p><p class="muted">Dining room server and prep cook in a senior living residence. Shift work, routine, and communication with residents.</p></li></ul></div>
+    </div>
+  </section>
+  <section class="edge" aria-label="Distinctive edge">
+    <div class="wrap">
+      <p class="kicker">Distinctive edge</p>
+      <div class="thirds"><article><p class="display small">01</p><h2>Lived resilience</h2><p>Composure under pressure, shaped by surviving an unprovoked hate crime and defending against a home intrusion.</p></article><article><p class="display small">02</p><h2>Systems thinking</h2><p>A computer science background turned toward how information moves, where systems fail, and how risk cascades.</p></article><article><p class="display small">03</p><h2>Multilingual communication</h2><p>English, Punjabi, Hindi, Urdu, and Gujarati, used to explain risk clearly across communities.</p></article></div>
+      <p class="clearance">Prepared for security clearance processes. Targeting intelligence support and public safety analyst roles with CBSA, CSIS, and federal agencies.</p>
+    </div>
+  </section>
+  <section id="mission">
+    <div class="wrap section">
+      <p class="kicker forest">01  Mission</p>
+      <h2 class="section-title">Long-term trajectory</h2>
+      <div class="split cards">
+        <article class="card"><h3>Career aspirations</h3><p>Targeting an Intelligence Support or Public Safety Analyst role within the Canada Border Services Agency (CBSA) or the Canadian Security Intelligence Service (CSIS). Focused on translating complex information into actionable intelligence to prevent harm and protect communities at critical infrastructure points.</p></article>
+        <article class="card">
+          <h3 class="kicker forest">Core value: seva</h3>
+          <blockquote>“You find God in performing seva (selfless service) for others.”</blockquote>
+          <p class="muted">Guided by the philosophy instilled by my grandmother. Public safety is a responsibility and a sacrifice, not a position of power. Every decision and action is grounded in this commitment to serve, not to dominate.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+  <section id="skills">
+    <div class="wrap section">
+      <p class="kicker forest">02  Coursework</p>
+      <h2 class="section-title">Transferable skills</h2>
+      <div class="stack"><article class="card"><h3>Systems thinking and analytical communication</h3><ol class="star"><li class=""><p class="kicker">Situation</p><p>Preparing for complex Bachelor of Public Safety final exams requiring the synthesis of dense rules and technical regulations.</p></li><li class=""><p class="kicker">Task</p><p>Review complex research topics and explain findings in a clear, interactive manner to improve retention and understanding.</p></li><li class=""><p class="kicker">Action</p><p>Designed and programmed complex interactive learning flow charts and videos that mapped out how information flows, how systems are interconnected, and how weaknesses create cascading risks.</p></li><li class="lead"><p class="kicker">Result</p><p>Mastered the concepts personally and distributed the interactive tools to my study group, directly resulting in peers achieving higher-than-expected grades.</p></li></ol></article><article class="card"><h3>Incident analysis and professional briefing</h3><ol class="star"><li class=""><p class="kicker">Situation</p><p>Assigned a critical incident analysis presentation in Police Foundations coursework.</p></li><li class=""><p class="kicker">Task</p><p>Analyze a complex event, identify risk indicators, and deliver a clear, concise operational briefing.</p></li><li class=""><p class="kicker">Action</p><p>Organized the information logically, prioritizing actionable intelligence over lengthy explanations, and delivered the findings with calm professionalism.</p></li><li class="lead"><p class="kicker">Result</p><p>Received excellent feedback from instructors for professional clarity, precision, and the ability to communicate decisions based strictly on risk rather than assumptions.</p></li></ol></article></div>
+    </div>
+  </section>
+  <section id="community">
+    <div class="wrap section">
+      <p class="kicker forest">03  Service</p>
+      <h2 class="section-title">Volunteer service</h2>
+      <div class="split">
+        <article class="card story">
+          <button type="button" class="shot" data-src="images/caldwell-family-services.png" data-alt="Caldwell Family Services volunteer work"><img src="images/caldwell-family-services.png" alt="Caldwell Family Services volunteer work" loading="lazy" decoding="async"></button>
+          <div class="pad"><h3>Caldwell Family Services</h3><p>Committed numerous volunteer hours assisting across departments, including extensive kitchen prep and meal coordination for local families.</p><p class="kicker muted">Community service in action</p></div>
+        </article>
+        <article class="card story">
+          <button type="button" class="shot" data-src="images/gurudwara-seva.png" data-alt="Gurudwara seva community work"><img src="images/gurudwara-seva.png" alt="Gurudwara seva community work" loading="lazy" decoding="async"></button>
+          <div class="pad"><h3>Gurudwara seva</h3><p>Regular, dedicated volunteer work focused on cleaning, maintenance, and dishwashing to support the community langar, directly applying a philosophy of selfless service.</p><p class="kicker muted">Selfless service and community care</p></div>
+        </article>
+      </div>
+      <article class="card later"><h3>Community service reflection</h3><ol class="star"><li class=""><p class="kicker">Situation</p><p>Diverse community members relying on local food banks and service centers.</p></li><li class=""><p class="kicker">Task</p><p>Coordinate volunteers and manage frontline food service operations.</p></li><li class=""><p class="kicker">Action</p><p>Provided clear instructions to volunteer teams, confirmed understanding, and adapted communication styles to build trust with individuals from diverse backgrounds.</p></li><li class="lead"><p class="kicker">Result</p><p>Streamlined volunteer coordination, improved service efficiency, and built meaningful trust with community members from varied cultural backgrounds.</p></li></ol></article>
+    </div>
+  </section>
+  <section id="certifications">
+    <div class="wrap section">
+      <p class="kicker forest">04  Record</p>
+      <h2 class="section-title">Certifications and technical work</h2>
+      <div class="stack"><article class="card"><h3>CBRNE awareness</h3><p class="note">FEMA/TEEX and SPCHTC, 18+ hours. Awareness level, not a technician certification.</p><ol class="star"><li class=""><p class="kicker">Situation</p><p>Public safety threats involving weapons of mass destruction (WMD) and CBRNE hazards require specialized technical knowledge and rapid threat assessment protocols.</p></li><li class=""><p class="kicker">Task</p><p>Complete awareness-level training in chemical, biological, radiological, nuclear, and explosive hazards and in emergency response.</p></li><li class=""><p class="kicker">Action</p><p>Completed 18+ hours of FEMA/TEEX and SPCHTC training on hazard identification, decontamination protocols, and how those tasks fit with incident command.</p></li><li class="lead"><p class="kicker">Result</p><p>I can name the hazard type and describe the risk in plain language. This is awareness-level training.</p></li></ol></article><article class="card"><h3>Cybersecurity competition</h3><p class="note">Minerva 2k12, 1st place nationally. A 2012 result.</p><ol class="star"><li class=""><p class="kicker">Situation</p><p>The Minerva 2k12 National Symposium featured an ethical hacking competition that required systems thinking and vulnerability analysis.</p></li><li class=""><p class="kicker">Task</p><p>Compete against national teams to identify, document, and resolve cybersecurity vulnerabilities under time constraints.</p></li><li class=""><p class="kicker">Action</p><p>Used systems thinking to review the system, map attack paths, harden the setup, and write down the fixes.</p></li><li class="lead"><p class="kicker">Result</p><p>Secured 1st place nationally. An early example of threat analysis and written remediation, not current professional practice.</p></li></ol></article><article class="card"><h3>Emergency management and first responder training</h3><p class="note">Emergency Management Ontario · Certificate No. 399266-IMS 100-102026. Awareness level.</p><ol class="star"><li class=""><p class="kicker">Situation</p><p>In an emergency, police, fire, paramedics and other agencies have to work together, and that only works when everyone uses the same structure and terminology.</p></li><li class=""><p class="kicker">Task</p><p>Learn Ontario’s Incident Management System (IMS) and how it organizes the response to an incident.</p></li><li class=""><p class="kicker">Action</p><p>Completed the IMS 100 e-learning course through Emergency Management Ontario in October 2026, alongside the SEC1009 Incident Management course at Algonquin College. It covered IMS principles, the IMS functions (command, operations, planning, logistics, and finance/administration), and how an incident organization is set up. I also completed Victim Rights in Canada (Dec 2024) and Mental Health Self-Awareness for First Responders (Nov 2024) through the Professional Security Knowledge Network.</p></li><li class="lead"><p class="kicker">Result</p><p>I can understand and work within a coordinated incident structure, support victims, and look after my own mental health on the job. This builds on my CBRNE training.</p></li></ol></article></div>
+      <div class="docs"><button type="button" class="shot" data-src="images/bioterrorism-certificate.png" data-alt="Bioterrorism certificate"><img src="images/bioterrorism-certificate.png" alt="Bioterrorism certificate" loading="lazy" decoding="async"><span>Bioterrorism</span></button><button type="button" class="shot" data-src="images/terrorism-awareness-certificate.png" data-alt="Terrorism awareness certificate"><img src="images/terrorism-awareness-certificate.png" alt="Terrorism awareness certificate" loading="lazy" decoding="async"><span>Terrorism awareness</span></button><button type="button" class="shot" data-src="images/chemical-response-certificate.png" data-alt="Chemical response certificate"><img src="images/chemical-response-certificate.png" alt="Chemical response certificate" loading="lazy" decoding="async"><span>Chemical response</span></button><button type="button" class="shot" data-src="images/radiological-events-certificate.png" data-alt="Radiological events certificate"><img src="images/radiological-events-certificate.png" alt="Radiological events certificate" loading="lazy" decoding="async"><span>Radiological events</span></button><button type="button" class="shot" data-src="images/cybersecurity-certificate.png" data-alt="Cybersecurity excellence certificate"><img src="images/cybersecurity-certificate.png" alt="Cybersecurity excellence certificate" loading="lazy" decoding="async"><span>Minerva 2k12</span></button><button type="button" class="shot" data-src="images/ims100-certificate.png" data-alt="IMS 100 certificate of completion from Emergency Management Ontario"><img src="images/ims100-certificate.png" alt="IMS 100 certificate of completion from Emergency Management Ontario" loading="lazy" decoding="async"><span>IMS 100</span></button><button type="button" class="shot" data-src="certificates/victim_rights_in_canada.png" data-alt="Victim Rights in Canada certificate from the Professional Security Knowledge Network"><img src="certificates/victim_rights_in_canada.png" alt="Victim Rights in Canada certificate from the Professional Security Knowledge Network" loading="lazy" decoding="async"><span>Victim rights, Dec 2024</span></button><button type="button" class="shot" data-src="certificates/mental_health_first_responders.png" data-alt="Mental Health Self-Awareness for First Responders certificate from the Professional Security Knowledge Network"><img src="certificates/mental_health_first_responders.png" alt="Mental Health Self-Awareness for First Responders certificate from the Professional Security Knowledge Network" loading="lazy" decoding="async"><span>Mental health, Nov 2024</span></button></div>
+    </div>
+  </section>
+  <section id="leadership">
+    <div class="wrap section">
+      <p class="kicker forest">05  Leadership</p>
+      <h2 class="section-title">Leadership and cultural competency</h2>
+      <div class="lead">
+        <article class="card">
+          <h3 class="kicker forest">Professional reference</h3>
+          <blockquote>“Outstanding reliability and leadership under pressure. Demonstrated exceptional ability to navigate complex cultural contexts with genuine respect and commitment to community service.”</blockquote>
+          <p class="fine muted">Original quote in English.</p>
+          <p class="who"><span class="strong">Shayanne Keeper</span><span class="muted">Native Northwest</span></p>
+          <button type="button" class="shot letter" data-src="reference_letter.png" data-alt="Reference letter from Shayanne Keeper">View the full reference letter</button>
+        </article>
+        <article class="card">
+          <h3>Indigenous advocacy</h3>
+          <ul class="plain"><li><p class="strong">Missing and Murdered Indigenous Women and Girls (MMIWG)</p><p class="muted">Active participant in Indigenous awareness initiatives and reconciliation efforts.</p></li><li><p class="strong">Every Child Matters Day</p><p class="muted">Supported cultural awareness campaigns honoring Indigenous children and families.</p></li><li><p class="strong">Employee mentorship</p><p class="muted">Guided new team members through professional development with cultural sensitivity and actionable leadership.</p></li></ul>
+          <button type="button" class="shot" data-src="images/indigenous-advocacy.png" data-alt="Indigenous advocacy community work"><img src="images/indigenous-advocacy.png" alt="Indigenous advocacy community work" loading="lazy" decoding="async"><span class="muted">Community advocacy and cultural leadership</span></button>
+        </article>
+      </div>
+    </div>
+  </section>
+</main>
+<footer>
+  <div class="wrap foot">
+    <div>
+      <p class="kicker">Land acknowledgement</p>
+      <p>This portfolio is situated on the unceded traditional territory of the Algonquin Anishinaabe people. I acknowledge the ongoing presence and contributions of First Nations, Inuit, and Métis peoples, and I am committed to learning and acting in ways that support reconciliation.</p>
+    </div>
+    <div class="foot-side">
+      <p class="kicker">Contact</p>
+      <a href="mailto:sing0642@algonquinlive.com">sing0642@algonquinlive.com</a>
+      <p class="display end-name">Ikjot Singh</p>
+      <p class="fine">© 2026 Ikjot Singh</p>
+    </div>
+  </div>
+</footer>
+<div id="lightbox" hidden>
+  <button type="button" data-close>Close</button>
+  <img alt="">
+</div></div>
+<script>
+const PAGES = {"en":"\u003cdiv class=\"bar\">\u003c/div>\n\u003cheader>\n  \u003cdiv class=\"wrap bar-row\">\n    \u003ca class=\"brand\" href=\"#home\">\n      \u003cspan class=\"mark\">IS\u003c/span>\n      \u003cspan>\u003cstrong class=\"display name\">Ikjot Singh\u003c/strong>\u003cspan class=\"kicker muted\">Public safety portfolio\u003c/span>\u003c/span>\n    \u003c/a>\n    \u003cnav class=\"desk\" aria-label=\"Public safety portfolio\">\u003ca href=\"#home\" data-nav=\"home\" aria-current=\"true\">Home\u003c/a>\u003ca href=\"#mission\" data-nav=\"mission\">Mission\u003c/a>\u003ca href=\"#skills\" data-nav=\"skills\">Skills\u003c/a>\u003ca href=\"#community\" data-nav=\"community\">Community\u003c/a>\u003ca href=\"#certifications\" data-nav=\"certifications\">Record\u003c/a>\u003ca href=\"#leadership\" data-nav=\"leadership\">Leadership\u003c/a>\u003c/nav>\n    \u003cdiv class=\"tools\">\n      \u003cdiv class=\"langs\" role=\"group\" aria-label=\"Language\">\n        \u003cbutton type=\"button\" data-lang=\"en\" aria-pressed=\"true\">EN\u003c/button>\n        \u003cbutton type=\"button\" data-lang=\"fr\" aria-pressed=\"false\">FR\u003c/button>\n      \u003c/div>\n      \u003cbutton type=\"button\" class=\"menu\" data-menu aria-expanded=\"false\" aria-label=\"Open menu\" data-open=\"Open menu\" data-close-label=\"Close menu\">\u003cspan>\u003c/span>\u003cspan>\u003c/span>\u003c/button>\n    \u003c/div>\n  \u003c/div>\n  \u003cnav class=\"mobile\" hidden aria-label=\"Public safety portfolio\">\u003ca href=\"#home\" data-nav=\"home\" aria-current=\"true\">Home\u003c/a>\u003ca href=\"#mission\" data-nav=\"mission\">Mission\u003c/a>\u003ca href=\"#skills\" data-nav=\"skills\">Skills\u003c/a>\u003ca href=\"#community\" data-nav=\"community\">Community\u003c/a>\u003ca href=\"#certifications\" data-nav=\"certifications\">Record\u003c/a>\u003ca href=\"#leadership\" data-nav=\"leadership\">Leadership\u003c/a>\u003c/nav>\n\u003c/header>\n\u003cmain id=\"main\">\n  \u003csection id=\"home\">\n    \u003cdiv class=\"wrap hero\">\n      \u003cdiv class=\"hero-copy\">\n        \u003cp class=\"kicker forest\">Ottawa, Ontario\u003c/p>\n        \u003ch1>Ikjot Singh\u003c/h1>\n        \u003cp class=\"tagline\">Resilient. Analytical. Committed to service.\u003c/p>\n        \u003cp class=\"bio\">Bachelor of Public Safety (Honours) candidate at Algonquin College, with completed diplomas in Computer Science, Computer Systems Technician, and Police Foundations (Dean&#39;s List). CBRNE awareness training, a 2012 national cybersecurity competition result, and 16 years of martial arts. After surviving an unprovoked hate crime and defending against a home intrusion, I redirected that technical background toward proactive risk identification and public safety. Multilingual (English, Punjabi, Hindi, Urdu, Gujarati), with proven composure under pressure.\u003c/p>\n        \u003cdiv class=\"actions\">\n          \u003ca class=\"btn solid\" href=\"#certifications\">View the record\u003c/a>\n          \u003ca class=\"btn line\" href=\"mailto:sing0642@algonquinlive.com\">sing0642@algonquinlive.com\u003c/a>\n        \u003c/div>\n      \u003c/div>\n      \u003cfigure class=\"hero-photo\">\n        \u003cdiv class=\"frame\">\n          \u003cimg src=\"images/ikjot-singh-profile.png\" alt=\"Ikjot Singh profile\" width=\"1100\" height=\"1374\">\n        \u003c/div>\n        \u003cfigcaption>\u003cspan>Bachelor of Public Safety (Honours)\u003c/span>Algonquin College\u003c/figcaption>\n      \u003c/figure>\n    \u003c/div>\n    \u003cdl class=\"stats wrap\">\u003cdiv>\u003cdt>16\u003c/dt>\u003cdd>Years of martial arts\u003c/dd>\u003c/div>\u003cdiv>\u003cdt>5\u003c/dt>\u003cdd>Languages\u003c/dd>\u003c/div>\u003cdiv>\u003cdt>18+\u003c/dt>\u003cdd>Hours of CBRNE training\u003c/dd>\u003c/div>\u003cdiv>\u003cdt>1st\u003c/dt>\u003cdd>Minerva 2k12, in 2012\u003c/dd>\u003c/div>\u003c/dl>\n  \u003c/section>\n  \u003csection class=\"basis\" aria-label=\"Education and work\">\n    \u003cdiv class=\"wrap split\">\n      \u003cdiv>\u003ch2>Education\u003c/h2>\u003cul class=\"plain\">\u003cli>\u003cp class=\"strong\">Bachelor of Public Safety (Honours)\u003c/p>\u003cp class=\"muted\">In progress. Algonquin College.\u003c/p>\u003c/li>\u003cli>\u003cp class=\"strong\">Police Foundations\u003c/p>\u003cp class=\"muted\">Completed. Dean&#39;s List. Algonquin College.\u003c/p>\u003c/li>\u003cli>\u003cp class=\"strong\">Computer Systems Technician\u003c/p>\u003cp class=\"muted\">Completed diploma. Algonquin College.\u003c/p>\u003c/li>\u003cli>\u003cp class=\"strong\">Computer Science\u003c/p>\u003cp class=\"muted\">Completed diploma. Guru Nanak Dev Polytechnic College.\u003c/p>\u003c/li>\u003c/ul>\u003c/div>\n      \u003cdiv>\u003ch2>Work\u003c/h2>\u003cul class=\"plain\">\u003cli>\u003cp class=\"strong\">Venvi Stonehaven, Kanata\u003c/p>\u003cp class=\"muted\">Dining room server and prep cook in a senior living residence. Shift work, routine, and communication with residents.\u003c/p>\u003c/li>\u003c/ul>\u003c/div>\n    \u003c/div>\n  \u003c/section>\n  \u003csection class=\"edge\" aria-label=\"Distinctive edge\">\n    \u003cdiv class=\"wrap\">\n      \u003cp class=\"kicker\">Distinctive edge\u003c/p>\n      \u003cdiv class=\"thirds\">\u003carticle>\u003cp class=\"display small\">01\u003c/p>\u003ch2>Lived resilience\u003c/h2>\u003cp>Composure under pressure, shaped by surviving an unprovoked hate crime and defending against a home intrusion.\u003c/p>\u003c/article>\u003carticle>\u003cp class=\"display small\">02\u003c/p>\u003ch2>Systems thinking\u003c/h2>\u003cp>A computer science background turned toward how information moves, where systems fail, and how risk cascades.\u003c/p>\u003c/article>\u003carticle>\u003cp class=\"display small\">03\u003c/p>\u003ch2>Multilingual communication\u003c/h2>\u003cp>English, Punjabi, Hindi, Urdu, and Gujarati, used to explain risk clearly across communities.\u003c/p>\u003c/article>\u003c/div>\n      \u003cp class=\"clearance\">Prepared for security clearance processes. Targeting intelligence support and public safety analyst roles with CBSA, CSIS, and federal agencies.\u003c/p>\n    \u003c/div>\n  \u003c/section>\n  \u003csection id=\"mission\">\n    \u003cdiv class=\"wrap section\">\n      \u003cp class=\"kicker forest\">01  Mission\u003c/p>\n      \u003ch2 class=\"section-title\">Long-term trajectory\u003c/h2>\n      \u003cdiv class=\"split cards\">\n        \u003carticle class=\"card\">\u003ch3>Career aspirations\u003c/h3>\u003cp>Targeting an Intelligence Support or Public Safety Analyst role within the Canada Border Services Agency (CBSA) or the Canadian Security Intelligence Service (CSIS). Focused on translating complex information into actionable intelligence to prevent harm and protect communities at critical infrastructure points.\u003c/p>\u003c/article>\n        \u003carticle class=\"card\">\n          \u003ch3 class=\"kicker forest\">Core value: seva\u003c/h3>\n          \u003cblockquote>“You find God in performing seva (selfless service) for others.”\u003c/blockquote>\n          \u003cp class=\"muted\">Guided by the philosophy instilled by my grandmother. Public safety is a responsibility and a sacrifice, not a position of power. Every decision and action is grounded in this commitment to serve, not to dominate.\u003c/p>\n        \u003c/article>\n      \u003c/div>\n    \u003c/div>\n  \u003c/section>\n  \u003csection id=\"skills\">\n    \u003cdiv class=\"wrap section\">\n      \u003cp class=\"kicker forest\">02  Coursework\u003c/p>\n      \u003ch2 class=\"section-title\">Transferable skills\u003c/h2>\n      \u003cdiv class=\"stack\">\u003carticle class=\"card\">\u003ch3>Systems thinking and analytical communication\u003c/h3>\u003col class=\"star\">\u003cli class=\"\">\u003cp class=\"kicker\">Situation\u003c/p>\u003cp>Preparing for complex Bachelor of Public Safety final exams requiring the synthesis of dense rules and technical regulations.\u003c/p>\u003c/li>\u003cli class=\"\">\u003cp class=\"kicker\">Task\u003c/p>\u003cp>Review complex research topics and explain findings in a clear, interactive manner to improve retention and understanding.\u003c/p>\u003c/li>\u003cli class=\"\">\u003cp class=\"kicker\">Action\u003c/p>\u003cp>Designed and programmed complex interactive learning flow charts and videos that mapped out how information flows, how systems are interconnected, and how weaknesses create cascading risks.\u003c/p>\u003c/li>\u003cli class=\"lead\">\u003cp class=\"kicker\">Result\u003c/p>\u003cp>Mastered the concepts personally and distributed the interactive tools to my study group, directly resulting in peers achieving higher-than-expected grades.\u003c/p>\u003c/li>\u003c/ol>\u003c/article>\u003carticle class=\"card\">\u003ch3>Incident analysis and professional briefing\u003c/h3>\u003col class=\"star\">\u003cli class=\"\">\u003cp class=\"kicker\">Situation\u003c/p>\u003cp>Assigned a critical incident analysis presentation in Police Foundations coursework.\u003c/p>\u003c/li>\u003cli class=\"\">\u003cp class=\"kicker\">Task\u003c/p>\u003cp>Analyze a complex event, identify risk indicators, and deliver a clear, concise operational briefing.\u003c/p>\u003c/li>\u003cli class=\"\">\u003cp class=\"kicker\">Action\u003c/p>\u003cp>Organized the information logically, prioritizing actionable intelligence over lengthy explanations, and delivered the findings with calm professionalism.\u003c/p>\u003c/li>\u003cli class=\"lead\">\u003cp class=\"kicker\">Result\u003c/p>\u003cp>Received excellent feedback from instructors for professional clarity, precision, and the ability to communicate decisions based strictly on risk rather than assumptions.\u003c/p>\u003c/li>\u003c/ol>\u003c/article>\u003c/div>\n    \u003c/div>\n  \u003c/section>\n  \u003csection id=\"community\">\n    \u003cdiv class=\"wrap section\">\n      \u003cp class=\"kicker forest\">03  Service\u003c/p>\n      \u003ch2 class=\"section-title\">Volunteer service\u003c/h2>\n      \u003cdiv class=\"split\">\n        \u003carticle class=\"card story\">\n          \u003cbutton type=\"button\" class=\"shot\" data-src=\"images/caldwell-family-services.png\" data-alt=\"Caldwell Family Services volunteer work\">\u003cimg src=\"images/caldwell-family-services.png\" alt=\"Caldwell Family Services volunteer work\" loading=\"lazy\" decoding=\"async\">\u003c/button>\n          \u003cdiv class=\"pad\">\u003ch3>Caldwell Family Services\u003c/h3>\u003cp>Committed numerous volunteer hours assisting across departments, including extensive kitchen prep and meal coordination for local families.\u003c/p>\u003cp class=\"kicker muted\">Community service in action\u003c/p>\u003c/div>\n        \u003c/article>\n        \u003carticle class=\"card story\">\n          \u003cbutton type=\"button\" class=\"shot\" data-src=\"images/gurudwara-seva.png\" data-alt=\"Gurudwara seva community work\">\u003cimg src=\"images/gurudwara-seva.png\" alt=\"Gurudwara seva community work\" loading=\"lazy\" decoding=\"async\">\u003c/button>\n          \u003cdiv class=\"pad\">\u003ch3>Gurudwara seva\u003c/h3>\u003cp>Regular, dedicated volunteer work focused on cleaning, maintenance, and dishwashing to support the community langar, directly applying a philosophy of selfless service.\u003c/p>\u003cp class=\"kicker muted\">Selfless service and community care\u003c/p>\u003c/div>\n        \u003c/article>\n      \u003c/div>\n      \u003carticle class=\"card later\">\u003ch3>Community service reflection\u003c/h3>\u003col class=\"star\">\u003cli class=\"\">\u003cp class=\"kicker\">Situation\u003c/p>\u003cp>Diverse community members relying on local food banks and service centers.\u003c/p>\u003c/li>\u003cli class=\"\">\u003cp class=\"kicker\">Task\u003c/p>\u003cp>Coordinate volunteers and manage frontline food service operations.\u003c/p>\u003c/li>\u003cli class=\"\">\u003cp class=\"kicker\">Action\u003c/p>\u003cp>Provided clear instructions to volunteer teams, confirmed understanding, and adapted communication styles to build trust with individuals from diverse backgrounds.\u003c/p>\u003c/li>\u003cli class=\"lead\">\u003cp class=\"kicker\">Result\u003c/p>\u003cp>Streamlined volunteer coordination, improved service efficiency, and built meaningful trust with community members from varied cultural backgrounds.\u003c/p>\u003c/li>\u003c/ol>\u003c/article>\n    \u003c/div>\n  \u003c/section>\n  \u003csection id=\"certifications\">\n    \u003cdiv class=\"wrap section\">\n      \u003cp class=\"kicker forest\">04  Record\u003c/p>\n      \u003ch2 class=\"section-title\">Certifications and technical work\u003c/h2>\n      \u003cdiv class=\"stack\">\u003carticle class=\"card\">\u003ch3>CBRNE awareness\u003c/h3>\u003cp class=\"note\">FEMA/TEEX and SPCHTC, 18+ hours. Awareness level, not a technician certification.\u003c/p>\u003col class=\"star\">\u003cli class=\"\">\u003cp class=\"kicker\">Situation\u003c/p>\u003cp>Public safety threats involving weapons of mass destruction (WMD) and CBRNE hazards require specialized technical knowledge and rapid threat assessment protocols.\u003c/p>\u003c/li>\u003cli class=\"\">\u003cp class=\"kicker\">Task\u003c/p>\u003cp>Complete awareness-level training in chemical, biological, radiological, nuclear, and explosive hazards and in emergency response.\u003c/p>\u003c/li>\u003cli class=\"\">\u003cp class=\"kicker\">Action\u003c/p>\u003cp>Completed 18+ hours of FEMA/TEEX and SPCHTC training on hazard identification, decontamination protocols, and how those tasks fit with incident command.\u003c/p>\u003c/li>\u003cli class=\"lead\">\u003cp class=\"kicker\">Result\u003c/p>\u003cp>I can name the hazard type and describe the risk in plain language. This is awareness-level training.\u003c/p>\u003c/li>\u003c/ol>\u003c/article>\u003carticle class=\"card\">\u003ch3>Cybersecurity competition\u003c/h3>\u003cp class=\"note\">Minerva 2k12, 1st place nationally. A 2012 result.\u003c/p>\u003col class=\"star\">\u003cli class=\"\">\u003cp class=\"kicker\">Situation\u003c/p>\u003cp>The Minerva 2k12 National Symposium featured an ethical hacking competition that required systems thinking and vulnerability analysis.\u003c/p>\u003c/li>\u003cli class=\"\">\u003cp class=\"kicker\">Task\u003c/p>\u003cp>Compete against national teams to identify, document, and resolve cybersecurity vulnerabilities under time constraints.\u003c/p>\u003c/li>\u003cli class=\"\">\u003cp class=\"kicker\">Action\u003c/p>\u003cp>Used systems thinking to review the system, map attack paths, harden the setup, and write down the fixes.\u003c/p>\u003c/li>\u003cli class=\"lead\">\u003cp class=\"kicker\">Result\u003c/p>\u003cp>Secured 1st place nationally. An early example of threat analysis and written remediation, not current professional practice.\u003c/p>\u003c/li>\u003c/ol>\u003c/article>\u003carticle class=\"card\">\u003ch3>Emergency management and first responder training\u003c/h3>\u003cp class=\"note\">Emergency Management Ontario · Certificate No. 399266-IMS 100-102026. Awareness level.\u003c/p>\u003col class=\"star\">\u003cli class=\"\">\u003cp class=\"kicker\">Situation\u003c/p>\u003cp>In an emergency, police, fire, paramedics and other agencies have to work together, and that only works when everyone uses the same structure and terminology.\u003c/p>\u003c/li>\u003cli class=\"\">\u003cp class=\"kicker\">Task\u003c/p>\u003cp>Learn Ontario’s Incident Management System (IMS) and how it organizes the response to an incident.\u003c/p>\u003c/li>\u003cli class=\"\">\u003cp class=\"kicker\">Action\u003c/p>\u003cp>Completed the IMS 100 e-learning course through Emergency Management Ontario in October 2026, alongside the SEC1009 Incident Management course at Algonquin College. It covered IMS principles, the IMS functions (command, operations, planning, logistics, and finance/administration), and how an incident organization is set up. I also completed Victim Rights in Canada (Dec 2024) and Mental Health Self-Awareness for First Responders (Nov 2024) through the Professional Security Knowledge Network.\u003c/p>\u003c/li>\u003cli class=\"lead\">\u003cp class=\"kicker\">Result\u003c/p>\u003cp>I can understand and work within a coordinated incident structure, support victims, and look after my own mental health on the job. This builds on my CBRNE training.\u003c/p>\u003c/li>\u003c/ol>\u003c/article>\u003c/div>\n      \u003cdiv class=\"docs\">\u003cbutton type=\"button\" class=\"shot\" data-src=\"images/bioterrorism-certificate.png\" data-alt=\"Bioterrorism certificate\">\u003cimg src=\"images/bioterrorism-certificate.png\" alt=\"Bioterrorism certificate\" loading=\"lazy\" decoding=\"async\">\u003cspan>Bioterrorism\u003c/span>\u003c/button>\u003cbutton type=\"button\" class=\"shot\" data-src=\"images/terrorism-awareness-certificate.png\" data-alt=\"Terrorism awareness certificate\">\u003cimg src=\"images/terrorism-awareness-certificate.png\" alt=\"Terrorism awareness certificate\" loading=\"lazy\" decoding=\"async\">\u003cspan>Terrorism awareness\u003c/span>\u003c/button>\u003cbutton type=\"button\" class=\"shot\" data-src=\"images/chemical-response-certificate.png\" data-alt=\"Chemical response certificate\">\u003cimg src=\"images/chemical-response-certificate.png\" alt=\"Chemical response certificate\" loading=\"lazy\" decoding=\"async\">\u003cspan>Chemical response\u003c/span>\u003c/button>\u003cbutton type=\"button\" class=\"shot\" data-src=\"images/radiological-events-certificate.png\" data-alt=\"Radiological events certificate\">\u003cimg src=\"images/radiological-events-certificate.png\" alt=\"Radiological events certificate\" loading=\"lazy\" decoding=\"async\">\u003cspan>Radiological events\u003c/span>\u003c/button>\u003cbutton type=\"button\" class=\"shot\" data-src=\"images/cybersecurity-certificate.png\" data-alt=\"Cybersecurity excellence certificate\">\u003cimg src=\"images/cybersecurity-certificate.png\" alt=\"Cybersecurity excellence certificate\" loading=\"lazy\" decoding=\"async\">\u003cspan>Minerva 2k12\u003c/span>\u003c/button>\u003cbutton type=\"button\" class=\"shot\" data-src=\"images/ims100-certificate.png\" data-alt=\"IMS 100 certificate of completion from Emergency Management Ontario\">\u003cimg src=\"images/ims100-certificate.png\" alt=\"IMS 100 certificate of completion from Emergency Management Ontario\" loading=\"lazy\" decoding=\"async\">\u003cspan>IMS 100\u003c/span>\u003c/button>\u003cbutton type=\"button\" class=\"shot\" data-src=\"certificates/victim_rights_in_canada.png\" data-alt=\"Victim Rights in Canada certificate from the Professional Security Knowledge Network\">\u003cimg src=\"certificates/victim_rights_in_canada.png\" alt=\"Victim Rights in Canada certificate from the Professional Security Knowledge Network\" loading=\"lazy\" decoding=\"async\">\u003cspan>Victim rights, Dec 2024\u003c/span>\u003c/button>\u003cbutton type=\"button\" class=\"shot\" data-src=\"certificates/mental_health_first_responders.png\" data-alt=\"Mental Health Self-Awareness for First Responders certificate from the Professional Security Knowledge Network\">\u003cimg src=\"certificates/mental_health_first_responders.png\" alt=\"Mental Health Self-Awareness for First Responders certificate from the Professional Security Knowledge Network\" loading=\"lazy\" decoding=\"async\">\u003cspan>Mental health, Nov 2024\u003c/span>\u003c/button>\u003c/div>\n    \u003c/div>\n  \u003c/section>\n  \u003csection id=\"leadership\">\n    \u003cdiv class=\"wrap section\">\n      \u003cp class=\"kicker forest\">05  Leadership\u003c/p>\n      \u003ch2 class=\"section-title\">Leadership and cultural competency\u003c/h2>\n      \u003cdiv class=\"lead\">\n        \u003carticle class=\"card\">\n          \u003ch3 class=\"kicker forest\">Professional reference\u003c/h3>\n          \u003cblockquote>“Outstanding reliability and leadership under pressure. Demonstrated exceptional ability to navigate complex cultural contexts with genuine respect and commitment to community service.”\u003c/blockquote>\n          \u003cp class=\"fine muted\">Original quote in English.\u003c/p>\n          \u003cp class=\"who\">\u003cspan class=\"strong\">Shayanne Keeper\u003c/span>\u003cspan class=\"muted\">Native Northwest\u003c/span>\u003c/p>\n          \u003cbutton type=\"button\" class=\"shot letter\" data-src=\"reference_letter.png\" data-alt=\"Reference letter from Shayanne Keeper\">View the full reference letter\u003c/button>\n        \u003c/article>\n        \u003carticle class=\"card\">\n          \u003ch3>Indigenous advocacy\u003c/h3>\n          \u003cul class=\"plain\">\u003cli>\u003cp class=\"strong\">Missing and Murdered Indigenous Women and Girls (MMIWG)\u003c/p>\u003cp class=\"muted\">Active participant in Indigenous awareness initiatives and reconciliation efforts.\u003c/p>\u003c/li>\u003cli>\u003cp class=\"strong\">Every Child Matters Day\u003c/p>\u003cp class=\"muted\">Supported cultural awareness campaigns honoring Indigenous children and families.\u003c/p>\u003c/li>\u003cli>\u003cp class=\"strong\">Employee mentorship\u003c/p>\u003cp class=\"muted\">Guided new team members through professional development with cultural sensitivity and actionable leadership.\u003c/p>\u003c/li>\u003c/ul>\n          \u003cbutton type=\"button\" class=\"shot\" data-src=\"images/indigenous-advocacy.png\" data-alt=\"Indigenous advocacy community work\">\u003cimg src=\"images/indigenous-advocacy.png\" alt=\"Indigenous advocacy community work\" loading=\"lazy\" decoding=\"async\">\u003cspan class=\"muted\">Community advocacy and cultural leadership\u003c/span>\u003c/button>\n        \u003c/article>\n      \u003c/div>\n    \u003c/div>\n  \u003c/section>\n\u003c/main>\n\u003cfooter>\n  \u003cdiv class=\"wrap foot\">\n    \u003cdiv>\n      \u003cp class=\"kicker\">Land acknowledgement\u003c/p>\n      \u003cp>This portfolio is situated on the unceded traditional territory of the Algonquin Anishinaabe people. I acknowledge the ongoing presence and contributions of First Nations, Inuit, and Métis peoples, and I am committed to learning and acting in ways that support reconciliation.\u003c/p>\n    \u003c/div>\n    \u003cdiv class=\"foot-side\">\n      \u003cp class=\"kicker\">Contact\u003c/p>\n      \u003ca href=\"mailto:sing0642@algonquinlive.com\">sing0642@algonquinlive.com\u003c/a>\n      \u003cp class=\"display end-name\">Ikjot Singh\u003c/p>\n      \u003cp class=\"fine\">© 2026 Ikjot Singh\u003c/p>\n    \u003c/div>\n  \u003c/div>\n\u003c/footer>\n\u003cdiv id=\"lightbox\" hidden>\n  \u003cbutton type=\"button\" data-close>Close\u003c/button>\n  \u003cimg alt=\"\">\n\u003c/div>","fr":"\u003cdiv class=\"bar\">\u003c/div>\n\u003cheader>\n  \u003cdiv class=\"wrap bar-row\">\n    \u003ca class=\"brand\" href=\"#home\">\n      \u003cspan class=\"mark\">IS\u003c/span>\n      \u003cspan>\u003cstrong class=\"display name\">Ikjot Singh\u003c/strong>\u003cspan class=\"kicker muted\">Portfolio en sécurité publique\u003c/span>\u003c/span>\n    \u003c/a>\n    \u003cnav class=\"desk\" aria-label=\"Portfolio en sécurité publique\">\u003ca href=\"#home\" data-nav=\"home\" aria-current=\"true\">Accueil\u003c/a>\u003ca href=\"#mission\" data-nav=\"mission\">Mission\u003c/a>\u003ca href=\"#skills\" data-nav=\"skills\">Compétences\u003c/a>\u003ca href=\"#community\" data-nav=\"community\">Communauté\u003c/a>\u003ca href=\"#certifications\" data-nav=\"certifications\">Dossier\u003c/a>\u003ca href=\"#leadership\" data-nav=\"leadership\">Leadership\u003c/a>\u003c/nav>\n    \u003cdiv class=\"tools\">\n      \u003cdiv class=\"langs\" role=\"group\" aria-label=\"Langue\">\n        \u003cbutton type=\"button\" data-lang=\"en\" aria-pressed=\"false\">EN\u003c/button>\n        \u003cbutton type=\"button\" data-lang=\"fr\" aria-pressed=\"true\">FR\u003c/button>\n      \u003c/div>\n      \u003cbutton type=\"button\" class=\"menu\" data-menu aria-expanded=\"false\" aria-label=\"Ouvrir le menu\" data-open=\"Ouvrir le menu\" data-close-label=\"Fermer le menu\">\u003cspan>\u003c/span>\u003cspan>\u003c/span>\u003c/button>\n    \u003c/div>\n  \u003c/div>\n  \u003cnav class=\"mobile\" hidden aria-label=\"Portfolio en sécurité publique\">\u003ca href=\"#home\" data-nav=\"home\" aria-current=\"true\">Accueil\u003c/a>\u003ca href=\"#mission\" data-nav=\"mission\">Mission\u003c/a>\u003ca href=\"#skills\" data-nav=\"skills\">Compétences\u003c/a>\u003ca href=\"#community\" data-nav=\"community\">Communauté\u003c/a>\u003ca href=\"#certifications\" data-nav=\"certifications\">Dossier\u003c/a>\u003ca href=\"#leadership\" data-nav=\"leadership\">Leadership\u003c/a>\u003c/nav>\n\u003c/header>\n\u003cmain id=\"main\">\n  \u003csection id=\"home\">\n    \u003cdiv class=\"wrap hero\">\n      \u003cdiv class=\"hero-copy\">\n        \u003cp class=\"kicker forest\">Ottawa (Ontario)\u003c/p>\n        \u003ch1>Ikjot Singh\u003c/h1>\n        \u003cp class=\"tagline\">Résilient. Analytique. Dévoué au service.\u003c/p>\n        \u003cp class=\"bio\">Candidat au baccalauréat en sécurité publique (spécialisé) au Collège Algonquin. Diplômes terminés en informatique, en techniques des systèmes informatiques et en techniques des services policiers (liste du doyen). Formation de sensibilisation CBRNE, résultat d’une compétition nationale de cybersécurité en 2012, et 16 ans d’arts martiaux. Après avoir survécu à un crime haineux non provoqué et m’être défendu lors d’une intrusion à domicile, j’ai réorienté cette formation technique vers l’identification proactive des risques et la sécurité publique. Multilingue (anglais, pendjabi, hindi, ourdou, gujarati), avec un sang-froid éprouvé sous pression.\u003c/p>\n        \u003cdiv class=\"actions\">\n          \u003ca class=\"btn solid\" href=\"#certifications\">Voir le dossier\u003c/a>\n          \u003ca class=\"btn line\" href=\"mailto:sing0642@algonquinlive.com\">sing0642@algonquinlive.com\u003c/a>\n        \u003c/div>\n      \u003c/div>\n      \u003cfigure class=\"hero-photo\">\n        \u003cdiv class=\"frame\">\n          \u003cimg src=\"images/ikjot-singh-profile.png\" alt=\"Profil d’Ikjot Singh\" width=\"1100\" height=\"1374\">\n        \u003c/div>\n        \u003cfigcaption>\u003cspan>Baccalauréat en sécurité publique (spécialisé)\u003c/span>Collège Algonquin\u003c/figcaption>\n      \u003c/figure>\n    \u003c/div>\n    \u003cdl class=\"stats wrap\">\u003cdiv>\u003cdt>16\u003c/dt>\u003cdd>Ans d’arts martiaux\u003c/dd>\u003c/div>\u003cdiv>\u003cdt>5\u003c/dt>\u003cdd>Langues\u003c/dd>\u003c/div>\u003cdiv>\u003cdt>18+\u003c/dt>\u003cdd>Heures de formation CBRNE\u003c/dd>\u003c/div>\u003cdiv>\u003cdt>1re\u003c/dt>\u003cdd>Minerva 2k12, en 2012\u003c/dd>\u003c/div>\u003c/dl>\n  \u003c/section>\n  \u003csection class=\"basis\" aria-label=\"Formation et travail\">\n    \u003cdiv class=\"wrap split\">\n      \u003cdiv>\u003ch2>Formation\u003c/h2>\u003cul class=\"plain\">\u003cli>\u003cp class=\"strong\">Baccalauréat en sécurité publique (spécialisé)\u003c/p>\u003cp class=\"muted\">En cours. Collège Algonquin.\u003c/p>\u003c/li>\u003cli>\u003cp class=\"strong\">Techniques des services policiers\u003c/p>\u003cp class=\"muted\">Terminé. Liste du doyen. Collège Algonquin.\u003c/p>\u003c/li>\u003cli>\u003cp class=\"strong\">Techniques des systèmes informatiques\u003c/p>\u003cp class=\"muted\">Diplôme terminé. Collège Algonquin.\u003c/p>\u003c/li>\u003cli>\u003cp class=\"strong\">Informatique\u003c/p>\u003cp class=\"muted\">Diplôme terminé. Guru Nanak Dev Polytechnic College.\u003c/p>\u003c/li>\u003c/ul>\u003c/div>\n      \u003cdiv>\u003ch2>Travail\u003c/h2>\u003cul class=\"plain\">\u003cli>\u003cp class=\"strong\">Venvi Stonehaven, Kanata\u003c/p>\u003cp class=\"muted\">Serveur en salle à manger et commis à la préparation dans une résidence pour aînés. Quarts de travail, routine et communication avec les résidents.\u003c/p>\u003c/li>\u003c/ul>\u003c/div>\n    \u003c/div>\n  \u003c/section>\n  \u003csection class=\"edge\" aria-label=\"Atout distinctif\">\n    \u003cdiv class=\"wrap\">\n      \u003cp class=\"kicker\">Atout distinctif\u003c/p>\n      \u003cdiv class=\"thirds\">\u003carticle>\u003cp class=\"display small\">01\u003c/p>\u003ch2>Résilience vécue\u003c/h2>\u003cp>Sang-froid sous pression, après avoir survécu à un crime haineux non provoqué et m’être défendu lors d’une intrusion à domicile.\u003c/p>\u003c/article>\u003carticle>\u003cp class=\"display small\">02\u003c/p>\u003ch2>Pensée systémique\u003c/h2>\u003cp>Une formation en informatique réorientée vers la circulation de l’information, les failles des systèmes et les risques en cascade.\u003c/p>\u003c/article>\u003carticle>\u003cp class=\"display small\">03\u003c/p>\u003ch2>Communication multilingue\u003c/h2>\u003cp>Anglais, pendjabi, hindi, ourdou et gujarati, pour expliquer le risque clairement d’une collectivité à l’autre.\u003c/p>\u003c/article>\u003c/div>\n      \u003cp class=\"clearance\">Prêt pour les processus d’habilitation de sécurité. Je vise des postes de soutien au renseignement ou d’analyste en sécurité publique à l’ASFC, au SCRS et au sein d’organismes fédéraux.\u003c/p>\n    \u003c/div>\n  \u003c/section>\n  \u003csection id=\"mission\">\n    \u003cdiv class=\"wrap section\">\n      \u003cp class=\"kicker forest\">01  Mission\u003c/p>\n      \u003ch2 class=\"section-title\">Trajectoire à long terme\u003c/h2>\n      \u003cdiv class=\"split cards\">\n        \u003carticle class=\"card\">\u003ch3>Aspirations professionnelles\u003c/h3>\u003cp>Je vise un poste de soutien au renseignement ou d’analyste en sécurité publique au sein de l’Agence des services frontaliers du Canada (ASFC) ou du Service canadien du renseignement de sécurité (SCRS). Je m’attache à transformer des informations complexes en renseignement exploitable afin de prévenir les préjudices et de protéger les collectivités aux points d’infrastructures essentielles.\u003c/p>\u003c/article>\n        \u003carticle class=\"card\">\n          \u003ch3 class=\"kicker forest\">Valeur fondamentale : seva\u003c/h3>\n          \u003cblockquote>“C’est en faisant seva (service désintéressé) pour les autres que l’on trouve Dieu.”\u003c/blockquote>\n          \u003cp class=\"muted\">Je suis guidé par la philosophie que m’a transmise ma grand-mère. La sécurité publique est une responsabilité et un sacrifice, et non une position de pouvoir. Chacune de mes décisions et de mes actions repose sur cet engagement à servir, et non à dominer.\u003c/p>\n        \u003c/article>\n      \u003c/div>\n    \u003c/div>\n  \u003c/section>\n  \u003csection id=\"skills\">\n    \u003cdiv class=\"wrap section\">\n      \u003cp class=\"kicker forest\">02  Formation\u003c/p>\n      \u003ch2 class=\"section-title\">Compétences transférables\u003c/h2>\n      \u003cdiv class=\"stack\">\u003carticle class=\"card\">\u003ch3>Pensée systémique et communication analytique\u003c/h3>\u003col class=\"star\">\u003cli class=\"\">\u003cp class=\"kicker\">Situation\u003c/p>\u003cp>Préparation à des examens finaux complexes du baccalauréat en sécurité publique exigeant la synthèse de règles denses et de règlements techniques.\u003c/p>\u003c/li>\u003cli class=\"\">\u003cp class=\"kicker\">Tâche\u003c/p>\u003cp>Étudier des sujets de recherche complexes et en expliquer les constatations de façon claire et interactive afin d’améliorer la rétention et la compréhension.\u003c/p>\u003c/li>\u003cli class=\"\">\u003cp class=\"kicker\">Action\u003c/p>\u003cp>J’ai conçu et programmé des logigrammes et des vidéos d’apprentissage interactifs complexes illustrant la circulation de l’information, l’interconnexion des systèmes et la façon dont les failles engendrent des risques en cascade.\u003c/p>\u003c/li>\u003cli class=\"lead\">\u003cp class=\"kicker\">Résultat\u003c/p>\u003cp>J’ai moi-même maîtrisé les concepts et j’ai distribué les outils interactifs à mon groupe d’étude, ce qui a directement permis à mes pairs d’obtenir des notes supérieures aux attentes.\u003c/p>\u003c/li>\u003c/ol>\u003c/article>\u003carticle class=\"card\">\u003ch3>Analyse d’incidents et breffage professionnel\u003c/h3>\u003col class=\"star\">\u003cli class=\"\">\u003cp class=\"kicker\">Situation\u003c/p>\u003cp>Présentation sur l’analyse d’un incident critique, confiée dans le cadre des cours de Techniques des services policiers.\u003c/p>\u003c/li>\u003cli class=\"\">\u003cp class=\"kicker\">Tâche\u003c/p>\u003cp>Analyser un événement complexe, cerner les indicateurs de risque et présenter un breffage opérationnel clair et concis.\u003c/p>\u003c/li>\u003cli class=\"\">\u003cp class=\"kicker\">Action\u003c/p>\u003cp>J’ai organisé l’information de façon logique, en privilégiant le renseignement exploitable plutôt que les longues explications, et j’ai présenté les constatations avec calme et professionnalisme.\u003c/p>\u003c/li>\u003cli class=\"lead\">\u003cp class=\"kicker\">Résultat\u003c/p>\u003cp>J’ai reçu d’excellents commentaires du corps enseignant pour ma clarté professionnelle, ma précision et ma capacité à communiquer des décisions fondées strictement sur le risque plutôt que sur des suppositions.\u003c/p>\u003c/li>\u003c/ol>\u003c/article>\u003c/div>\n    \u003c/div>\n  \u003c/section>\n  \u003csection id=\"community\">\n    \u003cdiv class=\"wrap section\">\n      \u003cp class=\"kicker forest\">03  Service\u003c/p>\n      \u003ch2 class=\"section-title\">Bénévolat\u003c/h2>\n      \u003cdiv class=\"split\">\n        \u003carticle class=\"card story\">\n          \u003cbutton type=\"button\" class=\"shot\" data-src=\"images/caldwell-family-services.png\" data-alt=\"Bénévolat chez Caldwell Family Services\">\u003cimg src=\"images/caldwell-family-services.png\" alt=\"Bénévolat chez Caldwell Family Services\" loading=\"lazy\" decoding=\"async\">\u003c/button>\n          \u003cdiv class=\"pad\">\u003ch3>Caldwell Family Services\u003c/h3>\u003cp>J’ai consacré de nombreuses heures de bénévolat à prêter main-forte dans divers services, notamment en effectuant de nombreuses tâches de préparation en cuisine et en coordonnant les repas pour des familles de la région.\u003c/p>\u003cp class=\"kicker muted\">Le service communautaire en action\u003c/p>\u003c/div>\n        \u003c/article>\n        \u003carticle class=\"card story\">\n          \u003cbutton type=\"button\" class=\"shot\" data-src=\"images/gurudwara-seva.png\" data-alt=\"Gurudwara seva : travail communautaire\">\u003cimg src=\"images/gurudwara-seva.png\" alt=\"Gurudwara seva : travail communautaire\" loading=\"lazy\" decoding=\"async\">\u003c/button>\n          \u003cdiv class=\"pad\">\u003ch3>Seva au gurdwara\u003c/h3>\u003cp>Bénévolat régulier et assidu axé sur le nettoyage, l’entretien et le lavage de la vaisselle pour soutenir le langar communautaire, en application directe de ma philosophie du service désintéressé.\u003c/p>\u003cp class=\"kicker muted\">Service désintéressé et soutien à la communauté\u003c/p>\u003c/div>\n        \u003c/article>\n      \u003c/div>\n      \u003carticle class=\"card later\">\u003ch3>Réflexion sur le service communautaire\u003c/h3>\u003col class=\"star\">\u003cli class=\"\">\u003cp class=\"kicker\">Situation\u003c/p>\u003cp>Des membres de la collectivité de divers horizons qui comptent sur les banques alimentaires et les centres de services locaux.\u003c/p>\u003c/li>\u003cli class=\"\">\u003cp class=\"kicker\">Tâche\u003c/p>\u003cp>Coordonner les bénévoles et gérer les activités de service alimentaire de première ligne.\u003c/p>\u003c/li>\u003cli class=\"\">\u003cp class=\"kicker\">Action\u003c/p>\u003cp>J’ai donné des consignes claires aux équipes de bénévoles, vérifié leur compréhension et adapté mon style de communication pour établir un lien de confiance avec des personnes de divers horizons.\u003c/p>\u003c/li>\u003cli class=\"lead\">\u003cp class=\"kicker\">Résultat\u003c/p>\u003cp>J’ai simplifié la coordination des bénévoles, amélioré l’efficacité du service et bâti une véritable relation de confiance avec des membres de la collectivité issus de milieux culturels variés.\u003c/p>\u003c/li>\u003c/ol>\u003c/article>\n    \u003c/div>\n  \u003c/section>\n  \u003csection id=\"certifications\">\n    \u003cdiv class=\"wrap section\">\n      \u003cp class=\"kicker forest\">04  Dossier\u003c/p>\n      \u003ch2 class=\"section-title\">Certifications et réalisations techniques\u003c/h2>\n      \u003cdiv class=\"stack\">\u003carticle class=\"card\">\u003ch3>Sensibilisation CBRNE\u003c/h3>\u003cp class=\"note\">FEMA/TEEX et SPCHTC, plus de 18 heures. Niveau sensibilisation, pas une certification de technicien.\u003c/p>\u003col class=\"star\">\u003cli class=\"\">\u003cp class=\"kicker\">Situation\u003c/p>\u003cp>Les menaces à la sécurité publique mettant en cause des armes de destruction massive (ADM) et des dangers CBRNE exigent des connaissances techniques spécialisées et des protocoles d’évaluation rapide des menaces.\u003c/p>\u003c/li>\u003cli class=\"\">\u003cp class=\"kicker\">Tâche\u003c/p>\u003cp>Suivre une formation de niveau sensibilisation sur les dangers chimiques, biologiques, radiologiques, nucléaires et explosifs, ainsi que sur l’intervention d’urgence.\u003c/p>\u003c/li>\u003cli class=\"\">\u003cp class=\"kicker\">Action\u003c/p>\u003cp>J’ai suivi plus de 18 heures de formation FEMA/TEEX et SPCHTC sur l’identification des dangers, les protocoles de décontamination et la façon dont ces tâches s’inscrivent dans le commandement d’incident.\u003c/p>\u003c/li>\u003cli class=\"lead\">\u003cp class=\"kicker\">Résultat\u003c/p>\u003cp>Je peux nommer le type de danger et décrire le risque en langage clair. Il s’agit d’une formation de niveau sensibilisation.\u003c/p>\u003c/li>\u003c/ol>\u003c/article>\u003carticle class=\"card\">\u003ch3>Compétition de cybersécurité\u003c/h3>\u003cp class=\"note\">Minerva 2k12, 1re place à l’échelle nationale. Résultat de 2012.\u003c/p>\u003col class=\"star\">\u003cli class=\"\">\u003cp class=\"kicker\">Situation\u003c/p>\u003cp>Le symposium national Minerva 2k12 comprenait une compétition de piratage éthique qui exigeait une pensée systémique et une analyse des vulnérabilités.\u003c/p>\u003c/li>\u003cli class=\"\">\u003cp class=\"kicker\">Tâche\u003c/p>\u003cp>Affronter des équipes de tout le pays pour cerner, documenter et corriger des vulnérabilités en cybersécurité dans des délais serrés.\u003c/p>\u003c/li>\u003cli class=\"\">\u003cp class=\"kicker\">Action\u003c/p>\u003cp>J’ai utilisé la pensée systémique pour examiner le système, cartographier les chemins d’attaque, renforcer l’installation et noter les correctifs.\u003c/p>\u003c/li>\u003cli class=\"lead\">\u003cp class=\"kicker\">Résultat\u003c/p>\u003cp>J’ai obtenu la 1re place à l’échelle nationale. Un exemple précoce d’analyse des menaces et de correctifs écrits, et non une pratique professionnelle actuelle.\u003c/p>\u003c/li>\u003c/ol>\u003c/article>\u003carticle class=\"card\">\u003ch3>Gestion des urgences et formation des premiers intervenants\u003c/h3>\u003cp class=\"note\">Gestion des situations d’urgence Ontario · Certificat no 399266-IMS 100-102026. Niveau sensibilisation.\u003c/p>\u003col class=\"star\">\u003cli class=\"\">\u003cp class=\"kicker\">Situation\u003c/p>\u003cp>Lors d’une urgence, la police, les pompiers, les paramédics et d’autres organismes doivent travailler ensemble, ce qui n’est possible que si tout le monde utilise la même structure et la même terminologie.\u003c/p>\u003c/li>\u003cli class=\"\">\u003cp class=\"kicker\">Tâche\u003c/p>\u003cp>Apprendre le Système de gestion des incidents (SGI) de l’Ontario et la façon dont il organise l’intervention lors d’un incident.\u003c/p>\u003c/li>\u003cli class=\"\">\u003cp class=\"kicker\">Action\u003c/p>\u003cp>J’ai suivi le cours en ligne IMS 100 offert par Gestion des situations d’urgence Ontario en octobre 2026, en parallèle avec le cours SEC1009 Incident Management au Collège Algonquin. Le cours portait sur les principes du SGI, ses fonctions (commandement, opérations, planification, logistique, et finances et administration) et la façon dont une organisation d’intervention est mise en place. J’ai aussi suivi Droits des victimes au Canada (déc. 2024) et Conscience de soi en santé mentale pour les premiers intervenants (nov. 2024), offerts par le Professional Security Knowledge Network.\u003c/p>\u003c/li>\u003cli class=\"lead\">\u003cp class=\"kicker\">Résultat\u003c/p>\u003cp>Je comprends le fonctionnement d’une structure d’intervention coordonnée et je suis en mesure d’y travailler, de soutenir les victimes et de prendre soin de ma santé mentale au travail. Cela complète ma formation CBRNE.\u003c/p>\u003c/li>\u003c/ol>\u003c/article>\u003c/div>\n      \u003cdiv class=\"docs\">\u003cbutton type=\"button\" class=\"shot\" data-src=\"images/bioterrorism-certificate.png\" data-alt=\"Certificat en bioterrorisme\">\u003cimg src=\"images/bioterrorism-certificate.png\" alt=\"Certificat en bioterrorisme\" loading=\"lazy\" decoding=\"async\">\u003cspan>Bioterrorisme\u003c/span>\u003c/button>\u003cbutton type=\"button\" class=\"shot\" data-src=\"images/terrorism-awareness-certificate.png\" data-alt=\"Certificat de sensibilisation au terrorisme\">\u003cimg src=\"images/terrorism-awareness-certificate.png\" alt=\"Certificat de sensibilisation au terrorisme\" loading=\"lazy\" decoding=\"async\">\u003cspan>Sensibilisation au terrorisme\u003c/span>\u003c/button>\u003cbutton type=\"button\" class=\"shot\" data-src=\"images/chemical-response-certificate.png\" data-alt=\"Certificat d’intervention en cas d’incident chimique\">\u003cimg src=\"images/chemical-response-certificate.png\" alt=\"Certificat d’intervention en cas d’incident chimique\" loading=\"lazy\" decoding=\"async\">\u003cspan>Incident chimique\u003c/span>\u003c/button>\u003cbutton type=\"button\" class=\"shot\" data-src=\"images/radiological-events-certificate.png\" data-alt=\"Certificat sur les événements radiologiques\">\u003cimg src=\"images/radiological-events-certificate.png\" alt=\"Certificat sur les événements radiologiques\" loading=\"lazy\" decoding=\"async\">\u003cspan>Événements radiologiques\u003c/span>\u003c/button>\u003cbutton type=\"button\" class=\"shot\" data-src=\"images/cybersecurity-certificate.png\" data-alt=\"Certificat d’excellence en cybersécurité\">\u003cimg src=\"images/cybersecurity-certificate.png\" alt=\"Certificat d’excellence en cybersécurité\" loading=\"lazy\" decoding=\"async\">\u003cspan>Minerva 2k12\u003c/span>\u003c/button>\u003cbutton type=\"button\" class=\"shot\" data-src=\"images/ims100-certificate.png\" data-alt=\"Certificat de réussite IMS 100 de Gestion des situations d’urgence Ontario\">\u003cimg src=\"images/ims100-certificate.png\" alt=\"Certificat de réussite IMS 100 de Gestion des situations d’urgence Ontario\" loading=\"lazy\" decoding=\"async\">\u003cspan>IMS 100\u003c/span>\u003c/button>\u003cbutton type=\"button\" class=\"shot\" data-src=\"certificates/victim_rights_in_canada.png\" data-alt=\"Certificat Droits des victimes au Canada du Professional Security Knowledge Network\">\u003cimg src=\"certificates/victim_rights_in_canada.png\" alt=\"Certificat Droits des victimes au Canada du Professional Security Knowledge Network\" loading=\"lazy\" decoding=\"async\">\u003cspan>Droits des victimes, déc. 2024\u003c/span>\u003c/button>\u003cbutton type=\"button\" class=\"shot\" data-src=\"certificates/mental_health_first_responders.png\" data-alt=\"Certificat Conscience de soi en santé mentale pour les premiers intervenants du Professional Security Knowledge Network\">\u003cimg src=\"certificates/mental_health_first_responders.png\" alt=\"Certificat Conscience de soi en santé mentale pour les premiers intervenants du Professional Security Knowledge Network\" loading=\"lazy\" decoding=\"async\">\u003cspan>Santé mentale, nov. 2024\u003c/span>\u003c/button>\u003c/div>\n    \u003c/div>\n  \u003c/section>\n  \u003csection id=\"leadership\">\n    \u003cdiv class=\"wrap section\">\n      \u003cp class=\"kicker forest\">05  Leadership\u003c/p>\n      \u003ch2 class=\"section-title\">Leadership et compétence culturelle\u003c/h2>\n      \u003cdiv class=\"lead\">\n        \u003carticle class=\"card\">\n          \u003ch3 class=\"kicker forest\">Référence professionnelle\u003c/h3>\n          \u003cblockquote>“Outstanding reliability and leadership under pressure. Demonstrated exceptional ability to navigate complex cultural contexts with genuine respect and commitment to community service.”\u003c/blockquote>\n          \u003cp class=\"fine muted\">Citation originale en anglais.\u003c/p>\n          \u003cp class=\"who\">\u003cspan class=\"strong\">Shayanne Keeper\u003c/span>\u003cspan class=\"muted\">Native Northwest\u003c/span>\u003c/p>\n          \u003cbutton type=\"button\" class=\"shot letter\" data-src=\"reference_letter.png\" data-alt=\"Lettre de référence de Shayanne Keeper\">Voir la lettre de référence complète\u003c/button>\n        \u003c/article>\n        \u003carticle class=\"card\">\n          \u003ch3>Défense des droits des Autochtones\u003c/h3>\n          \u003cul class=\"plain\">\u003cli>\u003cp class=\"strong\">Femmes et filles autochtones disparues et assassinées (FFADA)\u003c/p>\u003cp class=\"muted\">Participation active à des initiatives de sensibilisation aux réalités autochtones et à des efforts de réconciliation.\u003c/p>\u003c/li>\u003cli>\u003cp class=\"strong\">Journée Chaque enfant compte\u003c/p>\u003cp class=\"muted\">Soutien à des campagnes de sensibilisation culturelle rendant hommage aux enfants et aux familles autochtones.\u003c/p>\u003c/li>\u003cli>\u003cp class=\"strong\">Mentorat du personnel\u003c/p>\u003cp class=\"muted\">Accompagnement des nouveaux membres de l’équipe dans leur perfectionnement professionnel, avec une sensibilité culturelle et un leadership axé sur l’action.\u003c/p>\u003c/li>\u003c/ul>\n          \u003cbutton type=\"button\" class=\"shot\" data-src=\"images/indigenous-advocacy.png\" data-alt=\"Travail communautaire de défense des droits des Autochtones\">\u003cimg src=\"images/indigenous-advocacy.png\" alt=\"Travail communautaire de défense des droits des Autochtones\" loading=\"lazy\" decoding=\"async\">\u003cspan class=\"muted\">Défense des intérêts de la communauté et leadership culturel\u003c/span>\u003c/button>\n        \u003c/article>\n      \u003c/div>\n    \u003c/div>\n  \u003c/section>\n\u003c/main>\n\u003cfooter>\n  \u003cdiv class=\"wrap foot\">\n    \u003cdiv>\n      \u003cp class=\"kicker\">Reconnaissance du territoire\u003c/p>\n      \u003cp>Ce portfolio est situé sur le territoire traditionnel non cédé du peuple algonquin anishinaabe. Je reconnais la présence et les contributions continues des Premières Nations, des Inuits et des Métis, et je m’engage à apprendre et à agir de manière à soutenir la réconciliation.\u003c/p>\n    \u003c/div>\n    \u003cdiv class=\"foot-side\">\n      \u003cp class=\"kicker\">Coordonnées\u003c/p>\n      \u003ca href=\"mailto:sing0642@algonquinlive.com\">sing0642@algonquinlive.com\u003c/a>\n      \u003cp class=\"display end-name\">Ikjot Singh\u003c/p>\n      \u003cp class=\"fine\">© 2026 Ikjot Singh\u003c/p>\n    \u003c/div>\n  \u003c/div>\n\u003c/footer>\n\u003cdiv id=\"lightbox\" hidden>\n  \u003cbutton type=\"button\" data-close>Fermer\u003c/button>\n  \u003cimg alt=\"\">\n\u003c/div>"};
+const root = document.getElementById("app");
+function draw(lang) {
+  const next = lang === "fr" ? "fr" : "en";
+  document.documentElement.lang = next;
+  document.title = next === "fr" ? "Ikjot Singh | Portfolio en sécurité publique" : "Ikjot Singh | Public Safety Portfolio";
+  const y = window.scrollY;
+  root.innerHTML = PAGES[next];
+  window.scrollTo(0, y);
+  try { localStorage.setItem("lang", next); } catch (e) {}
+  observe();
+}
+let observer;
+function observe() {
+  if (observer) observer.disconnect();
+  const nodes = ["home","mission","skills","community","certifications","leadership"].map((id) => document.getElementById(id)).filter(Boolean);
+  observer = new IntersectionObserver((entries) => {
+    const visible = entries.filter((entry) => entry.isIntersecting).sort((a, b) => b.intersectionRatio - a.intersectionRatio)[0];
+    if (!visible) return;
+    document.querySelectorAll("[data-nav]").forEach((link) => {
+      if (link.getAttribute("data-nav") === visible.target.id) link.setAttribute("aria-current", "true");
+      else link.removeAttribute("aria-current");
     });
-    (function initLang() {
-      let saved = null;
-      try { saved = localStorage.getItem(LANG_KEY); } catch (e) {}
-      try { applyLang(saved === 'fr' ? 'fr' : 'en'); }
-      finally { document.documentElement.classList.remove('i18n-pending'); }
-      if (saved !== 'en' && saved !== 'fr') openLangModal();
-    })();
-    lucide.createIcons();
-  </script>
+  }, { rootMargin: "-30% 0px -55% 0px", threshold: [0.15, 0.4] });
+  nodes.forEach((node) => observer.observe(node));
+}
+document.addEventListener("click", (event) => {
+  const langBtn = event.target.closest("[data-lang]");
+  if (langBtn) { draw(langBtn.getAttribute("data-lang")); return; }
+  const menu = event.target.closest("[data-menu]");
+  if (menu) {
+    const panel = document.querySelector(".mobile");
+    const open = panel.hasAttribute("hidden");
+    if (open) panel.removeAttribute("hidden"); else panel.setAttribute("hidden", "");
+    menu.setAttribute("aria-expanded", String(open));
+    menu.setAttribute("aria-label", open ? menu.getAttribute("data-close-label") : menu.getAttribute("data-open"));
+    return;
+  }
+  if (event.target.closest(".mobile a")) {
+    const panel = document.querySelector(".mobile");
+    if (panel) panel.setAttribute("hidden", "");
+  }
+  const shot = event.target.closest("[data-src]");
+  if (shot) {
+    const box = document.getElementById("lightbox");
+    const img = box.querySelector("img");
+    img.src = shot.getAttribute("data-src");
+    img.alt = shot.getAttribute("data-alt") || "";
+    box.hidden = false;
+    return;
+  }
+  if (event.target.closest("[data-close]") || event.target.id === "lightbox") {
+    const box = document.getElementById("lightbox");
+    box.hidden = true;
+    const img = box.querySelector("img");
+    img.removeAttribute("src");
+  }
+});
+document.addEventListener("keydown", (event) => {
+  if (event.key === "Escape") {
+    const box = document.getElementById("lightbox");
+    if (box) box.hidden = true;
+  }
+});
+let saved = "en";
+try { saved = localStorage.getItem("lang") === "fr" ? "fr" : "en"; } catch (e) {}
+if (saved === "fr") draw("fr"); else observe();
+</script>
 </body>
 </html>

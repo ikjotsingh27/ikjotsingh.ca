@@ -42,3 +42,9 @@ The facts, certificates, photos, reference letter, email, and both languages. No
 
 What to build later
 Keep index.html as the published site until this idea is ready. Use this file as the brief when rebuilding the homepage.
+
+Update
+
+This idea is no longer only a note. It is the live homepage at index.html. The previous homepage is in older-version/index.html.
+
+The live page also uses the tighter wording: CBRNE and IMS 100 are awareness level, Minerva 2k12 is marked as 2012, completed diplomas are listed, and the Venvi Stonehaven work line is included.

@@ -1,5 +1,5 @@
-The new idea (index) file is new inspiration that I want to work on.
+The new idea (index) file is the inspiration for the live homepage.
 
 File: new idea (index).txt
 
-It is a redesign idea for the portfolio homepage. The live site is still index.html. I am not replacing that page yet.
+That design is now index.html. The previous site is saved at older-version/index.html and still opens at https://ikjotsingh.ca/older-version/
