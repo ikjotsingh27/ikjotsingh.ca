@@ -1,0 +1,44 @@
+New idea: index
+
+This is a design idea for the public safety portfolio homepage. It is inspiration to work on later. It does not replace the live index.html.
+
+Direction
+The current site reads like a cyan operations terminal (scan lines, glow, monospace labels). This idea replaces that with a paper brief in forest green, so the page sits with the graduation portrait instead of fighting it.
+
+Palette
+Paper #f3eee6
+Ink #17211c
+Forest #1b4336
+Muted #5e584f
+Line #d9d0c2
+Card #faf7f2
+
+Type
+Display: Fraunces
+Body: Outfit
+
+First screen
+A thin forest bar at the top.
+Monogram IS, name, and the line Public safety portfolio.
+English and French stay in the header. The choice is remembered.
+Large name, then the line: Resilient. Analytical. Committed to service.
+The existing bio stays.
+Actions: View the record, and the Algonquin email already on the site.
+Portrait on the right on a wide screen, and first on a phone, with a forest block offset behind it.
+Caption: Bachelor of Public Safety (Honours), Algonquin College.
+Four facts under the hero: 16 years of martial arts, 5 languages, 18+ hours of CBRNE training, 1st place at Minerva 2k12.
+
+Sections, in order
+1. Distinctive edge, on a forest band: lived resilience, systems thinking, multilingual communication, then the clearance and CBSA / CSIS line.
+2. Mission: career aspirations (Intelligence Support or Public Safety Analyst at CBSA or CSIS) beside the seva quote from my grandmother.
+3. Coursework: the two existing STAR examples, with the result marked in forest.
+4. Service: Caldwell Family Services and gurdwara seva, with the existing photos, then the community reflection.
+5. Record: CBRNE, Minerva 2k12, and IMS 100, then the certificate images, which open larger when tapped.
+6. Leadership: Shayanne Keeper's reference, the full letter, and the Indigenous advocacy notes with the existing photo.
+7. Footer: the Algonquin Anishinaabe land acknowledgement and the same contact email.
+
+What does not change
+The facts, certificates, photos, reference letter, email, and both languages. No new claims.
+
+What to build later
+Keep index.html as the published site until this idea is ready. Use this file as the brief when rebuilding the homepage.
