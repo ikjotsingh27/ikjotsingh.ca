@@ -74,11 +74,11 @@ test("english and french pages share one contact form", () => {
   }
   assert.match(en, />Get in touch</);
   assert.match(en, />Send message</);
-  assert.match(en, /I usually reply within a couple of days, and I will only use what you send to reply\./);
+  assert.match(en, /I usually reply within a couple of days\./);
   assert.match(en, />Contact</);
   assert.match(fr, />Me joindre</);
   assert.match(fr, />Envoyer le message</);
-  assert.match(fr, /Je réponds habituellement en quelques jours, et je n’utiliserai ce que vous m’envoyez que pour vous répondre\./);
+  assert.match(fr, /Je réponds habituellement en quelques jours\./);
   assert.match(fr, />Contact</);
   assert.match(fr, />Nom </);
   assert.match(fr, />Courriel </);
@@ -314,7 +314,7 @@ test("contact form submits in place in both languages", async () => {
     })()`);
     assert.equal(french.nav, "Contact");
     assert.equal(french.hero, "Me joindre");
-    assert.match(french.help, /quelques jours/);
+    assert.equal(french.help, "Je réponds habituellement en quelques jours.");
     assert.equal(french.send, "Envoyer le message");
     assert.equal(french.status, "Le message n’a pas pu être envoyé. Réessayez dans un moment.");
     assert.equal(french.state, "err");
