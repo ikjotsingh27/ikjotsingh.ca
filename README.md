@@ -27,6 +27,5 @@ What the new page says, on purpose:
 - Minerva 2k12 is a 2012 competition result, not current practice.
 - IMS 100 is awareness level.
 - Completed diplomas are listed on their own: Police Foundations (Dean's List), Computer Systems Technician, and Computer Science. The bachelor's is in progress.
-- Current work is listed: dining room server and prep cook at Venvi Stonehaven in Kanata.
 
 The photos, certificates, reference letter, and custom domain file were kept. References from Jill, Peter, and Joe are not on the page yet. They go on only after each person agrees.
