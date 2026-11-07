@@ -116,12 +116,19 @@ footer p, footer a { margin-top: .7rem; }
   .foot { display: grid; grid-template-columns: 1.4fr .8fr; gap: 2rem; }
   .foot-side { margin-top: 0; text-align: right; }
 }
-@media (min-width: 1024px) {
+@media (min-width: 860px) {
   .desk { display: flex; }
-  .menu, .mobile { display: none; }
-  .hero { grid-template-columns: 1.3fr .9fr; align-items: end; padding-top: 4rem; gap: 2.5rem; }
-  .hero-copy { order: 1; }
-  .hero-photo { order: 2; max-width: none; }
+  .menu, .mobile { display: none !important; }
+  .brand .kicker { max-width: none; }
+  .name { font-size: 1.15rem; }
+  .hero {
+    grid-template-columns: minmax(16rem, 0.86fr) 1.14fr;
+    align-items: center;
+    gap: 3.5rem;
+    padding: 3.5rem 0 2rem;
+  }
+  .hero-photo { order: 1; max-width: none; margin: 0; }
+  .hero-copy { order: 2; }
   .thirds { grid-template-columns: repeat(3, 1fr); }
   .lead { grid-template-columns: .85fr 1.15fr; }
 }
