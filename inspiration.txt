@@ -1,0 +1,5 @@
+The new idea (index) file is new inspiration that I want to work on.
+
+File: new idea (index).txt
+
+It is a redesign idea for the portfolio homepage. The live site is still index.html. I am not replacing that page yet.
