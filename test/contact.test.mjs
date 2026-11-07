@@ -74,11 +74,16 @@ test("english and french pages share one contact form", () => {
   }
   assert.match(en, />Get in touch</);
   assert.match(en, />Send message</);
-  assert.match(en, /I usually reply within a couple of days\./);
+  assert.equal(en.match(/id="contact-help">([^<]+)/)[1], "I'll get back to you within 24 hours.");
+  assert.equal(fr.match(/id="contact-help">([^<]+)/)[1], "Je vous répondrai dans les 24 heures.");
+  assert.equal(en.includes("I usually reply within a couple of days."), false);
+  assert.equal(fr.includes("Je réponds habituellement en quelques jours."), false);
+  assert.equal(html.includes("I usually reply within a couple of days."), false);
+  assert.equal(html.includes("Je réponds habituellement en quelques jours."), false);
+  assert.equal("I'll".charCodeAt(1), 39);
   assert.match(en, />Contact</);
   assert.match(fr, />Me joindre</);
   assert.match(fr, />Envoyer le message</);
-  assert.match(fr, /Je réponds habituellement en quelques jours\./);
   assert.match(fr, />Contact</);
   assert.match(fr, />Nom </);
   assert.match(fr, />Courriel </);
@@ -228,6 +233,7 @@ test("contact form submits in place in both languages", async () => {
         labels,
         visible,
         scroll: getComputedStyle(document.getElementById("contact")).scrollMarginTop,
+        help: document.getElementById("contact-help").textContent,
         text: document.body.innerText
       };
     })()`);
@@ -243,6 +249,7 @@ test("contact form submits in place in both languages", async () => {
     assert.match(english.labels[1], /Email/);
     assert.match(english.labels[2], /Message/);
     assert.notEqual(english.scroll, "0px");
+    assert.equal(english.help, "I'll get back to you within 24 hours.");
     assert.equal(english.text.includes("@"), false);
     await assertFits(page, "en");
 
@@ -314,7 +321,7 @@ test("contact form submits in place in both languages", async () => {
     })()`);
     assert.equal(french.nav, "Contact");
     assert.equal(french.hero, "Me joindre");
-    assert.equal(french.help, "Je réponds habituellement en quelques jours.");
+    assert.equal(french.help, "Je vous répondrai dans les 24 heures.");
     assert.equal(french.send, "Envoyer le message");
     assert.equal(french.status, "Le message n’a pas pu être envoyé. Réessayez dans un moment.");
     assert.equal(french.state, "err");
